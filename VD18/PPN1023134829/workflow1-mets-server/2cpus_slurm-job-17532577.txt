@@ -1,0 +1,71 @@
+================================================================================
+JobID = 17532577
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp008
+================================================================================
+amp008
+Hi there, I am task 0 of  tasks of job 17532577.
+I am on host amp008.
+I can use cpu 16-17 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/97fc6eca-ba61-422e-a476-9742b93b84c3.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/97fc6eca-ba61-422e-a476-9742b93b84c3
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/97fc6eca-ba61-422e-a476-9742b93b84c3.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/97fc6eca-ba61-422e-a476-9742b93b84c3/workflow1_mets_server.nf` [silly_morse] DSL2 - revision: 59755aa6c8
+O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/97fc6eca-ba61-422e-a476-9742b93b84c3/db651c29-bace-4c21-b750-9b490b3f3481:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 2
+ram                 : 32
+forks               : 2
+pages_per_range     : 70
+cpus_per_fork       : 1
+ram_per_fork        : 16GB
+
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+[7d/b5f00f] Submitted process > split_page_ranges (1)
+[bc/96f91b] Submitted process > split_page_ranges (2)
+Current page range: PHYS_0001..PHYS_0070
+Current page range: PHYS_0071..PHYS_0140
+[c5/bcebf9] Submitted process > ocrd_cis_ocropy_binarize (1)
+[1d/d78566] Submitted process > ocrd_cis_ocropy_binarize (2)
+[f9/7a6c89] Submitted process > ocrd_anybaseocr_crop (1)
+[15/f1cf78] Submitted process > ocrd_anybaseocr_crop (2)
+[31/8e25ec] Submitted process > ocrd_skimage_binarize (1)
+[3a/13a816] Submitted process > ocrd_skimage_binarize (2)
+[39/47a6e3] Submitted process > ocrd_skimage_denoise (1)
+[85/7ca58a] Submitted process > ocrd_skimage_denoise (2)
+[88/7843d5] Submitted process > ocrd_tesserocr_deskew (1)
+[90/6c8e59] Submitted process > ocrd_tesserocr_deskew (2)
+[d6/5a5b25] Submitted process > ocrd_cis_ocropy_segment (1)
+[8f/98a90a] Submitted process > ocrd_cis_ocropy_segment (2)
+[04/98c8a6] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[2b/d8a367] Submitted process > ocrd_cis_ocropy_dewarp (2)
+[76/691d04] Submitted process > ocrd_calamari_recognize (1)
+[77/e98db7] Submitted process > ocrd_calamari_recognize (2)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None

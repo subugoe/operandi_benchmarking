@@ -1,0 +1,152 @@
+================================================================================
+JobID = 17533601
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp059
+================================================================================
+amp059
+Hi there, I am task 0 of  tasks of job 17533601.
+I am on host amp059.
+I can use cpu 3-13,24-34,48-57 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9/workflow-odem_mets_server.nf` [silly_maxwell] DSL2 - revision: c2156c188b
+O P E R A N D I - H P C - WORKFLOW ODEM
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9/e765bc42-f805-4409-bf52-57946387c153:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 32
+ram                 : 32
+forks               : 32
+pages_per_range     : 4
+cpus_per_fork       : 1
+ram_per_fork        : 1GB
+
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+[c3/7ef610] Submitted process > split_page_ranges (7)
+[0a/1aad26] Submitted process > split_page_ranges (16)
+[20/43264f] Submitted process > split_page_ranges (8)
+Current page range: PHYS_0029..PHYS_0032
+Current page range: PHYS_0025..PHYS_0028
+Current page range: PHYS_0061..PHYS_0064
+[ad/3a50e1] Submitted process > split_page_ranges (28)
+Current page range: PHYS_0109..PHYS_0112
+[31/3a910a] Submitted process > split_page_ranges (25)
+Current page range: PHYS_0097..PHYS_0100
+[20/4fa3b7] Submitted process > split_page_ranges (23)
+Current page range: PHYS_0089..PHYS_0092
+[f6/8351f4] Submitted process > split_page_ranges (2)
+Current page range: PHYS_0005..PHYS_0008
+[5e/36094f] Submitted process > split_page_ranges (24)
+Current page range: PHYS_0093..PHYS_0096
+[42/e79008] Submitted process > split_page_ranges (3)
+[5b/e47816] Submitted process > split_page_ranges (5)
+Current page range: PHYS_0009..PHYS_0012
+Current page range: PHYS_0017..PHYS_0020
+[30/cb7a81] Submitted process > split_page_ranges (19)
+Current page range: PHYS_0073..PHYS_0076
+[ca/fd9e3a] Submitted process > split_page_ranges (11)
+Current page range: PHYS_0041..PHYS_0044
+[f2/2c5da7] Submitted process > split_page_ranges (22)
+Current page range: PHYS_0085..PHYS_0088
+[6b/c01587] Submitted process > split_page_ranges (1)
+Current page range: PHYS_0001..PHYS_0004
+[66/665c9b] Submitted process > split_page_ranges (26)
+Current page range: PHYS_0101..PHYS_0104
+[b7/8c6bcc] Submitted process > split_page_ranges (18)
+[3d/560e53] Submitted process > split_page_ranges (30)
+[c0/34c1d3] Submitted process > split_page_ranges (20)
+Current page range: PHYS_0069..PHYS_0072
+[44/c6d4f6] Submitted process > split_page_ranges (15)
+Current page range: PHYS_0117..PHYS_0120
+Current page range: PHYS_0057..PHYS_0060
+Current page range: PHYS_0077..PHYS_0080
+[1a/39704c] Submitted process > split_page_ranges (12)
+Current page range: PHYS_0045..PHYS_0048
+[d3/7749aa] Submitted process > split_page_ranges (9)
+[98/2663ac] Submitted process > split_page_ranges (29)
+[4a/1c224b] Submitted process > split_page_ranges (6)
+Current page range: PHYS_0113..PHYS_0116
+Current page range: PHYS_0033..PHYS_0036
+Current page range: PHYS_0021..PHYS_0024
+[12/f14167] Submitted process > split_page_ranges (31)
+[33/f9801e] Submitted process > split_page_ranges (32)
+[23/f5fdb9] Submitted process > split_page_ranges (17)
+Current page range: PHYS_0121..PHYS_0124
+Current page range: PHYS_0125..PHYS_0128
+[25/142b45] Submitted process > split_page_ranges (13)
+Current page range: PHYS_0065..PHYS_0068
+Current page range: PHYS_0049..PHYS_0052
+[6e/4fdc4c] Submitted process > split_page_ranges (4)
+Current page range: PHYS_0013..PHYS_0016
+[bb/c5be7c] Submitted process > split_page_ranges (10)
+Current page range: PHYS_0037..PHYS_0040
+[de/939686] Submitted process > split_page_ranges (27)
+Current page range: PHYS_0105..PHYS_0108
+[92/9597df] Submitted process > split_page_ranges (21)
+Current page range: PHYS_0081..PHYS_0084
+[74/eae57f] Submitted process > ocrd_cis_ocropy_binarize_0 (2)
+[9a/e8a4cf] Submitted process > ocrd_cis_ocropy_binarize_0 (1)
+[25/2e045d] Submitted process > ocrd_cis_ocropy_binarize_0 (3)
+[22/15baa9] Submitted process > ocrd_cis_ocropy_binarize_0 (4)
+[47/ab0199] Submitted process > ocrd_cis_ocropy_binarize_0 (5)
+[46/eef054] Submitted process > ocrd_cis_ocropy_binarize_0 (6)
+[92/dfd8a6] Submitted process > ocrd_cis_ocropy_binarize_0 (7)
+[da/6a0327] Submitted process > ocrd_cis_ocropy_binarize_0 (8)
+[ff/b97925] Submitted process > ocrd_cis_ocropy_binarize_0 (9)
+[03/8e596b] Submitted process > ocrd_cis_ocropy_binarize_0 (10)
+[dd/ea4341] Submitted process > ocrd_cis_ocropy_binarize_0 (11)
+[a6/359f44] Submitted process > ocrd_cis_ocropy_binarize_0 (12)
+[7e/53fdac] Submitted process > ocrd_cis_ocropy_binarize_0 (14)
+[e3/cbb3a7] Submitted process > ocrd_cis_ocropy_binarize_0 (13)
+[ab/3374ab] Submitted process > ocrd_cis_ocropy_binarize_0 (15)
+[ed/4e1a80] Submitted process > ocrd_cis_ocropy_binarize_0 (16)
+[ff/a93915] Submitted process > ocrd_cis_ocropy_binarize_0 (17)
+[b1/82a902] Submitted process > ocrd_cis_ocropy_binarize_0 (18)
+[f1/0ba26f] Submitted process > ocrd_cis_ocropy_binarize_0 (19)
+[97/e31459] Submitted process > ocrd_cis_ocropy_binarize_0 (20)
+[7b/0d5ce9] Submitted process > ocrd_cis_ocropy_binarize_0 (21)
+[8b/478c00] Submitted process > ocrd_cis_ocropy_binarize_0 (22)
+[c1/a5aed9] Submitted process > ocrd_cis_ocropy_binarize_0 (23)
+[fc/005f35] Submitted process > ocrd_cis_ocropy_binarize_0 (25)
+[a7/e5eace] Submitted process > ocrd_cis_ocropy_binarize_0 (24)
+[e9/8c7c7c] Submitted process > ocrd_cis_ocropy_binarize_0 (26)
+[f3/f45ce0] Submitted process > ocrd_cis_ocropy_binarize_0 (27)
+[9e/3443c7] Submitted process > ocrd_cis_ocropy_binarize_0 (30)
+[b1/12cd52] Submitted process > ocrd_cis_ocropy_binarize_0 (29)
+[57/7bbfab] Submitted process > ocrd_cis_ocropy_binarize_0 (28)
+[aa/831e3b] Submitted process > ocrd_cis_ocropy_binarize_0 (31)
+[0f/f24259] Submitted process > split_page_ranges (14)
+Current page range: PHYS_0053..PHYS_0056
+[e4/043a43] Submitted process > ocrd_cis_ocropy_binarize_0 (32)
+ERROR ~ Error executing process > 'ocrd_cis_ocropy_binarize_0 (7)'
+
+Caused by:
+  Process `ocrd_cis_ocropy_binarize_0 (7)` terminated with an error exit status (135)
+
+Command executed:
+
+  singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9/e765bc42-f805-4409-bf52-57946387c153:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif ocrd-cis-ocropy-binarize -U /ws_data/mets_server.sock -w /ws_data --page-id PHYS_0005..PHYS_0008 -m /ws_data/mets.xml -I MAX -O OCR-D-BINPAGE -P dpi 300
+
+Command exit status:
+  135
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: 556035 Bus error               singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9/e765bc42-f805-4409-bf52-57946387c153:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif ocrd-cis-ocropy-binarize -U /ws_data/mets_server.sock -w /ws_data --page-id PHYS_0005..PHYS_0008 -m /ws_data/mets.xml -I MAX -O OCR-D-BINPAGE -P dpi 300
+
+Work dir:
+  /scratch1/users/mmustaf/operandi/slurm_workspaces/a09b0789-1170-4ce0-8c4f-0dcd97ab2cc9/work/92/dfd8a64663ece55699db34965cf92e
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+ -- Check '.nextflow.log' file for details
+WARN: Killing running tasks (31)

@@ -1,0 +1,111 @@
+================================================================================
+JobID = 17532578
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp062
+================================================================================
+amp062
+Hi there, I am task 0 of  tasks of job 17532578.
+I am on host amp062.
+I can use cpu 64-65,70-71 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/8e538c40-8b98-4e5e-9938-c11350058606.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/8e538c40-8b98-4e5e-9938-c11350058606
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/8e538c40-8b98-4e5e-9938-c11350058606.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/8e538c40-8b98-4e5e-9938-c11350058606/workflow1_mets_server.nf` [infallible_franklin] DSL2 - revision: 59755aa6c8
+O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/8e538c40-8b98-4e5e-9938-c11350058606/12f420b0-45ed-4ecf-a109-ed08c4bf25b6:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 4
+ram                 : 32
+forks               : 4
+pages_per_range     : 35
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+[09/2f6928] Submitted process > split_page_ranges (3)
+[af/64ffe1] Submitted process > split_page_ranges (1)
+Current page range: PHYS_0071..PHYS_0105
+[b6/c1be20] Submitted process > split_page_ranges (4)
+Current page range: PHYS_0001..PHYS_0035
+Current page range: PHYS_0106..PHYS_0140
+[d6/ffda5b] Submitted process > split_page_ranges (2)
+Current page range: PHYS_0036..PHYS_0070
+[0f/fee9c5] Submitted process > ocrd_cis_ocropy_binarize (2)
+[1d/862144] Submitted process > ocrd_cis_ocropy_binarize (3)
+[a3/bb4939] Submitted process > ocrd_cis_ocropy_binarize (1)
+[54/4f85d0] Submitted process > ocrd_cis_ocropy_binarize (4)
+[21/72e379] Submitted process > ocrd_anybaseocr_crop (1)
+[68/889cb3] Submitted process > ocrd_anybaseocr_crop (2)
+[29/4b5753] Submitted process > ocrd_anybaseocr_crop (3)
+[19/ab2be4] Submitted process > ocrd_anybaseocr_crop (4)
+[9f/71c643] Submitted process > ocrd_skimage_binarize (1)
+[57/0e0758] Submitted process > ocrd_skimage_binarize (2)
+[f8/47efed] Submitted process > ocrd_skimage_binarize (3)
+[bb/586a8d] Submitted process > ocrd_skimage_binarize (4)
+[15/f1fca0] Submitted process > ocrd_skimage_denoise (1)
+[10/379183] Submitted process > ocrd_skimage_denoise (2)
+[99/463f68] Submitted process > ocrd_skimage_denoise (3)
+[cc/ace067] Submitted process > ocrd_skimage_denoise (4)
+[17/37cf0d] Submitted process > ocrd_tesserocr_deskew (1)
+[4b/561719] Submitted process > ocrd_tesserocr_deskew (2)
+[b7/064c2d] Submitted process > ocrd_tesserocr_deskew (3)
+[96/f5143b] Submitted process > ocrd_tesserocr_deskew (4)
+[2b/efda87] Submitted process > ocrd_cis_ocropy_segment (1)
+[28/b68460] Submitted process > ocrd_cis_ocropy_segment (2)
+[cd/7c5ba9] Submitted process > ocrd_cis_ocropy_segment (3)
+[0f/bfbc3a] Submitted process > ocrd_cis_ocropy_segment (4)
+[02/7eaead] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[a5/1663d1] Submitted process > ocrd_cis_ocropy_dewarp (2)
+[a1/0e34a1] Submitted process > ocrd_cis_ocropy_dewarp (3)
+[63/a7762c] Submitted process > ocrd_cis_ocropy_dewarp (4)
+[03/d429a0] Submitted process > ocrd_calamari_recognize (1)
+[7c/53624d] Submitted process > ocrd_calamari_recognize (2)
+[5d/91cc21] Submitted process > ocrd_calamari_recognize (3)
+[45/aa858d] Submitted process > ocrd_calamari_recognize (4)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None

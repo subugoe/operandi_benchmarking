@@ -1,0 +1,79 @@
+================================================================================
+JobID = 17533563
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp074
+================================================================================
+amp074
+Hi there, I am task 0 of  tasks of job 17533563.
+I am on host amp074.
+I can use cpu 18-19,22-23 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/2cbc5fb1-da1a-40f4-a582-1ccfe7e7f7a7.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/2cbc5fb1-da1a-40f4-a582-1ccfe7e7f7a7
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/2cbc5fb1-da1a-40f4-a582-1ccfe7e7f7a7.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/2cbc5fb1-da1a-40f4-a582-1ccfe7e7f7a7/workflow-odem_mets_server.nf` [festering_leakey] DSL2 - revision: c2156c188b
+O P E R A N D I - H P C - WORKFLOW ODEM
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/2cbc5fb1-da1a-40f4-a582-1ccfe7e7f7a7/1d401235-434f-4240-9d04-7b16308aca65:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 4
+ram                 : 32
+forks               : 4
+pages_per_range     : 35
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+[72/dfec26] Submitted process > split_page_ranges (3)
+[b2/b39701] Submitted process > split_page_ranges (4)
+[2a/e416b2] Submitted process > split_page_ranges (1)
+[04/e63413] Submitted process > split_page_ranges (2)
+Current page range: PHYS_0071..PHYS_0105
+Current page range: PHYS_0001..PHYS_0035
+Current page range: PHYS_0036..PHYS_0070
+Current page range: PHYS_0106..PHYS_0140
+[cb/c2069d] Submitted process > ocrd_cis_ocropy_binarize_0 (3)
+[b0/f42809] Submitted process > ocrd_cis_ocropy_binarize_0 (4)
+[0f/1451cf] Submitted process > ocrd_cis_ocropy_binarize_0 (1)
+[76/27d782] Submitted process > ocrd_cis_ocropy_binarize_0 (2)
+[68/610d1b] Submitted process > ocrd_anybaseocr_crop_1 (1)
+[c2/c1c829] Submitted process > ocrd_anybaseocr_crop_1 (2)
+[ae/883045] Submitted process > ocrd_anybaseocr_crop_1 (3)
+[fd/720124] Submitted process > ocrd_anybaseocr_crop_1 (4)
+[5b/c7faba] Submitted process > ocrd_cis_ocropy_denoise_2 (1)
+[4c/fe97a5] Submitted process > ocrd_cis_ocropy_denoise_2 (2)
+[07/e0d302] Submitted process > ocrd_cis_ocropy_denoise_2 (3)
+[3a/2d996a] Submitted process > ocrd_cis_ocropy_denoise_2 (4)
+[1c/a7ed41] Submitted process > ocrd_cis_ocropy_deskew_3 (1)
+[96/fa62b1] Submitted process > ocrd_cis_ocropy_deskew_3 (2)
+[ca/35172d] Submitted process > ocrd_cis_ocropy_deskew_3 (3)
+[0c/e14c2f] Submitted process > ocrd_cis_ocropy_deskew_3 (4)
+[40/e3cde9] Submitted process > ocrd_tesserocr_segment_region_4 (1)
+[30/458d5e] Submitted process > ocrd_tesserocr_segment_region_4 (2)
+[c6/82737c] Submitted process > ocrd_tesserocr_segment_region_4 (3)
+[a7/24c4df] Submitted process > ocrd_tesserocr_segment_region_4 (4)
+[e9/2dca86] Submitted process > ocrd_segment_repair_5 (1)
+[d7/7ece84] Submitted process > ocrd_segment_repair_5 (2)
+[f6/52e856] Submitted process > ocrd_segment_repair_5 (3)
+[2f/a2f72d] Submitted process > ocrd_segment_repair_5 (4)
+[77/c6109f] Submitted process > ocrd_cis_ocropy_clip_6 (1)
+[b6/9e58c2] Submitted process > ocrd_cis_ocropy_clip_6 (2)
+[50/2946a9] Submitted process > ocrd_cis_ocropy_clip_6 (3)
+[92/d9de6b] Submitted process > ocrd_cis_ocropy_clip_6 (4)
+[6b/834bd8] Submitted process > ocrd_cis_ocropy_segment_7 (1)
+[25/92f99b] Submitted process > ocrd_cis_ocropy_segment_7 (2)
+[44/d93f8c] Submitted process > ocrd_cis_ocropy_segment_7 (3)
+[a3/52c6dd] Submitted process > ocrd_cis_ocropy_segment_7 (4)
+[8d/07a5fb] Submitted process > ocrd_cis_ocropy_dewarp_8 (1)
+[e1/c55fec] Submitted process > ocrd_cis_ocropy_dewarp_8 (2)
+[38/b328a8] Submitted process > ocrd_cis_ocropy_dewarp_8 (3)
+[b6/a00908] Submitted process > ocrd_cis_ocropy_dewarp_8 (4)
+[13/d78d86] Submitted process > ocrd_tesserocr_recognize_9 (1)
+[1b/d49b32] Submitted process > ocrd_tesserocr_recognize_9 (2)
+[c7/633665] Submitted process > ocrd_tesserocr_recognize_9 (3)
+[6a/a48df0] Submitted process > ocrd_tesserocr_recognize_9 (4)

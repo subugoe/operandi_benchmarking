@@ -1,0 +1,51 @@
+================================================================================
+JobID = 17532575
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp006
+================================================================================
+amp006
+Hi there, I am task 0 of  tasks of job 17532575.
+I am on host amp006.
+I can use cpu 22 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/01eb479d-3052-4842-8881-9caff9de2166.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/01eb479d-3052-4842-8881-9caff9de2166
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/01eb479d-3052-4842-8881-9caff9de2166.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/01eb479d-3052-4842-8881-9caff9de2166/workflow1_mets_server.nf` [elated_gauss] DSL2 - revision: 59755aa6c8
+O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/01eb479d-3052-4842-8881-9caff9de2166/1c3becd3-35e0-4974-bc66-e0ee638768c5:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 1
+ram                 : 32
+forks               : 1
+pages_per_range     : 140
+cpus_per_fork       : 1
+ram_per_fork        : 32GB
+
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+[8f/661bf2] Submitted process > split_page_ranges (1)
+Current page range: PHYS_0001..PHYS_0140
+[4d/8c1ce7] Submitted process > ocrd_cis_ocropy_binarize (1)
+[28/c6574a] Submitted process > ocrd_anybaseocr_crop (1)
+[c2/186bad] Submitted process > ocrd_skimage_binarize (1)
+[15/3e4a2a] Submitted process > ocrd_skimage_denoise (1)
+[9f/bf5ace] Submitted process > ocrd_tesserocr_deskew (1)
+[78/9b2907] Submitted process > ocrd_cis_ocropy_segment (1)
+[ef/b23dd9] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[ed/f83229] Submitted process > ocrd_calamari_recognize (1)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None

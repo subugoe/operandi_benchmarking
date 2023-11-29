@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mets:mets xmlns:mets="http://www.loc.gov/METS/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mods="http://www.loc.gov/mods/v3"
+  xmlns:slub="http://slub-dresden.de/" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:dv="http://dfg-viewer.de/"
+  xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+  <mets:metsHdr CREATEDATE="2019-07-11T13:56:13">
+    <mets:agent OTHERTYPE="SOFTWARE" ROLE="CREATOR" TYPE="OTHER">
+      <mets:name>Kitodo - kitodo-ugh-2.1.1-kitodo-ugh-2.1.1 - 21−January−2019</mets:name>
+      <mets:note>Kitodo</mets:note>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:dmdSec ID="DMDLOG_0000">
+    <mets:mdWrap MDTYPE="MODS">
+      <mets:xmlData>
+        <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:identifier type="goobi">17659</mods:identifier>
+          <mods:location>
+            <mods:physicalLocation authority="marcorg" displayLabel="Saxon State Library, Dresden, Germany">DE-14</mods:physicalLocation>
+            <mods:shelfLocator>Coll.diss.A.89,37</mods:shelfLocator>
+          </mods:location>
+          <mods:relatedItem type="series">
+            <mods:titleInfo>
+              <mods:title lang="ger">Drucke des 17. Jahrhunderts</mods:title>
+            </mods:titleInfo>
+          </mods:relatedItem>
+          <mods:relatedItem type="series">
+            <mods:titleInfo>
+              <mods:title lang="ger">Projekt: Im deutschen Sprachraum erschienene Drucke des 17. Jahrhunderts (VD 17)</mods:title>
+            </mods:titleInfo>
+          </mods:relatedItem>
+          <mods:recordInfo>
+            <mods:recordIdentifier source="http://digital.slub-dresden.de/oai/">oai:de:slub-dresden:db:id-327277084</mods:recordIdentifier>
+          </mods:recordInfo>
+          <mods:physicalDescription>
+            <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
+            <mods:extent>[16] Bl.</mods:extent>
+          </mods:physicalDescription>
+          <mods:identifier type="swb-ppn">327277084</mods:identifier>
+          <mods:identifier type="purl">http://digital.slub-dresden.de/id327277084</mods:identifier>
+          <mods:identifier type="urn">urn:nbn:de:bsz:14-db-id3272770845</mods:identifier>
+          <mods:extension>
+            <slub:slub xmlns:slub="http://slub-dresden.de/">
+              <slub:id type="digital">327277084</slub:id>
+              <slub:id type="source">075185342</slub:id>
+              <slub:id type="tsl-ats">admodusco</slub:id>
+              <slub:footer>slubdfg</slub:footer>
+            </slub:slub>
+          </mods:extension>
+          <mods:identifier type="swb-ppn">075185342</mods:identifier>
+          <mods:titleInfo>
+            <mods:title>Admonitores duo scholasticorum operum</mods:title>
+            <mods:subTitle>prior est Sermo succinctus de ludorum literariorum inspectoribus sub verni examinis auspicio anno 1599 ... Neustadij ad Orlam habitus; posterior est Oratiuncula de pueritiae in scholis neglectae peccato anno 1604 conscripta</mods:subTitle>
+          </mods:titleInfo>
+          <mods:language>
+            <mods:languageTerm authority="rfc3066" type="code">la</mods:languageTerm>
+          </mods:language>
+          <mods:originInfo eventType="publication">
+            <mods:place>
+              <mods:placeTerm type="text">Lipsiae</mods:placeTerm>
+            </mods:place>
+            <mods:dateIssued keyDate="yes">1604</mods:dateIssued>
+            <mods:publisher>Lantzenberger</mods:publisher>
+          </mods:originInfo>
+          <mods:name type="personal">
+            <mods:role>
+              <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+            </mods:role>
+            <mods:namePart type="family">Pharetratus</mods:namePart>
+            <mods:namePart type="given">Michael</mods:namePart>
+            <mods:displayForm>Pharetratus, Michael</mods:displayForm>
+          </mods:name>
+          <mods:identifier type="vd17">VD17 14:651377F</mods:identifier>
+          <mods:name>
+            <mods:role>
+              <mods:roleTerm authority="marcrelator" type="code">fnd</mods:roleTerm>
+            </mods:role>
+            <mods:displayForm>Deutsche Forschungsgemeinschaft</mods:displayForm>
+          </mods:name>
+          <mods:accessCondition xmlns:xlink="http://www.w3.org/1999/xlink"
+            type="use and reproduction"
+            xlink:href="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain Mark
+            1.0</mods:accessCondition>
+          <mods:accessCondition xmlns:xlink="http://www.w3.org/1999/xlink"
+            displayLabel="Access Status" type="restriction on access"
+            xlink:href="http://purl.org/coar/access_right/c_abf2">Open Access</mods:accessCondition>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:amdSec ID="AMD">
+    <mets:rightsMD ID="RIGHTS">
+      <mets:mdWrap MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="DVRIGHTS">
+        <mets:xmlData>
+          <dv:rights xmlns:dv="http://dfg-viewer.de/">
+            <dv:owner>Sächsische Landesbibliothek - Staats- und Universitätsbibliothek
+              Dresden</dv:owner>
+            <dv:ownerLogo>http://digital.slub-dresden.de/fileadmin/images/dfgviewer_logo_slub.gif</dv:ownerLogo>
+            <dv:ownerSiteURL>http://www.slub-dresden.de/</dv:ownerSiteURL>
+            <dv:ownerContact>mailto:digital@slub-dresden.de</dv:ownerContact>
+          </dv:rights>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:rightsMD>
+    <mets:digiprovMD ID="DIGIPROV">
+      <mets:mdWrap MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="DVLINKS">
+        <mets:xmlData>
+          <dv:links xmlns:dv="http://dfg-viewer.de/">
+            <dv:reference>http://dienste.slub-dresden.de/cgi-bin/FOZK.pl?PPN=327277084</dv:reference>
+            <dv:presentation>https://digital.slub-dresden.de/id327277084</dv:presentation>
+          </dv:links>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+  </mets:amdSec>
+  <mets:fileSec>
+    <mets:fileGrp USE="DOWNLOAD">
+      <mets:file ID="FILE_0000_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000001.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0001_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000002.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0002_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000003.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0003_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000004.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0004_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000005.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0005_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000006.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0006_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000007.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0007_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000008.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0008_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000009.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0009_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000010.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0010_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000011.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0011_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000012.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0012_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000013.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0013_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000014.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0014_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000015.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0015_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000016.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0016_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000017.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0017_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000018.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0018_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000019.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0019_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000020.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0020_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000021.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0021_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000022.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0022_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000023.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0023_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000024.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0024_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000025.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0025_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000026.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0026_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000027.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0027_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000028.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0028_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000029.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0029_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000030.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0030_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000031.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0031_DOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000032.tif.pdf"
+        />
+      </mets:file>
+      <mets:file ID="FULLDOWNLOAD" MIMETYPE="application/pdf">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/admodusco_327277084.pdf"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="MAX">
+      <mets:file ID="FILE_0000_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000001.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0001_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000002.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0002_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000003.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0003_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000004.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0004_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000005.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0005_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000006.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0006_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000007.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0007_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000008.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0008_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000009.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0009_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000010.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0010_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000011.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0011_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000012.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0012_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000013.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0013_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000014.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0014_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000015.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0015_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000016.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0016_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000017.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0017_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000018.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0018_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000019.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0019_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000020.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0020_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000021.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0021_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000022.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0022_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000023.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0023_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000024.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0024_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000025.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0025_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000026.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0026_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000027.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0027_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000028.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0028_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000029.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0029_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000030.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0030_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000031.tif.large.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0031_MAX" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000032.tif.large.jpg"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="ORIGINAL">
+      <mets:file ID="FILE_0000_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000001.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0001_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000002.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0002_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000003.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0003_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000004.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0004_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000005.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0005_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000006.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0006_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000007.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0007_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000008.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0008_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000009.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0009_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000010.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0010_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000011.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0011_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000012.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0012_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000013.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0013_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000014.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0014_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000015.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0015_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000016.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0016_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000017.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0017_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000018.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0018_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000019.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0019_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000020.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0020_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000021.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0021_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000022.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0022_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000023.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0023_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000024.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0024_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000025.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0025_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000026.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0026_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000027.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0027_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000028.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0028_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000029.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0029_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000030.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0030_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000031.tif.original.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0031_ORIGINAL" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000032.tif.original.jpg"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="THUMBS">
+      <mets:file ID="FILE_0000_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000001.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0001_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000002.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0002_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000003.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0003_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000004.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0004_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000005.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0005_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000006.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0006_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000007.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0007_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000008.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0008_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000009.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0009_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000010.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0010_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000011.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0011_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000012.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0012_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000013.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0013_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000014.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0014_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000015.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0015_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000016.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0016_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000017.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0017_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000018.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0018_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000019.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0019_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000020.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0020_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000021.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0021_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000022.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0022_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000023.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0023_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000024.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0024_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000025.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0025_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000026.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0026_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000027.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0027_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000028.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0028_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000029.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0029_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000030.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0030_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000031.tif.thumbnail.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0031_THUMBS" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000032.tif.thumbnail.jpg"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="MIN">
+      <mets:file ID="FILE_0000_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000001.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0001_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000002.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0002_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000003.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0003_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000004.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0004_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000005.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0005_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000006.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0006_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000007.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0007_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000008.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0008_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000009.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0009_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000010.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0010_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000011.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0011_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000012.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0012_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000013.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0013_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000014.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0014_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000015.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0015_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000016.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0016_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000017.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0017_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000018.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0018_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000019.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0019_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000020.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0020_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000021.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0021_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000022.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0022_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000023.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0023_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000024.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0024_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000025.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0025_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000026.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0026_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000027.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0027_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000028.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0028_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000029.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0029_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000030.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0030_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000031.tif.small.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0031_MIN" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000032.tif.small.jpg"
+        />
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="DEFAULT">
+      <mets:file ID="FILE_0000_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000001.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0001_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000002.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0002_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000003.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0003_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000004.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0004_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000005.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0005_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000006.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0006_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000007.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0007_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000008.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0008_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000009.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0009_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000010.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0010_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000011.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0011_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000012.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0012_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000013.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0013_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000014.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0014_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000015.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0015_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000016.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0016_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000017.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0017_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000018.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0018_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000019.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0019_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000020.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0020_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000021.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0021_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000022.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0022_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000023.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0023_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000024.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0024_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000025.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0025_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000026.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0026_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000027.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0027_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000028.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0028_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000029.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0029_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000030.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0030_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000031.tif.medium.jpg"
+        />
+      </mets:file>
+      <mets:file ID="FILE_0031_DEFAULT" MIMETYPE="image/jpeg">
+        <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" LOCTYPE="URL"
+          xlink:href="https://digital.slub-dresden.de/data/kitodo/admodusco_327277084/admodusco_327277084_tif/jpegs/00000032.tif.medium.jpg"
+        />
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap TYPE="LOGICAL">
+    <mets:div ADMID="AMD" CONTENTIDS="https://digital.slub-dresden.de/id327277084"
+      DMDID="DMDLOG_0000" ID="LOG_0000" LABEL="Admonitores duo scholasticorum operum"
+      ORDERLABEL="Admonitores duo scholasticorum operum" TYPE="monograph"/>
+  </mets:structMap>
+  <mets:structMap TYPE="PHYSICAL">
+    <mets:div ID="PHYS_0000" TYPE="physSequence">
+      <mets:fptr FILEID="FULLDOWNLOAD"/>
+      <mets:div ID="PHYS_0001" ORDER="1" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0000_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0000_MAX"/>
+        <mets:fptr FILEID="FILE_0000_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0000_THUMBS"/>
+        <mets:fptr FILEID="FILE_0000_MIN"/>
+        <mets:fptr FILEID="FILE_0000_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0002" ORDER="2" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0001_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0001_MAX"/>
+        <mets:fptr FILEID="FILE_0001_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0001_THUMBS"/>
+        <mets:fptr FILEID="FILE_0001_MIN"/>
+        <mets:fptr FILEID="FILE_0001_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0003" ORDER="3" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0002_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0002_MAX"/>
+        <mets:fptr FILEID="FILE_0002_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0002_THUMBS"/>
+        <mets:fptr FILEID="FILE_0002_MIN"/>
+        <mets:fptr FILEID="FILE_0002_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0004" ORDER="4" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0003_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0003_MAX"/>
+        <mets:fptr FILEID="FILE_0003_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0003_THUMBS"/>
+        <mets:fptr FILEID="FILE_0003_MIN"/>
+        <mets:fptr FILEID="FILE_0003_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0005" ORDER="5" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0004_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0004_MAX"/>
+        <mets:fptr FILEID="FILE_0004_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0004_THUMBS"/>
+        <mets:fptr FILEID="FILE_0004_MIN"/>
+        <mets:fptr FILEID="FILE_0004_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0006" ORDER="6" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0005_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0005_MAX"/>
+        <mets:fptr FILEID="FILE_0005_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0005_THUMBS"/>
+        <mets:fptr FILEID="FILE_0005_MIN"/>
+        <mets:fptr FILEID="FILE_0005_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0007" ORDER="7" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0006_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0006_MAX"/>
+        <mets:fptr FILEID="FILE_0006_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0006_THUMBS"/>
+        <mets:fptr FILEID="FILE_0006_MIN"/>
+        <mets:fptr FILEID="FILE_0006_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0008" ORDER="8" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0007_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0007_MAX"/>
+        <mets:fptr FILEID="FILE_0007_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0007_THUMBS"/>
+        <mets:fptr FILEID="FILE_0007_MIN"/>
+        <mets:fptr FILEID="FILE_0007_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0009" ORDER="9" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0008_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0008_MAX"/>
+        <mets:fptr FILEID="FILE_0008_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0008_THUMBS"/>
+        <mets:fptr FILEID="FILE_0008_MIN"/>
+        <mets:fptr FILEID="FILE_0008_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0010" ORDER="10" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0009_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0009_MAX"/>
+        <mets:fptr FILEID="FILE_0009_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0009_THUMBS"/>
+        <mets:fptr FILEID="FILE_0009_MIN"/>
+        <mets:fptr FILEID="FILE_0009_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0011" ORDER="11" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0010_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0010_MAX"/>
+        <mets:fptr FILEID="FILE_0010_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0010_THUMBS"/>
+        <mets:fptr FILEID="FILE_0010_MIN"/>
+        <mets:fptr FILEID="FILE_0010_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0012" ORDER="12" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0011_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0011_MAX"/>
+        <mets:fptr FILEID="FILE_0011_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0011_THUMBS"/>
+        <mets:fptr FILEID="FILE_0011_MIN"/>
+        <mets:fptr FILEID="FILE_0011_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0013" ORDER="13" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0012_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0012_MAX"/>
+        <mets:fptr FILEID="FILE_0012_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0012_THUMBS"/>
+        <mets:fptr FILEID="FILE_0012_MIN"/>
+        <mets:fptr FILEID="FILE_0012_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0014" ORDER="14" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0013_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0013_MAX"/>
+        <mets:fptr FILEID="FILE_0013_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0013_THUMBS"/>
+        <mets:fptr FILEID="FILE_0013_MIN"/>
+        <mets:fptr FILEID="FILE_0013_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0015" ORDER="15" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0014_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0014_MAX"/>
+        <mets:fptr FILEID="FILE_0014_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0014_THUMBS"/>
+        <mets:fptr FILEID="FILE_0014_MIN"/>
+        <mets:fptr FILEID="FILE_0014_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0016" ORDER="16" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0015_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0015_MAX"/>
+        <mets:fptr FILEID="FILE_0015_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0015_THUMBS"/>
+        <mets:fptr FILEID="FILE_0015_MIN"/>
+        <mets:fptr FILEID="FILE_0015_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0017" ORDER="17" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0016_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0016_MAX"/>
+        <mets:fptr FILEID="FILE_0016_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0016_THUMBS"/>
+        <mets:fptr FILEID="FILE_0016_MIN"/>
+        <mets:fptr FILEID="FILE_0016_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0018" ORDER="18" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0017_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0017_MAX"/>
+        <mets:fptr FILEID="FILE_0017_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0017_THUMBS"/>
+        <mets:fptr FILEID="FILE_0017_MIN"/>
+        <mets:fptr FILEID="FILE_0017_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0019" ORDER="19" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0018_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0018_MAX"/>
+        <mets:fptr FILEID="FILE_0018_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0018_THUMBS"/>
+        <mets:fptr FILEID="FILE_0018_MIN"/>
+        <mets:fptr FILEID="FILE_0018_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0020" ORDER="20" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0019_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0019_MAX"/>
+        <mets:fptr FILEID="FILE_0019_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0019_THUMBS"/>
+        <mets:fptr FILEID="FILE_0019_MIN"/>
+        <mets:fptr FILEID="FILE_0019_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0021" ORDER="21" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0020_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0020_MAX"/>
+        <mets:fptr FILEID="FILE_0020_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0020_THUMBS"/>
+        <mets:fptr FILEID="FILE_0020_MIN"/>
+        <mets:fptr FILEID="FILE_0020_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0022" ORDER="22" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0021_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0021_MAX"/>
+        <mets:fptr FILEID="FILE_0021_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0021_THUMBS"/>
+        <mets:fptr FILEID="FILE_0021_MIN"/>
+        <mets:fptr FILEID="FILE_0021_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0023" ORDER="23" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0022_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0022_MAX"/>
+        <mets:fptr FILEID="FILE_0022_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0022_THUMBS"/>
+        <mets:fptr FILEID="FILE_0022_MIN"/>
+        <mets:fptr FILEID="FILE_0022_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0024" ORDER="24" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0023_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0023_MAX"/>
+        <mets:fptr FILEID="FILE_0023_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0023_THUMBS"/>
+        <mets:fptr FILEID="FILE_0023_MIN"/>
+        <mets:fptr FILEID="FILE_0023_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0025" ORDER="25" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0024_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0024_MAX"/>
+        <mets:fptr FILEID="FILE_0024_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0024_THUMBS"/>
+        <mets:fptr FILEID="FILE_0024_MIN"/>
+        <mets:fptr FILEID="FILE_0024_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0026" ORDER="26" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0025_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0025_MAX"/>
+        <mets:fptr FILEID="FILE_0025_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0025_THUMBS"/>
+        <mets:fptr FILEID="FILE_0025_MIN"/>
+        <mets:fptr FILEID="FILE_0025_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0027" ORDER="27" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0026_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0026_MAX"/>
+        <mets:fptr FILEID="FILE_0026_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0026_THUMBS"/>
+        <mets:fptr FILEID="FILE_0026_MIN"/>
+        <mets:fptr FILEID="FILE_0026_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0028" ORDER="28" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0027_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0027_MAX"/>
+        <mets:fptr FILEID="FILE_0027_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0027_THUMBS"/>
+        <mets:fptr FILEID="FILE_0027_MIN"/>
+        <mets:fptr FILEID="FILE_0027_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0029" ORDER="29" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0028_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0028_MAX"/>
+        <mets:fptr FILEID="FILE_0028_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0028_THUMBS"/>
+        <mets:fptr FILEID="FILE_0028_MIN"/>
+        <mets:fptr FILEID="FILE_0028_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0030" ORDER="30" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0029_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0029_MAX"/>
+        <mets:fptr FILEID="FILE_0029_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0029_THUMBS"/>
+        <mets:fptr FILEID="FILE_0029_MIN"/>
+        <mets:fptr FILEID="FILE_0029_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0031" ORDER="31" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0030_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0030_MAX"/>
+        <mets:fptr FILEID="FILE_0030_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0030_THUMBS"/>
+        <mets:fptr FILEID="FILE_0030_MIN"/>
+        <mets:fptr FILEID="FILE_0030_DEFAULT"/>
+      </mets:div>
+      <mets:div ID="PHYS_0032" ORDER="32" ORDERLABEL=" - " TYPE="page">
+        <mets:fptr FILEID="FILE_0031_DOWNLOAD"/>
+        <mets:fptr FILEID="FILE_0031_MAX"/>
+        <mets:fptr FILEID="FILE_0031_ORIGINAL"/>
+        <mets:fptr FILEID="FILE_0031_THUMBS"/>
+        <mets:fptr FILEID="FILE_0031_MIN"/>
+        <mets:fptr FILEID="FILE_0031_DEFAULT"/>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+  <mets:structLink>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0001"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0002"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0003"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0004"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0005"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0006"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0007"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0008"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0009"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0010"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0011"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0012"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0013"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0014"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0015"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0016"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0017"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0018"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0019"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0020"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0021"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0022"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0023"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0024"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0025"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0026"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0027"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0028"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0029"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0030"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0031"
+      xlink:from="LOG_0000"/>
+    <mets:smLink xmlns:xlink="http://www.w3.org/1999/xlink" xlink:to="PHYS_0032"
+      xlink:from="LOG_0000"/>
+  </mets:structLink>
+</mets:mets>

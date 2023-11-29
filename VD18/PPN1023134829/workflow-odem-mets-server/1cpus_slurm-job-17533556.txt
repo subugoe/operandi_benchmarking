@@ -1,0 +1,43 @@
+================================================================================
+JobID = 17533556
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp062
+================================================================================
+amp062
+Hi there, I am task 0 of  tasks of job 17533556.
+I am on host amp062.
+I can use cpu 17 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/c2f3c1cc-aa3e-4cf2-9638-726af1289d75.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/c2f3c1cc-aa3e-4cf2-9638-726af1289d75
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/c2f3c1cc-aa3e-4cf2-9638-726af1289d75.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/c2f3c1cc-aa3e-4cf2-9638-726af1289d75/workflow-odem_mets_server.nf` [tiny_rutherford] DSL2 - revision: c2156c188b
+O P E R A N D I - H P C - WORKFLOW ODEM
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/c2f3c1cc-aa3e-4cf2-9638-726af1289d75/c56da433-5979-4874-b9c7-b74ac85232ac:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 1
+ram                 : 32
+forks               : 1
+pages_per_range     : 140
+cpus_per_fork       : 1
+ram_per_fork        : 32GB
+
+WARN: The `echo` directive has been deprecated - use to `debug` instead
+[cf/17364b] Submitted process > split_page_ranges (1)
+Current page range: PHYS_0001..PHYS_0140
+[28/c900c0] Submitted process > ocrd_cis_ocropy_binarize_0 (1)
+[36/922c1d] Submitted process > ocrd_anybaseocr_crop_1 (1)
+[cf/969ceb] Submitted process > ocrd_cis_ocropy_denoise_2 (1)
+[d1/30efdf] Submitted process > ocrd_cis_ocropy_deskew_3 (1)
+[5a/cc2517] Submitted process > ocrd_tesserocr_segment_region_4 (1)
+[3a/b55944] Submitted process > ocrd_segment_repair_5 (1)
+[4b/de0216] Submitted process > ocrd_cis_ocropy_clip_6 (1)
+[37/403c26] Submitted process > ocrd_cis_ocropy_segment_7 (1)
+[e0/5f5bdf] Submitted process > ocrd_cis_ocropy_dewarp_8 (1)
+[29/ae0142] Submitted process > ocrd_tesserocr_recognize_9 (1)
