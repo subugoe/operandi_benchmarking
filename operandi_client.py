@@ -18,6 +18,12 @@ class OperandiClient:
         self.logger = logging.getLogger("operandi_client")
         self.logger.setLevel("INFO")
 
+    def receive_file(self, response, download_path):
+        with open(download_path, 'wb') as filePtr:
+            for chunk in response.iter_content(chunk_size=1024):
+                if chunk:
+                    filePtr.write(chunk)
+
     def post_workspace_zip(self, ocrd_zip_path: str) -> str:
         self.logger.info(f"Posting workspace ocrd zip: {ocrd_zip_path}")
         response = post(
@@ -101,7 +107,7 @@ class OperandiClient:
             headers={"accept": "application/vnd.ocrd+zip"},
             auth=self.auth
         )
-        receive_file(response=response, download_path=download_path)
+        self.receive_file(response=response, download_path=download_path)
         self.logger.info(f"Downloaded workspace ocrd zip to: {download_path}")
         return download_path
 
@@ -113,6 +119,6 @@ class OperandiClient:
             headers={'accept': 'application/vnd.zip'},
             auth=self.auth
         )
-        receive_file(response=response, download_path=download_path)
+        self.receive_file(response=response, download_path=download_path)
         self.logger.info(f"Downloaded workflow job zip to: {download_path}")
         return download_path
