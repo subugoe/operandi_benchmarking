@@ -1,5 +1,6 @@
 import logging
 from os import environ
+from os.path import join
 from requests import get, post
 from requests.auth import HTTPBasicAuth
 
@@ -99,9 +100,9 @@ class OperandiClient:
             raise ValueError(f"Failed to parse workflow job state from response")
         return workflow_job_status
 
-    def download_workspace(self, workspace_id: str, download_dir: str) -> str:
+    def download_workspace(self, workspace_id: str, download_dir: str, zip_name: str) -> str:
         self.logger.info(f"Getting workspace zip of: {workspace_id}")
-        download_path = join(download_dir, f"{workspace_id}.ocrd.zip")
+        download_path = join(download_dir, f"{zip_name}.ocrd.zip")
         response = get(
             url=f"{self.server_address}/workspace/{workspace_id}",
             headers={"accept": "application/vnd.ocrd+zip"},
@@ -111,9 +112,9 @@ class OperandiClient:
         self.logger.info(f"Downloaded workspace ocrd zip to: {download_path}")
         return download_path
 
-    def download_workflow_job(self, workflow_id: str, job_id: str, download_dir: str) -> str:
+    def download_workflow_job(self, workflow_id: str, job_id: str, download_dir: str, zip_name: str) -> str:
         self.logger.info(f"Getting workflow job zip of: {job_id}")
-        download_path = join(download_dir, f"{job_id}.zip")
+        download_path = join(download_dir, f"{zip_name}.zip")
         response = get(
             url=f"{self.server_address}/workflow/{workflow_id}/{job_id}",
             headers={'accept': 'application/vnd.zip'},
