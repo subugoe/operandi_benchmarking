@@ -44,8 +44,12 @@ class WorkflowJobData:
 
 class OperandiBenchmark:
     def __init__(self, server_address: str, auth_username: str, auth_password: str):
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(levelname) -7s %(asctime)s %(name) -30s %(funcName) -35s %(lineno) -5d: %(message)s"
+        )
         self.logger = logging.getLogger("operandi_benchmark")
-        self.logger.setLevel("INFO")
+        self.logger.setLevel(logging.INFO)
         self.operandi_client = OperandiClient(
             server_address=server_address,
             auth_username=auth_username,
@@ -217,9 +221,9 @@ def main():
         use_cpus=[1, 2, 4, 8],
         use_ram=[32]
     )
-    operandi_benchmarking.run_workflow_jobs()
-    operandi_benchmarking.poll_till_jobs_end()
-    operandi_benchmarking.download_all_results()
+    # operandi_benchmarking.run_workflow_jobs()
+    # operandi_benchmarking.poll_till_jobs_end()
+    # operandi_benchmarking.download_all_results()
 
 if __name__ == '__main__':
     main()

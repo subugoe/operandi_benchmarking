@@ -17,7 +17,7 @@ class OperandiClient:
         self.server_address = server_address
         self.auth = HTTPBasicAuth(auth_username, auth_password)
         self.logger = logging.getLogger("operandi_client")
-        self.logger.setLevel("INFO")
+        self.logger.setLevel(logging.INFO)
 
     def receive_file(self, response, download_path):
         with open(download_path, 'wb') as filePtr:
