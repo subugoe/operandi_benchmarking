@@ -1,0 +1,49 @@
+================================================================================
+JobID = 18393813
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp061
+================================================================================
+amp061
+Hi there, I am task 0 of  tasks of job 18393813.
+I am on host amp061.
+I can use cpu 2 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/b7acd4e4-9eed-449d-968a-8812e5a17f34.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/b7acd4e4-9eed-449d-968a-8812e5a17f34
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/b7acd4e4-9eed-449d-968a-8812e5a17f34.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/b7acd4e4-9eed-449d-968a-8812e5a17f34/default_workflow_mets_server.nf` [cheesy_kalman] DSL2 - revision: f892ffd725
+O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 32
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/b7acd4e4-9eed-449d-968a-8812e5a17f34/9cca12b5-d9d7-4ced-90cd-1705ff772202:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 1
+ram                 : 32
+forks               : 1
+cpus_per_fork       : 1
+ram_per_fork        : 32GB
+
+[17/9b9e7d] Submitted process > split_page_ranges (1)
+Current range is: PHYS_0001,PHYS_0002,PHYS_0003,PHYS_0004,PHYS_0005,PHYS_0006,PHYS_0007,PHYS_0008,PHYS_0009,PHYS_0010,PHYS_0011,PHYS_0012,PHYS_0013,PHYS_0014,PHYS_0015,PHYS_0016,PHYS_0017,PHYS_0018,PHYS_0019,PHYS_0020,PHYS_0021,PHYS_0022,PHYS_0023,PHYS_0024,PHYS_0025,PHYS_0026,PHYS_0027,PHYS_0028,PHYS_0029,PHYS_0030,PHYS_0031,PHYS_0032
+[53/c89342] Submitted process > ocrd_cis_ocropy_binarize (1)
+[95/0f87ec] Submitted process > ocrd_anybaseocr_crop (1)
+[80/cc98ee] Submitted process > ocrd_skimage_binarize (1)
+[b5/e32781] Submitted process > ocrd_skimage_denoise (1)
+[23/e8cb54] Submitted process > ocrd_tesserocr_deskew (1)
+[b5/15216c] Submitted process > ocrd_cis_ocropy_segment (1)
+[f6/c5c9fe] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[b3/bb31c6] Submitted process > ocrd_calamari_recognize (1)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None

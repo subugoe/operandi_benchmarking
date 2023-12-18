@@ -1,0 +1,109 @@
+================================================================================
+JobID = 18393790
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp015
+================================================================================
+amp015
+Hi there, I am task 0 of  tasks of job 18393790.
+I am on host amp015.
+I can use cpu 12-13,69,93 on this host.
+There is 32768MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/24588cf5-465f-413b-99f7-717fe48945d7.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/24588cf5-465f-413b-99f7-717fe48945d7
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/24588cf5-465f-413b-99f7-717fe48945d7.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/24588cf5-465f-413b-99f7-717fe48945d7/default_workflow_mets_server.nf` [small_austin] DSL2 - revision: f892ffd725
+O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 169
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/24588cf5-465f-413b-99f7-717fe48945d7/e9dfc74e-1e33-453d-ad98-6235bf799faa:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 4
+ram                 : 32
+forks               : 4
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+[e3/3f7dea] Submitted process > split_page_ranges (2)
+[32/827603] Submitted process > split_page_ranges (3)
+[77/c6efbb] Submitted process > split_page_ranges (1)
+[cc/26b39e] Submitted process > split_page_ranges (4)
+Current range is: phys4944955,phys4944957,phys4944958,phys4944959,phys4944960,phys4944962,phys4944963,phys4944964,phys4944966,phys4944967,phys4944969,phys4944971,phys4944972,phys4944973,phys4944974,phys4944975,phys4944976,phys4944978,phys4944979,phys4944980,phys4944981,phys4944982,phys4944983,phys4944984,phys4944985,phys4944987,phys4944988,phys4944990,phys4944991,phys4944992,phys4944993,phys4944994,phys4944995,phys4944996,phys4944998,phys4945000,phys4945002,phys4945004,phys4945006,phys4945007,phys4945009,phys4945010
+Current range is: phys4945011,phys4945012,phys4945013,phys4945014,phys4945016,phys4945017,phys4945018,phys4945019,phys4945020,phys4945021,phys4945022,phys4945023,phys4945024,phys4945025,phys4945026,phys4945027,phys4945028,phys4945029,phys4945030,phys4945031,phys4945032,phys4945034,phys4945035,phys4945036,phys4945037,phys4945038,phys4945039,phys4945040,phys4945041,phys4945042,phys4945043,phys4945044,phys4945045,phys4945046,phys4945047,phys4945048,phys4945049,phys4945050,phys4945051,phys4945053,phys4945054,phys4945055
+[64/3ca038] Submitted process > ocrd_cis_ocropy_binarize (1)
+[38/50e2d2] Submitted process > ocrd_cis_ocropy_binarize (2)
+Current range is: phys4944854,phys4944855,phys4944857,phys4944858,phys4944860,phys4944861,phys4944862,phys4944863,phys4944864,phys4944865,phys4944866,phys4944867,phys4944868,phys4944869,phys4944871,phys4944872,phys4944873,phys4944874,phys4944876,phys4944877,phys4944878,phys4944879,phys4944880,phys4944882,phys4944883,phys4944884,phys4944885,phys4944886,phys4944887,phys4944888,phys4944889,phys4944890,phys4944891,phys4944892,phys4944893,phys4944894,phys4944895,phys4944896,phys4944897,phys4944898,phys4944899,phys4944900,phys4944901
+[a7/5be30a] Submitted process > ocrd_cis_ocropy_binarize (3)
+Current range is: phys4944902,phys4944903,phys4944904,phys4944905,phys4944906,phys4944907,phys4944908,phys4944909,phys4944910,phys4944911,phys4944913,phys4944914,phys4944915,phys4944916,phys4944918,phys4944919,phys4944920,phys4944921,phys4944922,phys4944923,phys4944924,phys4944925,phys4944926,phys4944927,phys4944928,phys4944929,phys4944931,phys4944932,phys4944934,phys4944936,phys4944938,phys4944940,phys4944942,phys4944943,phys4944944,phys4944945,phys4944947,phys4944948,phys4944949,phys4944950,phys4944952,phys4944954
+[12/eb1251] Submitted process > ocrd_cis_ocropy_binarize (4)
+[ea/c1f43d] Submitted process > ocrd_anybaseocr_crop (1)
+[b7/2612f5] Submitted process > ocrd_anybaseocr_crop (2)
+[96/1cf2ee] Submitted process > ocrd_anybaseocr_crop (3)
+[f0/77a3cd] Submitted process > ocrd_anybaseocr_crop (4)
+[0e/ec7335] Submitted process > ocrd_skimage_binarize (1)
+[73/613959] Submitted process > ocrd_skimage_binarize (2)
+[53/bec132] Submitted process > ocrd_skimage_binarize (3)
+[c7/d85f4a] Submitted process > ocrd_skimage_binarize (4)
+[de/6c6667] Submitted process > ocrd_skimage_denoise (1)
+[5e/2d7975] Submitted process > ocrd_skimage_denoise (2)
+[13/5dbf3e] Submitted process > ocrd_skimage_denoise (3)
+[25/d4e62a] Submitted process > ocrd_skimage_denoise (4)
+[8c/5c2fc9] Submitted process > ocrd_tesserocr_deskew (1)
+[5b/72e0f2] Submitted process > ocrd_tesserocr_deskew (2)
+[c9/7feacf] Submitted process > ocrd_tesserocr_deskew (3)
+[c7/1aab7d] Submitted process > ocrd_tesserocr_deskew (4)
+[85/023cc6] Submitted process > ocrd_cis_ocropy_segment (1)
+[ef/33df0d] Submitted process > ocrd_cis_ocropy_segment (2)
+[e3/ceb710] Submitted process > ocrd_cis_ocropy_segment (3)
+[f5/fb204a] Submitted process > ocrd_cis_ocropy_segment (4)
+[fb/9b1add] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[19/ae664a] Submitted process > ocrd_cis_ocropy_dewarp (2)
+[f4/870d53] Submitted process > ocrd_cis_ocropy_dewarp (3)
+[cd/e7d8ae] Submitted process > ocrd_cis_ocropy_dewarp (4)
+[c5/d037c3] Submitted process > ocrd_calamari_recognize (1)
+[31/77f1a4] Submitted process > ocrd_calamari_recognize (2)
+[84/24d3ec] Submitted process > ocrd_calamari_recognize (3)
+[cf/2f0885] Submitted process > ocrd_calamari_recognize (4)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None

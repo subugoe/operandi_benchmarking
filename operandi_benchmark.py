@@ -209,17 +209,19 @@ def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
-            "default_workflow_mets_server"
+            "default_workflow_mets_server",
+            "odem_workflow_mets_server"
         ],
         use_workspaces=[
             "VD16",
-            "VD17"
+            "VD17",
+            "VD18"
         ],
         use_file_groups=[
             "MAX"
         ],
-        use_cpus=[1, 2, 4, 8],
-        use_ram=[32]
+        use_cpus=[16,32],
+        use_ram=[64]
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()
