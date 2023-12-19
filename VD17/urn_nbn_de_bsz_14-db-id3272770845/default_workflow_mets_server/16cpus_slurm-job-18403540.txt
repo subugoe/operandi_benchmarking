@@ -1,0 +1,349 @@
+================================================================================
+JobID = 18403540
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp089
+================================================================================
+amp089
+Hi there, I am task 0 of  tasks of job 18403540.
+I am on host amp089.
+I can use cpu 5,8,10,12,27-29,35,52,59,61-62,79-82 on this host.
+There is 131072MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/1a906433-e0c1-45c4-8a15-300fba2242fa.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/1a906433-e0c1-45c4-8a15-300fba2242fa
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/1a906433-e0c1-45c4-8a15-300fba2242fa.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/1a906433-e0c1-45c4-8a15-300fba2242fa/default_workflow_mets_server.nf` [gloomy_hugle] DSL2 - revision: f892ffd725
+O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 32
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/1a906433-e0c1-45c4-8a15-300fba2242fa/581dd607-1936-4cc9-a1b8-453fa6998af4:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 16
+ram                 : 128
+forks               : 16
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+[69/12989a] Submitted process > split_page_ranges (16)
+[12/9247ad] Submitted process > split_page_ranges (5)
+[4d/75bacb] Submitted process > split_page_ranges (12)
+[fa/eae5cc] Submitted process > split_page_ranges (1)
+[3b/4889cd] Submitted process > split_page_ranges (14)
+[ec/33e05a] Submitted process > split_page_ranges (7)
+[50/ef17bb] Submitted process > split_page_ranges (3)
+[d9/f1b5b8] Submitted process > split_page_ranges (6)
+[d5/a3cf02] Submitted process > split_page_ranges (15)
+[7b/71647b] Submitted process > split_page_ranges (10)
+[28/6ffb9f] Submitted process > split_page_ranges (4)
+[79/ba6b6b] Submitted process > split_page_ranges (11)
+[16/0ef93f] Submitted process > split_page_ranges (9)
+[ff/c5c8c9] Submitted process > split_page_ranges (8)
+[e4/bd3de0] Submitted process > split_page_ranges (2)
+[05/185e86] Submitted process > split_page_ranges (13)
+Current range is: PHYS_0005,PHYS_0006
+[e6/68271a] Submitted process > ocrd_cis_ocropy_binarize (1)
+Current range is: PHYS_0017,PHYS_0018
+[80/9b66e0] Submitted process > ocrd_cis_ocropy_binarize (2)
+Current range is: PHYS_0015,PHYS_0016
+[3b/03d6e5] Submitted process > ocrd_cis_ocropy_binarize (3)
+Current range is: PHYS_0011,PHYS_0012
+[37/2e8d23] Submitted process > ocrd_cis_ocropy_binarize (4)
+Current range is: PHYS_0007,PHYS_0008
+[53/4dbd68] Submitted process > ocrd_cis_ocropy_binarize (5)
+Current range is: PHYS_0023,PHYS_0024
+[7f/2442ec] Submitted process > ocrd_cis_ocropy_binarize (6)
+Current range is: PHYS_0001,PHYS_0002
+Current range is: PHYS_0029,PHYS_0030
+[d1/8c29de] Submitted process > ocrd_cis_ocropy_binarize (7)
+Current range is: PHYS_0025,PHYS_0026
+Current range is: PHYS_0013,PHYS_0014
+[d4/1c6149] Submitted process > ocrd_cis_ocropy_binarize (8)
+Current range is: PHYS_0019,PHYS_0020
+[37/1be678] Submitted process > ocrd_cis_ocropy_binarize (9)
+[b9/820e54] Submitted process > ocrd_cis_ocropy_binarize (10)
+Current range is: PHYS_0021,PHYS_0022
+[31/082a51] Submitted process > ocrd_cis_ocropy_binarize (11)
+[86/be2cba] Submitted process > ocrd_cis_ocropy_binarize (12)
+Current range is: PHYS_0027,PHYS_0028
+[5f/9e80ac] Submitted process > ocrd_cis_ocropy_binarize (13)
+Current range is: PHYS_0003,PHYS_0004
+[01/d2f135] Submitted process > ocrd_cis_ocropy_binarize (14)
+Current range is: PHYS_0009,PHYS_0010
+[70/8b821d] Submitted process > ocrd_cis_ocropy_binarize (15)
+Current range is: PHYS_0031,PHYS_0032
+[3c/a2fc51] Submitted process > ocrd_cis_ocropy_binarize (16)
+[d8/b1191d] Submitted process > ocrd_anybaseocr_crop (1)
+[88/076c65] Submitted process > ocrd_anybaseocr_crop (2)
+[f8/85729f] Submitted process > ocrd_anybaseocr_crop (3)
+[ef/f48ce6] Submitted process > ocrd_anybaseocr_crop (4)
+[23/1dabd2] Submitted process > ocrd_anybaseocr_crop (5)
+[91/7189b1] Submitted process > ocrd_anybaseocr_crop (6)
+[2f/86ac9c] Submitted process > ocrd_anybaseocr_crop (7)
+[93/1b2c5d] Submitted process > ocrd_anybaseocr_crop (8)
+[13/8c288c] Submitted process > ocrd_anybaseocr_crop (9)
+[ee/90003a] Submitted process > ocrd_anybaseocr_crop (10)
+[34/971035] Submitted process > ocrd_anybaseocr_crop (11)
+[8f/7396f0] Submitted process > ocrd_anybaseocr_crop (12)
+[db/7ec9fc] Submitted process > ocrd_anybaseocr_crop (13)
+[fb/6b6605] Submitted process > ocrd_anybaseocr_crop (14)
+[a6/0bb19b] Submitted process > ocrd_anybaseocr_crop (15)
+[1f/061497] Submitted process > ocrd_anybaseocr_crop (16)
+[49/1892b6] Submitted process > ocrd_skimage_binarize (1)
+[98/7ed8e5] Submitted process > ocrd_skimage_denoise (1)
+[d8/9a3a9d] Submitted process > ocrd_skimage_binarize (2)
+[9e/f878c8] Submitted process > ocrd_skimage_binarize (3)
+[7b/fcd732] Submitted process > ocrd_skimage_binarize (4)
+[4e/60c985] Submitted process > ocrd_skimage_binarize (5)
+[9a/b16196] Submitted process > ocrd_tesserocr_deskew (1)
+[b1/6503eb] Submitted process > ocrd_skimage_binarize (6)
+[0f/c51827] Submitted process > ocrd_skimage_binarize (7)
+[7a/23ed4f] Submitted process > ocrd_skimage_binarize (8)
+[7f/d3339a] Submitted process > ocrd_skimage_binarize (9)
+[69/8eb12f] Submitted process > ocrd_skimage_denoise (2)
+[f5/419ca3] Submitted process > ocrd_skimage_denoise (3)
+[fe/3893ad] Submitted process > ocrd_skimage_binarize (10)
+[ec/51c5d6] Submitted process > ocrd_skimage_binarize (11)
+[3f/c00af3] Submitted process > ocrd_skimage_denoise (4)
+[e0/648a08] Submitted process > ocrd_skimage_binarize (12)
+[b7/466a2e] Submitted process > ocrd_skimage_binarize (13)
+[65/b2cfea] Submitted process > ocrd_skimage_denoise (5)
+[f0/89519b] Submitted process > ocrd_skimage_denoise (6)
+[1f/f5934c] Submitted process > ocrd_skimage_denoise (7)
+[38/b831b6] Submitted process > ocrd_skimage_binarize (14)
+[3e/54e97f] Submitted process > ocrd_skimage_denoise (8)
+[f9/241d5a] Submitted process > ocrd_cis_ocropy_segment (1)
+[ba/1084c3] Submitted process > ocrd_tesserocr_deskew (2)
+[bd/3419e7] Submitted process > ocrd_tesserocr_deskew (3)
+[67/9626f5] Submitted process > ocrd_skimage_denoise (9)
+[2a/207dea] Submitted process > ocrd_tesserocr_deskew (4)
+[c2/62af6c] Submitted process > ocrd_skimage_denoise (10)
+[1a/d650c9] Submitted process > ocrd_skimage_denoise (11)
+[f0/f0c6b8] Submitted process > ocrd_skimage_denoise (12)
+[b0/7c13ed] Submitted process > ocrd_skimage_denoise (13)
+[a3/c96bff] Submitted process > ocrd_tesserocr_deskew (5)
+[60/ebb06b] Submitted process > ocrd_tesserocr_deskew (6)
+[7f/2566fe] Submitted process > ocrd_tesserocr_deskew (7)
+[2a/f7ca96] Submitted process > ocrd_skimage_denoise (14)
+[04/ab6344] Submitted process > ocrd_tesserocr_deskew (8)
+[9a/1e2547] Submitted process > ocrd_tesserocr_deskew (9)
+[d4/fbc053] Submitted process > ocrd_tesserocr_deskew (10)
+[22/f1cdef] Submitted process > ocrd_tesserocr_deskew (11)
+[3d/791daa] Submitted process > ocrd_skimage_binarize (15)
+[f5/c91e62] Submitted process > ocrd_tesserocr_deskew (12)
+[ec/5f5675] Submitted process > ocrd_tesserocr_deskew (13)
+[77/4b55ba] Submitted process > ocrd_cis_ocropy_segment (2)
+[5b/02dc01] Submitted process > ocrd_tesserocr_deskew (14)
+[18/67d1c8] Submitted process > ocrd_cis_ocropy_segment (3)
+[54/98a96a] Submitted process > ocrd_cis_ocropy_segment (4)
+[64/bd2d7e] Submitted process > ocrd_cis_ocropy_segment (5)
+[25/cdc998] Submitted process > ocrd_cis_ocropy_segment (6)
+[99/e4996f] Submitted process > ocrd_cis_ocropy_segment (7)
+[d6/fd9540] Submitted process > ocrd_skimage_denoise (15)
+[92/51e7a5] Submitted process > ocrd_cis_ocropy_segment (8)
+[fb/7af1f8] Submitted process > ocrd_cis_ocropy_segment (9)
+[4e/f50d26] Submitted process > ocrd_cis_ocropy_segment (10)
+[8d/7a2af3] Submitted process > ocrd_cis_ocropy_segment (11)
+[81/0028fa] Submitted process > ocrd_cis_ocropy_segment (12)
+[c2/715cfc] Submitted process > ocrd_skimage_binarize (16)
+[bf/efb43b] Submitted process > ocrd_cis_ocropy_segment (13)
+[bc/4f4b76] Submitted process > ocrd_cis_ocropy_segment (14)
+[9a/d78728] Submitted process > ocrd_tesserocr_deskew (15)
+[51/fee19a] Submitted process > ocrd_skimage_denoise (16)
+[40/0b5da0] Submitted process > ocrd_tesserocr_deskew (16)
+[be/45dfec] Submitted process > ocrd_cis_ocropy_segment (15)
+[eb/471bad] Submitted process > ocrd_cis_ocropy_segment (16)
+[89/e0ca4d] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[fc/e3621d] Submitted process > ocrd_cis_ocropy_dewarp (2)
+[0d/6885e2] Submitted process > ocrd_cis_ocropy_dewarp (3)
+[04/40641f] Submitted process > ocrd_cis_ocropy_dewarp (4)
+[bf/cae526] Submitted process > ocrd_cis_ocropy_dewarp (5)
+[90/c7f258] Submitted process > ocrd_cis_ocropy_dewarp (6)
+[05/3c4ec2] Submitted process > ocrd_cis_ocropy_dewarp (7)
+[c5/3014de] Submitted process > ocrd_cis_ocropy_dewarp (8)
+[8c/03fe41] Submitted process > ocrd_cis_ocropy_dewarp (9)
+[57/491ae2] Submitted process > ocrd_cis_ocropy_dewarp (10)
+[6a/02aca2] Submitted process > ocrd_cis_ocropy_dewarp (11)
+[80/d57040] Submitted process > ocrd_cis_ocropy_dewarp (12)
+[2a/13f70b] Submitted process > ocrd_calamari_recognize (1)
+[10/2e1fd1] Submitted process > ocrd_cis_ocropy_dewarp (13)
+[d3/b9bfac] Submitted process > ocrd_cis_ocropy_dewarp (14)
+[65/31e832] Submitted process > ocrd_calamari_recognize (2)
+[c3/45ceb0] Submitted process > ocrd_calamari_recognize (3)
+[8e/bcb2b8] Submitted process > ocrd_calamari_recognize (4)
+[c4/d4b9c2] Submitted process > ocrd_calamari_recognize (5)
+[02/d28408] Submitted process > ocrd_calamari_recognize (6)
+[93/f24fac] Submitted process > ocrd_cis_ocropy_dewarp (15)
+[b8/c6ba9b] Submitted process > ocrd_calamari_recognize (7)
+[4f/3a1126] Submitted process > ocrd_calamari_recognize (8)
+[51/33bb2e] Submitted process > ocrd_calamari_recognize (9)
+[a4/fdf478] Submitted process > ocrd_calamari_recognize (10)
+[bc/3a0e77] Submitted process > ocrd_calamari_recognize (11)
+[bf/45263a] Submitted process > ocrd_calamari_recognize (12)
+[fd/020833] Submitted process > ocrd_calamari_recognize (13)
+[e9/673930] Submitted process > ocrd_calamari_recognize (14)
+[82/ebe6c0] Submitted process > ocrd_cis_ocropy_dewarp (16)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[57/a215b2] Submitted process > ocrd_calamari_recognize (15)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[e7/451e7e] Submitted process > ocrd_calamari_recognize (16)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None

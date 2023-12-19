@@ -11,7 +11,6 @@ OPERANDI_SERVER_ADDR = environ.get("OPERANDI_SERVER_ADDR", "http://localhost:800
 OPERANDI_USERNAME = environ.get("OPERANDI_USERNAME", "server_operandi")
 OPERANDI_PASSWORD = environ.get("OPERANDI_PASSWORD", "server_operandi")
 OPERANDI_RESULTS_DIR = environ.get("OPERANDI_RESULTS_DIR", "/home/mm/Desktop/benchmarking_results")
-makedirs(name=OPERANDI_RESULTS_DIR, mode = 0o777, exist_ok = True)
 UNSET_VALUE = "Unset"
 
 NF_WORKFLOWS = {
@@ -167,7 +166,8 @@ class OperandiBenchmark:
     def _update_workflow_job_statuses(self) -> bool:
         update_occurred = False
         for wf_job_data in self.workflow_jobs_data:
-            if wf_job_data.workflow_job_status != "SUCCESS" or wf_job_data.workflow_job_status != "FAILED":
+            sleep(1)
+            if wf_job_data.workflow_job_status != "SUCCESS" and wf_job_data.workflow_job_status != "FAILED":
                 self._update_workflow_job_status(wf_job_data)
                 update_occurred = True
         return update_occurred
@@ -181,19 +181,23 @@ class OperandiBenchmark:
             self.logger.info(f"Next update will happen after {wait_between} seconds.")
 
     def _download_results_workspace(self, wf_job_data: WorkflowJobData) -> str:
+        download_dir = join(OPERANDI_RESULTS_DIR, wf_job_data.vd_workspace)
+        makedirs(name=download_dir, mode = 0o777, exist_ok = True)
         workspace_zip_path = self.operandi_client.download_workspace(
             workspace_id=wf_job_data.workspace_id,
-            download_dir=join(OPERANDI_RESULTS_DIR, wf_job_data.vd_workspace),
+            download_dir=download_dir,
             zip_name=f"ws_{wf_job_data.cpus}_{wf_job_data.ram}_{wf_job_data.workflow_job_id}"
         )
         wf_job_data.download_path_workspace_zip = workspace_zip_path
         return workspace_zip_path
 
     def _download_results_workflow_job(self, wf_job_data: WorkflowJobData) -> str:
+        download_dir = join(OPERANDI_RESULTS_DIR, wf_job_data.vd_workspace)
+        makedirs(name=download_dir, mode = 0o777, exist_ok = True)
         wf_job_zip_path = self.operandi_client.download_workflow_job(
             workflow_id=wf_job_data.workflow_id,
             job_id=wf_job_data.workflow_job_id,
-            download_dir=join(OPERANDI_RESULTS_DIR, wf_job_data.vd_workspace),
+            download_dir=download_dir,
             zip_name=f"wf_{wf_job_data.cpus}_{wf_job_data.ram}_{wf_job_data.workflow_job_id}"
         )
         wf_job_data.download_path_workflow_job_zip = wf_job_zip_path
@@ -202,26 +206,26 @@ class OperandiBenchmark:
     def download_all_results(self):
         self.logger.info("Downloading all results")
         for wf_job_data in self.workflow_jobs_data:
+            sleep(1)
             self._download_results_workspace(wf_job_data)
+            sleep(1)
             self._download_results_workflow_job(wf_job_data)
+            sleep(1) 
 
 def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
-            "default_workflow_mets_server",
-            "odem_workflow_mets_server"
+            "odem_workflow_mets_server",
         ],
         use_workspaces=[
-            "VD16",
-            "VD17",
             "VD18"
         ],
         use_file_groups=[
             "MAX"
         ],
-        use_cpus=[16,32],
-        use_ram=[64]
+        use_cpus=[32],
+        use_ram=[256]
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()

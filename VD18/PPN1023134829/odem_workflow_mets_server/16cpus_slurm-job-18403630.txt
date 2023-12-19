@@ -1,0 +1,222 @@
+================================================================================
+JobID = 18403630
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp051
+================================================================================
+amp051
+Hi there, I am task 0 of  tasks of job 18403630.
+I am on host amp051.
+I can use cpu 0-3,5-7,9,14,16-22 on this host.
+There is 131072MB of Memory available on this host.
+====================
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/41c14dd4-84d0-4fd2-9e5e-2bb168fd9b09.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/41c14dd4-84d0-4fd2-9e5e-2bb168fd9b09
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/41c14dd4-84d0-4fd2-9e5e-2bb168fd9b09.zip
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/41c14dd4-84d0-4fd2-9e5e-2bb168fd9b09/odem_workflow_mets_server.nf` [kickass_goldstine] DSL2 - revision: ec3dfdb293
+O P E R A N D I - H P C - WORKFLOW ODEM
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : /ws_data/mets_server.sock
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/41c14dd4-84d0-4fd2-9e5e-2bb168fd9b09/fadd29c0-62b2-472f-908e-3e21b34bce55:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=true /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 16
+ram                 : 128
+forks               : 16
+pages_per_range     : 9
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+[1e/1082ab] Submitted process > split_page_ranges (1)
+[10/8eb3d7] Submitted process > split_page_ranges (9)
+[6f/0772b4] Submitted process > split_page_ranges (14)
+[37/9c09f3] Submitted process > split_page_ranges (10)
+[81/5db90e] Submitted process > split_page_ranges (2)
+[9c/cb67f5] Submitted process > split_page_ranges (8)
+[71/900dee] Submitted process > split_page_ranges (5)
+[df/bf660f] Submitted process > split_page_ranges (3)
+[a5/7a8027] Submitted process > split_page_ranges (7)
+[2e/ba7453] Submitted process > split_page_ranges (6)
+[ab/7be965] Submitted process > split_page_ranges (11)
+[a3/8eaa2f] Submitted process > split_page_ranges (4)
+[55/2f5a3a] Submitted process > split_page_ranges (13)
+[da/1d1cf5] Submitted process > split_page_ranges (15)
+[02/3c5a0e] Submitted process > split_page_ranges (12)
+[db/e4c0ad] Submitted process > split_page_ranges (16)
+Current range is: PHYS_0082,PHYS_0083,PHYS_0084,PHYS_0085,PHYS_0086,PHYS_0087,PHYS_0088,PHYS_0089,PHYS_0090
+Current range is: PHYS_0133,PHYS_0134,PHYS_0135,PHYS_0136,PHYS_0137,PHYS_0138,PHYS_0139,PHYS_0140
+Current range is: PHYS_0091,PHYS_0092,PHYS_0093,PHYS_0094,PHYS_0095,PHYS_0096,PHYS_0097,PHYS_0098,PHYS_0099
+[15/551ea9] Submitted process > ocrd_cis_ocropy_binarize_0 (2)
+Current range is: PHYS_0010,PHYS_0011,PHYS_0012,PHYS_0013,PHYS_0014,PHYS_0015,PHYS_0016,PHYS_0017,PHYS_0018
+[08/91275d] Submitted process > ocrd_cis_ocropy_binarize_0 (1)
+Current range is: PHYS_0037,PHYS_0038,PHYS_0039,PHYS_0040,PHYS_0041,PHYS_0042,PHYS_0043,PHYS_0044,PHYS_0045
+[7e/04c98a] Submitted process > ocrd_cis_ocropy_binarize_0 (3)
+[6c/fc9b06] Submitted process > ocrd_cis_ocropy_binarize_0 (4)
+[aa/f06087] Submitted process > ocrd_cis_ocropy_binarize_0 (5)
+Current range is: PHYS_0073,PHYS_0074,PHYS_0075,PHYS_0076,PHYS_0077,PHYS_0078,PHYS_0079,PHYS_0080,PHYS_0081
+[9d/eabf14] Submitted process > ocrd_cis_ocropy_binarize_0 (6)
+Current range is: PHYS_0117,PHYS_0118,PHYS_0119,PHYS_0120,PHYS_0121,PHYS_0122,PHYS_0123,PHYS_0124
+Current range is: PHYS_0064,PHYS_0065,PHYS_0066,PHYS_0067,PHYS_0068,PHYS_0069,PHYS_0070,PHYS_0071,PHYS_0072
+Current range is: PHYS_0019,PHYS_0020,PHYS_0021,PHYS_0022,PHYS_0023,PHYS_0024,PHYS_0025,PHYS_0026,PHYS_0027
+Current range is: PHYS_0046,PHYS_0047,PHYS_0048,PHYS_0049,PHYS_0050,PHYS_0051,PHYS_0052,PHYS_0053,PHYS_0054
+[e1/d7ff3d] Submitted process > ocrd_cis_ocropy_binarize_0 (7)
+[3c/f4d6dc] Submitted process > ocrd_cis_ocropy_binarize_0 (8)
+[9f/3c1ff7] Submitted process > ocrd_cis_ocropy_binarize_0 (9)
+[4d/621d87] Submitted process > ocrd_cis_ocropy_binarize_0 (10)
+Current range is: PHYS_0028,PHYS_0029,PHYS_0030,PHYS_0031,PHYS_0032,PHYS_0033,PHYS_0034,PHYS_0035,PHYS_0036
+[83/e2acc2] Submitted process > ocrd_cis_ocropy_binarize_0 (11)
+Current range is: PHYS_0055,PHYS_0056,PHYS_0057,PHYS_0058,PHYS_0059,PHYS_0060,PHYS_0061,PHYS_0062,PHYS_0063
+Current range is: PHYS_0100,PHYS_0101,PHYS_0102,PHYS_0103,PHYS_0104,PHYS_0105,PHYS_0106,PHYS_0107,PHYS_0108
+[60/14774d] Submitted process > ocrd_cis_ocropy_binarize_0 (12)
+[5c/078c36] Submitted process > ocrd_cis_ocropy_binarize_0 (13)
+Current range is: PHYS_0001,PHYS_0002,PHYS_0003,PHYS_0004,PHYS_0005,PHYS_0006,PHYS_0007,PHYS_0008,PHYS_0009
+Current range is: PHYS_0109,PHYS_0110,PHYS_0111,PHYS_0112,PHYS_0113,PHYS_0114,PHYS_0115,PHYS_0116
+[81/eb0834] Submitted process > ocrd_cis_ocropy_binarize_0 (14)
+[6f/2c527f] Submitted process > ocrd_cis_ocropy_binarize_0 (15)
+Current range is: PHYS_0125,PHYS_0126,PHYS_0127,PHYS_0128,PHYS_0129,PHYS_0130,PHYS_0131,PHYS_0132
+[09/27acba] Submitted process > ocrd_cis_ocropy_binarize_0 (16)
+[6a/d379a7] Submitted process > ocrd_anybaseocr_crop_1 (1)
+[f9/1e5af8] Submitted process > ocrd_anybaseocr_crop_1 (2)
+[ea/f1e142] Submitted process > ocrd_anybaseocr_crop_1 (3)
+[d8/409390] Submitted process > ocrd_anybaseocr_crop_1 (4)
+[19/d9294e] Submitted process > ocrd_anybaseocr_crop_1 (5)
+[b4/665147] Submitted process > ocrd_anybaseocr_crop_1 (6)
+[d1/c83e7d] Submitted process > ocrd_anybaseocr_crop_1 (7)
+[c6/312c94] Submitted process > ocrd_anybaseocr_crop_1 (8)
+[4f/bf6b38] Submitted process > ocrd_anybaseocr_crop_1 (9)
+[f8/aa5ab7] Submitted process > ocrd_anybaseocr_crop_1 (10)
+[6e/d41396] Submitted process > ocrd_anybaseocr_crop_1 (11)
+[3e/7f9778] Submitted process > ocrd_anybaseocr_crop_1 (12)
+[7d/b8ea56] Submitted process > ocrd_anybaseocr_crop_1 (13)
+[05/8f1a13] Submitted process > ocrd_anybaseocr_crop_1 (14)
+[54/b67504] Submitted process > ocrd_anybaseocr_crop_1 (15)
+[29/ccc50e] Submitted process > ocrd_anybaseocr_crop_1 (16)
+[96/5c11ac] Submitted process > ocrd_cis_ocropy_denoise_2 (1)
+[7e/04cda0] Submitted process > ocrd_cis_ocropy_denoise_2 (2)
+[a7/eb90e6] Submitted process > ocrd_cis_ocropy_denoise_2 (3)
+[a0/89e2da] Submitted process > ocrd_cis_ocropy_denoise_2 (4)
+[44/227b58] Submitted process > ocrd_cis_ocropy_denoise_2 (5)
+[f5/98ca10] Submitted process > ocrd_cis_ocropy_denoise_2 (6)
+[05/a9908e] Submitted process > ocrd_cis_ocropy_denoise_2 (7)
+[5d/8475e8] Submitted process > ocrd_cis_ocropy_denoise_2 (8)
+[8f/4b7593] Submitted process > ocrd_cis_ocropy_denoise_2 (9)
+[20/a415be] Submitted process > ocrd_cis_ocropy_denoise_2 (10)
+[01/017dcf] Submitted process > ocrd_cis_ocropy_denoise_2 (11)
+[03/42b26e] Submitted process > ocrd_cis_ocropy_denoise_2 (12)
+[5b/6f8d31] Submitted process > ocrd_cis_ocropy_denoise_2 (13)
+[1a/4c63d3] Submitted process > ocrd_cis_ocropy_denoise_2 (14)
+[35/8b28d6] Submitted process > ocrd_cis_ocropy_denoise_2 (15)
+[0c/f6189b] Submitted process > ocrd_cis_ocropy_denoise_2 (16)
+[de/2a0434] Submitted process > ocrd_cis_ocropy_deskew_3 (1)
+[45/665552] Submitted process > ocrd_cis_ocropy_deskew_3 (2)
+[d1/9c3aa3] Submitted process > ocrd_cis_ocropy_deskew_3 (3)
+[c8/dbff97] Submitted process > ocrd_cis_ocropy_deskew_3 (4)
+[fe/f56b55] Submitted process > ocrd_cis_ocropy_deskew_3 (5)
+[9a/a1ca48] Submitted process > ocrd_cis_ocropy_deskew_3 (6)
+[9b/d44e08] Submitted process > ocrd_cis_ocropy_deskew_3 (7)
+[c9/213237] Submitted process > ocrd_cis_ocropy_deskew_3 (8)
+[8a/920ca8] Submitted process > ocrd_cis_ocropy_deskew_3 (9)
+[35/bd8d7f] Submitted process > ocrd_cis_ocropy_deskew_3 (10)
+[75/9ead65] Submitted process > ocrd_cis_ocropy_deskew_3 (11)
+[1e/7bc738] Submitted process > ocrd_cis_ocropy_deskew_3 (12)
+[21/1e1570] Submitted process > ocrd_cis_ocropy_deskew_3 (13)
+[91/701618] Submitted process > ocrd_cis_ocropy_deskew_3 (14)
+[0f/a34031] Submitted process > ocrd_cis_ocropy_deskew_3 (15)
+[48/15dd81] Submitted process > ocrd_cis_ocropy_deskew_3 (16)
+[a8/1ce10b] Submitted process > ocrd_tesserocr_segment_region_4 (1)
+[be/cdd18d] Submitted process > ocrd_tesserocr_segment_region_4 (2)
+[cd/c3892f] Submitted process > ocrd_tesserocr_segment_region_4 (3)
+[3e/6cb6f6] Submitted process > ocrd_tesserocr_segment_region_4 (4)
+[6c/ea49ec] Submitted process > ocrd_tesserocr_segment_region_4 (5)
+[bd/4d3562] Submitted process > ocrd_tesserocr_segment_region_4 (6)
+[79/38adac] Submitted process > ocrd_tesserocr_segment_region_4 (7)
+[4c/3846d7] Submitted process > ocrd_tesserocr_segment_region_4 (8)
+[30/8cd630] Submitted process > ocrd_tesserocr_segment_region_4 (9)
+[6f/582491] Submitted process > ocrd_tesserocr_segment_region_4 (10)
+[67/58ec9c] Submitted process > ocrd_tesserocr_segment_region_4 (11)
+[b7/477671] Submitted process > ocrd_tesserocr_segment_region_4 (12)
+[c1/af8464] Submitted process > ocrd_tesserocr_segment_region_4 (13)
+[53/f99ce9] Submitted process > ocrd_tesserocr_segment_region_4 (14)
+[62/4b16fd] Submitted process > ocrd_tesserocr_segment_region_4 (15)
+[37/47c34a] Submitted process > ocrd_tesserocr_segment_region_4 (16)
+[ed/0cb94c] Submitted process > ocrd_segment_repair_5 (1)
+[51/a7b7f8] Submitted process > ocrd_segment_repair_5 (2)
+[f1/588787] Submitted process > ocrd_segment_repair_5 (3)
+[98/48626e] Submitted process > ocrd_segment_repair_5 (4)
+[fc/b3b167] Submitted process > ocrd_cis_ocropy_clip_6 (1)
+[7c/3c215b] Submitted process > ocrd_cis_ocropy_clip_6 (2)
+[fc/d0307f] Submitted process > ocrd_cis_ocropy_clip_6 (3)
+[87/d91756] Submitted process > ocrd_cis_ocropy_clip_6 (4)
+[b1/9e58c3] Submitted process > ocrd_segment_repair_5 (5)
+[58/fe4cb8] Submitted process > ocrd_segment_repair_5 (6)
+[40/078533] Submitted process > ocrd_segment_repair_5 (7)
+[30/466987] Submitted process > ocrd_segment_repair_5 (8)
+[73/95f5a9] Submitted process > ocrd_segment_repair_5 (9)
+[52/4b9559] Submitted process > ocrd_segment_repair_5 (10)
+[cf/ea6e32] Submitted process > ocrd_segment_repair_5 (11)
+[96/2d0903] Submitted process > ocrd_segment_repair_5 (12)
+[66/bf9099] Submitted process > ocrd_segment_repair_5 (13)
+[aa/d7ba19] Submitted process > ocrd_segment_repair_5 (14)
+[e4/e389df] Submitted process > ocrd_segment_repair_5 (15)
+[9e/da0358] Submitted process > ocrd_segment_repair_5 (16)
+[a5/8d6515] Submitted process > ocrd_cis_ocropy_clip_6 (5)
+[4e/340cdd] Submitted process > ocrd_cis_ocropy_clip_6 (6)
+[43/9d6f74] Submitted process > ocrd_cis_ocropy_clip_6 (7)
+[5b/933fee] Submitted process > ocrd_cis_ocropy_clip_6 (8)
+[cc/0f493e] Submitted process > ocrd_cis_ocropy_clip_6 (9)
+[a4/22d471] Submitted process > ocrd_cis_ocropy_clip_6 (10)
+[e0/220692] Submitted process > ocrd_cis_ocropy_clip_6 (11)
+[b2/368818] Submitted process > ocrd_cis_ocropy_clip_6 (12)
+[6c/581453] Submitted process > ocrd_cis_ocropy_clip_6 (13)
+[65/cd3a62] Submitted process > ocrd_cis_ocropy_clip_6 (14)
+[12/c0121b] Submitted process > ocrd_cis_ocropy_clip_6 (15)
+[77/bcca16] Submitted process > ocrd_cis_ocropy_clip_6 (16)
+[92/bba93f] Submitted process > ocrd_cis_ocropy_segment_7 (1)
+[ae/6dbbac] Submitted process > ocrd_cis_ocropy_segment_7 (2)
+[73/d6983a] Submitted process > ocrd_cis_ocropy_segment_7 (3)
+[ec/468bb6] Submitted process > ocrd_cis_ocropy_segment_7 (4)
+[b5/7bcfe3] Submitted process > ocrd_cis_ocropy_segment_7 (5)
+[2b/a4d02e] Submitted process > ocrd_cis_ocropy_segment_7 (6)
+[41/f8da98] Submitted process > ocrd_cis_ocropy_segment_7 (7)
+[0a/cd34a6] Submitted process > ocrd_cis_ocropy_segment_7 (8)
+[92/bb7838] Submitted process > ocrd_cis_ocropy_segment_7 (9)
+[d8/86cdc3] Submitted process > ocrd_cis_ocropy_segment_7 (10)
+[3f/649d07] Submitted process > ocrd_cis_ocropy_segment_7 (11)
+[a2/29adcb] Submitted process > ocrd_cis_ocropy_segment_7 (12)
+[33/8bb297] Submitted process > ocrd_cis_ocropy_segment_7 (13)
+[b3/ae559f] Submitted process > ocrd_cis_ocropy_segment_7 (14)
+[d3/58f59e] Submitted process > ocrd_cis_ocropy_segment_7 (15)
+[c8/8072e4] Submitted process > ocrd_cis_ocropy_segment_7 (16)
+[28/f28f97] Submitted process > ocrd_cis_ocropy_dewarp_8 (1)
+[2c/194911] Submitted process > ocrd_cis_ocropy_dewarp_8 (2)
+[64/46687a] Submitted process > ocrd_cis_ocropy_dewarp_8 (3)
+[cc/a70393] Submitted process > ocrd_cis_ocropy_dewarp_8 (4)
+[bb/c49c95] Submitted process > ocrd_cis_ocropy_dewarp_8 (5)
+[08/931fcd] Submitted process > ocrd_cis_ocropy_dewarp_8 (6)
+[6d/9fb303] Submitted process > ocrd_cis_ocropy_dewarp_8 (7)
+[8b/7c93de] Submitted process > ocrd_cis_ocropy_dewarp_8 (8)
+[ac/d94673] Submitted process > ocrd_cis_ocropy_dewarp_8 (9)
+[cf/8f5623] Submitted process > ocrd_cis_ocropy_dewarp_8 (10)
+[f9/501022] Submitted process > ocrd_cis_ocropy_dewarp_8 (11)
+[17/dece5c] Submitted process > ocrd_cis_ocropy_dewarp_8 (12)
+[6e/e52ccb] Submitted process > ocrd_cis_ocropy_dewarp_8 (13)
+[53/e2635f] Submitted process > ocrd_cis_ocropy_dewarp_8 (14)
+[c9/97ba30] Submitted process > ocrd_tesserocr_recognize_9 (1)
+[83/634336] Submitted process > ocrd_tesserocr_recognize_9 (2)
+[8b/390c30] Submitted process > ocrd_cis_ocropy_dewarp_8 (15)
+[83/0cb014] Submitted process > ocrd_cis_ocropy_dewarp_8 (16)
+[74/dc4b79] Submitted process > ocrd_tesserocr_recognize_9 (3)
+[35/285f1a] Submitted process > ocrd_tesserocr_recognize_9 (4)
+[dd/a919bc] Submitted process > ocrd_tesserocr_recognize_9 (5)
+[dd/cef633] Submitted process > ocrd_tesserocr_recognize_9 (6)
+[cd/b96fb9] Submitted process > ocrd_tesserocr_recognize_9 (7)
+[ae/d8d588] Submitted process > ocrd_tesserocr_recognize_9 (8)
+[42/f66268] Submitted process > ocrd_tesserocr_recognize_9 (9)
+[60/eff60f] Submitted process > ocrd_tesserocr_recognize_9 (10)
+[e1/8e4161] Submitted process > ocrd_tesserocr_recognize_9 (11)
+[7b/f96480] Submitted process > ocrd_tesserocr_recognize_9 (12)
+[1f/c13399] Submitted process > ocrd_tesserocr_recognize_9 (13)
+[cf/c214d8] Submitted process > ocrd_tesserocr_recognize_9 (14)
+[74/079db9] Submitted process > ocrd_tesserocr_recognize_9 (15)
+[05/969b54] Submitted process > ocrd_tesserocr_recognize_9 (16)
