@@ -210,7 +210,7 @@ class OperandiBenchmark:
             self._download_results_workspace(wf_job_data)
             sleep(1)
             self._download_results_workflow_job(wf_job_data)
-            sleep(1) 
+            sleep(1)
 
 def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
