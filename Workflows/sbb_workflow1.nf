@@ -82,6 +82,6 @@ process ocrd_kraken_recognize {
 workflow {
   main:
     ocrd_sbb_binarize(params.mets, params.input_file_group, "OCR-D-BIN")
-    ocrd_tesserocrd_segment(ocrd_sbb_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
-    ocrd_kraken_recognize(ocrd_tesserocrd_segment.out, "OCR-D-SEG", "OCR-D-OCR")
+    ocrd_tesserocr_segment(ocrd_sbb_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
+    ocrd_kraken_recognize(ocrd_tesserocr_segment.out, "OCR-D-SEG", "OCR-D-OCR")
 }

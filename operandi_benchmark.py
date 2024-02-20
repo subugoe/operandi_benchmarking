@@ -18,6 +18,8 @@ NF_WORKFLOWS = {
     "default_workflow_mets_server":"./Workflows/default_workflow_mets_server.nf",
     "odem_workflow":"./Workflows/odem_workflow.nf",
     "odem_workflow_mets_server":"./Workflows/odem_workflow_mets_server.nf",
+    "sbb_workflow1":"./Workflows/sbb_workflow1.nf",
+    "sbb_workflow1_mets_server":"./Workflows/sbb_workflow1_mets_server.nf"
 }
 
 OCRD_WORKSPACE_ZIPS = {
@@ -216,7 +218,8 @@ def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
-            "odem_workflow_mets_server",
+            "sbb_workflow1",
+            "sbb_workflow1_mets_server"
         ],
         use_workspaces=[
             "VD18"
@@ -224,8 +227,8 @@ def main():
         use_file_groups=[
             "MAX"
         ],
-        use_cpus=[32],
-        use_ram=[256]
+        use_cpus=[8],
+        use_ram=[32]
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()

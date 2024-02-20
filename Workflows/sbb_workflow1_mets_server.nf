@@ -112,6 +112,6 @@ workflow {
     ch_range_multipliers = Channel.of(0..params.forks.intValue()-1)
     split_page_ranges(ch_range_multipliers)
     ocrd_sbb_binarize(split_page_ranges.out, params.input_file_group, "OCR-D-BIN")
-    ocrd_tesserocrd_segment(ocrd_sbb_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
-    ocrd_kraken_recognize(ocrd_tesserocrd_segment.out, "OCR-D-SEG", "OCR-D-OCR")
+    ocrd_tesserocr_segment(ocrd_sbb_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
+    ocrd_kraken_recognize(ocrd_tesserocr_segment.out, "OCR-D-SEG", "OCR-D-OCR")
 }
