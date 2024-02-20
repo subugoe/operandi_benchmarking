@@ -9,7 +9,7 @@ params.cpus = "null"
 params.ram = "null"
 
 log.info """\
-         O P E R A N D I - H P C - WORKFLOW 1
+         O P E R A N D I - H P C - default_workflow
          ===========================================
          input_file_group    : ${params.input_file_group}
          mets                : ${params.mets}
@@ -23,7 +23,7 @@ process ocrd_cis_ocropy_binarize {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -43,7 +43,7 @@ process ocrd_anybaseocr_crop {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -63,7 +63,7 @@ process ocrd_skimage_binarize {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -83,7 +83,7 @@ process ocrd_skimage_denoise {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -103,7 +103,7 @@ process ocrd_tesserocr_deskew {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -123,7 +123,7 @@ process ocrd_cis_ocropy_segment {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -143,7 +143,7 @@ process ocrd_cis_ocropy_dewarp {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -163,7 +163,7 @@ process ocrd_calamari_recognize {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file

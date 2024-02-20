@@ -9,7 +9,7 @@ params.cpus = "null"
 params.ram = "null"
 
 log.info """\
-         O P E R A N D I - H P C - WORKFLOW ODEM
+         O P E R A N D I - H P C - odem_workflow
          ===========================================
          input_file_group    : ${params.input_file_group}
          mets                : ${params.mets}
@@ -23,7 +23,7 @@ process ocrd_cis_ocropy_binarize_0 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -43,7 +43,7 @@ process ocrd_anybaseocr_crop_1 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -63,7 +63,7 @@ process ocrd_cis_ocropy_denoise_2 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -83,7 +83,7 @@ process ocrd_cis_ocropy_deskew_3 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -103,7 +103,7 @@ process ocrd_tesserocr_segment_region_4 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -123,7 +123,7 @@ process ocrd_segment_repair_5 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -143,7 +143,7 @@ process ocrd_cis_ocropy_clip_6 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -163,7 +163,7 @@ process ocrd_cis_ocropy_segment_7 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -183,7 +183,7 @@ process ocrd_cis_ocropy_dewarp_8 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file
@@ -203,7 +203,7 @@ process ocrd_tesserocr_recognize_9 {
   maxForks 1
   cpus params.cpus
   memory params.ram
-  echo true
+  debug true
 
   input:
     path mets_file

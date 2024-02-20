@@ -17,7 +17,7 @@ params.cpus_per_fork = (params.cpus.toInteger() / params.forks.toInteger()).intV
 params.ram_per_fork = sprintf("%dGB", (params.ram.toInteger() / params.forks.toInteger()).intValue())
 
 log.info """\
-         O P E R A N D I - H P C - D E F A U L T  P I P E L I N E
+         O P E R A N D I - H P C - default_workflow_mets_server
          ===========================================
          input_file_group    : ${params.input_file_group}
          mets                : ${params.mets}

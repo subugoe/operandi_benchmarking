@@ -18,22 +18,22 @@ params.cpus_per_fork = (params.cpus.toInteger() / params.forks.toInteger()).intV
 params.ram_per_fork = sprintf("%dGB", (params.ram.toInteger() / params.forks.toInteger()).intValue())
 
 log.info """\
-         O P E R A N D I - H P C - WORKFLOW ODEM
-         ===========================================
-         input_file_group    : ${params.input_file_group}
-         mets                : ${params.mets}
-         mets_socket         : ${params.mets_socket}
-         workspace_dir       : ${params.workspace_dir}
-         pages               : ${params.pages}
-         singularity_wrapper : ${params.singularity_wrapper}
-         cpus                : ${params.cpus}
-         ram                 : ${params.ram}
-         forks               : ${params.forks}
-         pages_per_range     : ${params.pages_per_range}
-         cpus_per_fork       : ${params.cpus_per_fork}
-         ram_per_fork        : ${params.ram_per_fork}
-         """
-         .stripIndent()
+        O P E R A N D I - H P C - odem_workflow_mets_server
+        ===========================================
+        input_file_group    : ${params.input_file_group}
+        mets                : ${params.mets}
+        mets_socket         : ${params.mets_socket}
+        workspace_dir       : ${params.workspace_dir}
+        pages               : ${params.pages}
+        singularity_wrapper : ${params.singularity_wrapper}
+        cpus                : ${params.cpus}
+        ram                 : ${params.ram}
+        forks               : ${params.forks}
+        pages_per_range     : ${params.pages_per_range}
+        cpus_per_fork       : ${params.cpus_per_fork}
+        ram_per_fork        : ${params.ram_per_fork}
+        """
+        .stripIndent()
 
 process split_page_ranges {
     maxForks params.forks
