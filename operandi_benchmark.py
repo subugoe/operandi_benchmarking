@@ -218,7 +218,6 @@ def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
-            "sbb_workflow1",
             "sbb_workflow1_mets_server"
         ],
         use_workspaces=[

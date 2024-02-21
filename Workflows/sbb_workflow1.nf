@@ -21,7 +21,7 @@ log.info """\
         """
         .stripIndent()
 
-process ocrd_olena_binarize {
+process ocrd_cis_ocropy_binarize {
     maxForks 1
     cpus params.cpus
     memory params.ram
@@ -37,7 +37,7 @@ process ocrd_olena_binarize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-olena-binarize -w ${params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
+    ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -w ${params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
     """
 }
 
@@ -83,7 +83,7 @@ process ocrd_kraken_recognize {
 
 workflow {
   main:
-    ocrd_olena_binarize(params.mets, params.input_file_group, "OCR-D-BIN")
-    ocrd_tesserocr_segment(ocrd_olena_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
+    ocrd_cis_ocropy_binarize(params.mets, params.input_file_group, "OCR-D-BIN")
+    ocrd_tesserocr_segment(ocrd_cis_ocropy_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
     ocrd_kraken_recognize(ocrd_tesserocr_segment.out, "OCR-D-SEG", "OCR-D-OCR")
 }
