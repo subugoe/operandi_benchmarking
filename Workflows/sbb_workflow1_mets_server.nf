@@ -65,7 +65,7 @@ process ocrd_olena_binarize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd_olena_binarize -U ${params.mets_socket} -w ${params.workspace_dir} --page-id ${page_range} -m ${params.mets} -I ${input_group} -O ${output_group} -p '{"model": "default-2021-03-09"}'
+    ${params.singularity_wrapper} ocrd-olena-binarize -U ${params.mets_socket} -w ${params.workspace_dir} --page-id ${page_range} -m ${params.mets} -I ${input_group} -O ${output_group} -p '{"model": "default-2021-03-09"}'
     """
 }
 

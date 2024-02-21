@@ -37,7 +37,7 @@ process ocrd_olena_binarize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd_olena_binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
+    ${params.singularity_wrapper} ocrd-olena-binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
     """
 }
 
