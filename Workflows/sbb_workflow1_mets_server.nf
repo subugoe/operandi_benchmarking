@@ -50,7 +50,7 @@ process split_page_ranges {
     '''
 }
 
-process ocrd_sbb_binarize {
+process ocrd_olena_binarize {
     maxForks params.forks
     cpus params.cpus_per_fork
     memory params.ram_per_fork
@@ -65,7 +65,7 @@ process ocrd_sbb_binarize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-sbb-binarize -U ${params.mets_socket} -w ${params.workspace_dir} --page-id ${page_range} -m ${params.mets} -I ${input_group} -O ${output_group} -p '{"model": "default-2021-03-09"}'
+    ${params.singularity_wrapper} ocrd_olena_binarize -U ${params.mets_socket} -w ${params.workspace_dir} --page-id ${page_range} -m ${params.mets} -I ${input_group} -O ${output_group} -p '{"model": "default-2021-03-09"}'
     """
 }
 
@@ -111,7 +111,7 @@ workflow {
   main:
     ch_range_multipliers = Channel.of(0..params.forks.intValue()-1)
     split_page_ranges(ch_range_multipliers)
-    ocrd_sbb_binarize(split_page_ranges.out, params.input_file_group, "OCR-D-BIN")
-    ocrd_tesserocr_segment(ocrd_sbb_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
+    ocrd_olena_binarize(split_page_ranges.out, params.input_file_group, "OCR-D-BIN")
+    ocrd_tesserocr_segment(ocrd_olena_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
     ocrd_kraken_recognize(ocrd_tesserocr_segment.out, "OCR-D-SEG", "OCR-D-OCR")
 }

@@ -4,6 +4,7 @@ nextflow.enable.dsl=2
 // Based on internal values and options provided in the request
 params.input_file_group = "null"
 params.mets = "null"
+params.workspace_dir = "null"
 params.singularity_wrapper = "null"
 params.cpus = "null"
 params.ram = "null"
@@ -13,13 +14,14 @@ log.info """\
         ===========================================
         input_file_group    : ${params.input_file_group}
         mets                : ${params.mets}
+        workspace_dir       : ${params.workspace_dir}
         singularity_wrapper : ${params.singularity_wrapper}
         cpus                : ${params.cpus}
         ram                 : ${params.ram}
         """
         .stripIndent()
 
-process ocrd_sbb_binarize {
+process ocrd_olena_binarize {
     maxForks 1
     cpus params.cpus
     memory params.ram
@@ -35,7 +37,7 @@ process ocrd_sbb_binarize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-sbb-binarize -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"model": "default-2021-03-09"}'
+    ${params.singularity_wrapper} ocrd_olena_binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
     """
 }
 
@@ -55,7 +57,7 @@ process ocrd_tesserocr_segment {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-tesserocr-segment -m ${mets_file} -I ${input_group} -O ${output_group}
+    ${params.singularity_wrapper} ocrd-tesserocr-segment -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
     """
 }
 
@@ -75,13 +77,13 @@ process ocrd_kraken_recognize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-kraken-recognize -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"model": "typewriter.mlmodel"}'
+    ${params.singularity_wrapper} ocrd-kraken-recognize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"model": "typewriter.mlmodel"}'
     """
 }
 
 workflow {
   main:
-    ocrd_sbb_binarize(params.mets, params.input_file_group, "OCR-D-BIN")
-    ocrd_tesserocr_segment(ocrd_sbb_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
+    ocrd_olena_binarize(params.mets, params.input_file_group, "OCR-D-BIN")
+    ocrd_tesserocr_segment(ocrd_olena_binarize.out, "OCR-D-BIN", "OCR-D-SEG")
     ocrd_kraken_recognize(ocrd_tesserocr_segment.out, "OCR-D-SEG", "OCR-D-OCR")
 }
