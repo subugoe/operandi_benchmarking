@@ -4,6 +4,7 @@ nextflow.enable.dsl=2
 // Based on internal values and options provided in the request
 params.input_file_group = "null"
 params.mets = "null"
+params.workspace_dir = "null"
 params.singularity_wrapper = "null"
 params.cpus = "null"
 params.ram = "null"
@@ -13,6 +14,7 @@ log.info """\
          ===========================================
          input_file_group    : ${params.input_file_group}
          mets                : ${params.mets}
+         workspace_dir       : ${params.workspace_dir}
          singularity_wrapper : ${params.singularity_wrapper}
          cpus                : ${params.cpus}
          ram                 : ${params.ram}
@@ -35,7 +37,7 @@ process ocrd_cis_ocropy_binarize_0 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -55,7 +57,7 @@ process ocrd_anybaseocr_crop_1 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-anybaseocr-crop -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-anybaseocr-crop -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -75,7 +77,7 @@ process ocrd_cis_ocropy_denoise_2 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-denoise -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-cis-ocropy-denoise -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -95,7 +97,7 @@ process ocrd_cis_ocropy_deskew_3 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-deskew -I ${input_dir} -O ${output_dir} -P level-of-operation page
+  ${params.singularity_wrapper} ocrd-cis-ocropy-deskew -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P level-of-operation page
   """
 }
 
@@ -115,7 +117,7 @@ process ocrd_tesserocr_segment_region_4 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-tesserocr-segment-region -I ${input_dir} -O ${output_dir} -P padding 5.0 -P find_tables false -P dpi 300
+  ${params.singularity_wrapper} ocrd-tesserocr-segment-region -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P padding 5.0 -P find_tables false -P dpi 300
   """
 }
 
@@ -135,7 +137,7 @@ process ocrd_segment_repair_5 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-segment-repair -I ${input_dir} -O ${output_dir} -P plausibilize true -P plausibilize_merge_min_overlap 0.7
+  ${params.singularity_wrapper} ocrd-segment-repair -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P plausibilize true -P plausibilize_merge_min_overlap 0.7
   """
 }
 
@@ -155,7 +157,7 @@ process ocrd_cis_ocropy_clip_6 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-clip -I ${input_dir} -O ${output_dir}
+  ${params.singularity_wrapper} ocrd-cis-ocropy-clip -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir}
   """
 }
 
@@ -175,7 +177,7 @@ process ocrd_cis_ocropy_segment_7 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-segment -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-cis-ocropy-segment -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -195,7 +197,7 @@ process ocrd_cis_ocropy_dewarp_8 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-dewarp -I ${input_dir} -O ${output_dir}
+  ${params.singularity_wrapper} ocrd-cis-ocropy-dewarp -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir}
   """
 }
 
@@ -215,7 +217,7 @@ process ocrd_tesserocr_recognize_9 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-tesserocr-recognize -I ${input_dir} -O ${output_dir} -P model Fraktur
+  ${params.singularity_wrapper} ocrd-tesserocr-recognize -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P model Fraktur
   """
 }
 

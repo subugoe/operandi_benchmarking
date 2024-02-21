@@ -4,6 +4,7 @@ nextflow.enable.dsl=2
 // Based on internal values and options provided in the request
 params.input_file_group = "null"
 params.mets = "null"
+params.workspace_dir = "null"
 params.singularity_wrapper = "null"
 params.cpus = "null"
 params.ram = "null"
@@ -13,6 +14,7 @@ log.info """\
          ===========================================
          input_file_group    : ${params.input_file_group}
          mets                : ${params.mets}
+         workspace_dir       : ${params.workspace_dir}
          singularity_wrapper : ${params.singularity_wrapper}
          cpus                : ${params.cpus}
          ram                 : ${params.ram}
@@ -35,7 +37,7 @@ process ocrd_cis_ocropy_binarize {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -m ${mets_file} -I ${input_group} -O ${output_group}
+  ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
   """
 }
 
@@ -55,7 +57,7 @@ process ocrd_anybaseocr_crop {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-anybaseocr-crop -m ${mets_file} -I ${input_group} -O ${output_group}
+  ${params.singularity_wrapper} ocrd-anybaseocr-crop -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
   """
 }
 
@@ -75,7 +77,7 @@ process ocrd_skimage_binarize {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-skimage-binarize -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"method": "li"}'
+  ${params.singularity_wrapper} ocrd-skimage-binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"method": "li"}'
   """
 }
 
@@ -95,7 +97,7 @@ process ocrd_skimage_denoise {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-skimage-denoise -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"level-of-operation": "page"}'
+  ${params.singularity_wrapper} ocrd-skimage-denoise -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"level-of-operation": "page"}'
   """
 }
 
@@ -115,7 +117,7 @@ process ocrd_tesserocr_deskew {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-tesserocr-deskew -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"operation_level": "page"}'
+  ${params.singularity_wrapper} ocrd-tesserocr-deskew -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"operation_level": "page"}'
   """
 }
 
@@ -135,7 +137,7 @@ process ocrd_cis_ocropy_segment {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-segment -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"level-of-operation": "page"}'
+  ${params.singularity_wrapper} ocrd-cis-ocropy-segment -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"level-of-operation": "page"}'
   """
 }
 
@@ -155,7 +157,7 @@ process ocrd_cis_ocropy_dewarp {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-dewarp -m ${mets_file} -I ${input_group} -O ${output_group}
+  ${params.singularity_wrapper} ocrd-cis-ocropy-dewarp -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
   """
 }
 
@@ -175,7 +177,7 @@ process ocrd_calamari_recognize {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-calamari-recognize -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"checkpoint_dir": "qurator-gt4histocr-1.0"}'
+  ${params.singularity_wrapper} ocrd-calamari-recognize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"checkpoint_dir": "qurator-gt4histocr-1.0"}'
   """
 }
 
