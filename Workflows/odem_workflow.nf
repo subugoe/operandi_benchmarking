@@ -37,7 +37,7 @@ process ocrd_cis_ocropy_binarize_0 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-cis-ocropy-binarize -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -57,7 +57,7 @@ process ocrd_anybaseocr_crop_1 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-anybaseocr-crop -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-anybaseocr-crop -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -77,7 +77,7 @@ process ocrd_cis_ocropy_denoise_2 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-denoise -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-cis-ocropy-denoise -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -97,7 +97,7 @@ process ocrd_cis_ocropy_deskew_3 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-deskew -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P level-of-operation page
+  ${params.singularity_wrapper} ocrd-cis-ocropy-deskew -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P level-of-operation page
   """
 }
 
@@ -117,7 +117,7 @@ process ocrd_tesserocr_segment_region_4 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-tesserocr-segment-region -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P padding 5.0 -P find_tables false -P dpi 300
+  ${params.singularity_wrapper} ocrd-tesserocr-segment-region -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P padding 5.0 -P find_tables false -P dpi 300
   """
 }
 
@@ -137,7 +137,7 @@ process ocrd_segment_repair_5 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-segment-repair -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P plausibilize true -P plausibilize_merge_min_overlap 0.7
+  ${params.singularity_wrapper} ocrd-segment-repair -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P plausibilize true -P plausibilize_merge_min_overlap 0.7
   """
 }
 
@@ -157,7 +157,7 @@ process ocrd_cis_ocropy_clip_6 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-clip -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir}
+  ${params.singularity_wrapper} ocrd-cis-ocropy-clip -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir}
   """
 }
 
@@ -177,7 +177,7 @@ process ocrd_cis_ocropy_segment_7 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-segment -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
+  ${params.singularity_wrapper} ocrd-cis-ocropy-segment -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P dpi 300
   """
 }
 
@@ -197,7 +197,7 @@ process ocrd_cis_ocropy_dewarp_8 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-cis-ocropy-dewarp -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir}
+  ${params.singularity_wrapper} ocrd-cis-ocropy-dewarp -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir}
   """
 }
 
@@ -217,7 +217,7 @@ process ocrd_tesserocr_recognize_9 {
 
   script:
   """
-  ${params.singularity_wrapper} ocrd-tesserocr-recognize -w !{params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P model Fraktur
+  ${params.singularity_wrapper} ocrd-tesserocr-recognize -w ${params.workspace_dir} -m ${mets_file} -I ${input_dir} -O ${output_dir} -P model Fraktur
   """
 }
 

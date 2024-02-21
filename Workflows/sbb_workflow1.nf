@@ -37,7 +37,7 @@ process ocrd_olena_binarize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-olena-binarize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
+    ${params.singularity_wrapper} ocrd-olena-binarize -w ${params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
     """
 }
 
@@ -57,7 +57,7 @@ process ocrd_tesserocr_segment {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-tesserocr-segment -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
+    ${params.singularity_wrapper} ocrd-tesserocr-segment -w ${params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group}
     """
 }
 
@@ -77,7 +77,7 @@ process ocrd_kraken_recognize {
 
     script:
     """
-    ${params.singularity_wrapper} ocrd-kraken-recognize -w !{params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"model": "typewriter.mlmodel"}'
+    ${params.singularity_wrapper} ocrd-kraken-recognize -w ${params.workspace_dir} -m ${mets_file} -I ${input_group} -O ${output_group} -p '{"model": "typewriter.mlmodel"}'
     """
 }
 
