@@ -14,18 +14,18 @@ OPERANDI_RESULTS_DIR = environ.get("OPERANDI_RESULTS_DIR", "/home/mm/Desktop/ben
 UNSET_VALUE = "Unset"
 
 NF_WORKFLOWS = {
-    "default_workflow":"./Workflows/default_workflow.nf",
     "default_workflow_mets_server":"./Workflows/default_workflow_mets_server.nf",
-    "odem_workflow":"./Workflows/odem_workflow.nf",
     "odem_workflow_mets_server":"./Workflows/odem_workflow_mets_server.nf",
-    "sbb_workflow1":"./Workflows/sbb_workflow1.nf",
-    "sbb_workflow1_mets_server":"./Workflows/sbb_workflow1_mets_server.nf"
+    "sbb_workflow1_mets_server":"./Workflows/sbb_workflow1_mets_server.nf",
+    "sbb_workflow2_mets_server":"./Workflows/sbb_workflow2_mets_server.nf"
 }
 
 OCRD_WORKSPACE_ZIPS = {
     "VD16":"./VD16/urn_nbn_de_gbv_3_1-326439.ocrd.zip",
     "VD17":"./VD17/urn_nbn_de_bsz_14-db-id3272770845.ocrd.zip",
-    "VD18":"./VD18/PPN1023134829.ocrd.zip"
+    "VD18":"./VD18/PPN1023134829.ocrd.zip",
+    "Fraktur":"./FontBased/Fraktur/PPN385030444_1830_3.ocrd.zip",
+    "Antiqua":"./FontBased/Antiqua/PPN637243196_1873.ocrd.zip"
 }
 
 @dataclass()
@@ -218,16 +218,18 @@ def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
+            "default_workflow_mets_server",
+            "odem_workflow_mets_server",
             "sbb_workflow1_mets_server"
         ],
         use_workspaces=[
-            "VD18"
+            "Fraktur", "Antiqua"
         ],
         use_file_groups=[
             "MAX"
         ],
-        use_cpus=[8,16],
-        use_ram=[64,128]
+        use_cpus=[16],
+        use_ram=[128]
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()

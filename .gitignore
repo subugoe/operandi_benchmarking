@@ -160,3 +160,4 @@ cython_debug/
 .idea/
 
 VD*/*.ocrd.zip
+FontBased/*/*.ocrd.zip
