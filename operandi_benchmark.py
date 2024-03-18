@@ -223,7 +223,8 @@ def main():
             "sbb_workflow1_mets_server"
         ],
         use_workspaces=[
-            "Fraktur", "Antiqua"
+            "Fraktur",
+            "Antiqua"
         ],
         use_file_groups=[
             "MAX"
