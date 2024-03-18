@@ -219,8 +219,7 @@ def main():
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
             "default_workflow_mets_server",
-            "odem_workflow_mets_server",
-            "sbb_workflow1_mets_server"
+            "odem_workflow_mets_server"
         ],
         use_workspaces=[
             "Fraktur",
