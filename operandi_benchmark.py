@@ -233,7 +233,7 @@ def main():
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()
-    operandi_benchmarking.download_all_results()
+    # operandi_benchmarking.download_all_results()
 
 if __name__ == '__main__':
     main()
