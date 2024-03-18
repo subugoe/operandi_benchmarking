@@ -174,7 +174,7 @@ class OperandiBenchmark:
                 update_occurred = True
         return update_occurred
 
-    def poll_till_jobs_end(self, wait_between=30):
+    def poll_till_jobs_end(self, wait_between=90):
         update_occurred = True
         while update_occurred:
             update_occurred = self._update_workflow_job_statuses()
