@@ -24,8 +24,8 @@ OCRD_WORKSPACE_ZIPS = {
     "VD16":"./VD16/urn_nbn_de_gbv_3_1-326439.ocrd.zip",
     "VD17":"./VD17/urn_nbn_de_bsz_14-db-id3272770845.ocrd.zip",
     "VD18":"./VD18/PPN1023134829.ocrd.zip",
-    "Fraktur":"./FontBased/Fraktur/PPN385030444_1830_3.ocrd.zip",
-    "Antiqua":"./FontBased/Antiqua/PPN637243196_1873.ocrd.zip"
+    "Fraktur":"./FontBased/Fraktur/PPN841193452.ocrd.zip",
+    "Antiqua":"./FontBased/Antiqua/PPN63511240X.ocrd.zip"
 }
 
 @dataclass()
@@ -229,8 +229,8 @@ def main():
         use_file_groups=[
             "MAX"
         ],
-        use_cpus=[16],
-        use_ram=[128]
+        use_cpus=[8,16],
+        use_ram=[64,128]
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()
