@@ -1,0 +1,125 @@
+================================================================================
+JobID = 19698773
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp012
+================================================================================
+amp012
+Hi there, I am task 0 of  tasks of job 19698773.
+I am on host amp012.
+I can use cpu 16-19 on this host.
+There is 32768MB of Memory available on this host.
+====================
+ocrd all SIF path: /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+Workspace dir: /scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320/1e85caa6-03de-4049-9057-6dd7822050da
+Nextflow script path: /scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320/default_workflow.nf
+Use mets server: false
+Used file group: MAX
+Pages: 85
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320.zip
+Executing the nextflow workflow without mets server
+Nextflow 23.10.1 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320/default_workflow.nf` [loving_gautier] DSL2 - revision: 169ff7b234
+OPERANDI - HPC - Default Workflow
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+workspace_dir       : /ws_data
+pages               : 85
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/30110389-78a6-4167-941a-eeefa5127320/1e85caa6-03de-4049-9057-6dd7822050da:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 4
+ram                 : 32
+forks               : 4
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+[89/bc5698] Submitted process > split_page_ranges (2)
+[eb/ab8a40] Submitted process > split_page_ranges (1)
+[ac/2c306e] Submitted process > split_page_ranges (4)
+[5d/192bf5] Submitted process > split_page_ranges (3)
+Current range is: PHYS_0023,PHYS_0024,PHYS_0025,PHYS_0026,PHYS_0027,PHYS_0028,PHYS_0029,PHYS_0030,PHYS_0031,PHYS_0032,PHYS_0033,PHYS_0034,PHYS_0035,PHYS_0036,PHYS_0037,PHYS_0038,PHYS_0039,PHYS_0040,PHYS_0041,PHYS_0042,PHYS_0043
+Mets file chunk path: /ws_data/mets_1.xml
+Current range is: PHYS_0001,PHYS_0002,PHYS_0003,PHYS_0004,PHYS_0005,PHYS_0006,PHYS_0007,PHYS_0008,PHYS_0009,PHYS_0010,PHYS_0011,PHYS_0012,PHYS_0013,PHYS_0014,PHYS_0015,PHYS_0016,PHYS_0017,PHYS_0018,PHYS_0019,PHYS_0020,PHYS_0021,PHYS_0022
+Mets file chunk path: /ws_data/mets_0.xml
+[2b/e67afa] Submitted process > ocrd_cis_ocropy_binarize (1)
+[20/95cae1] Submitted process > ocrd_cis_ocropy_binarize (2)
+Current range is: PHYS_0065,PHYS_0066,PHYS_0067,PHYS_0068,PHYS_0069,PHYS_0070,PHYS_0071,PHYS_0072,PHYS_0073,PHYS_0074,PHYS_0075,PHYS_0076,PHYS_0077,PHYS_0078,PHYS_0079,PHYS_0080,PHYS_0081,PHYS_0082,PHYS_0083,PHYS_0084,PHYS_0085
+Mets file chunk path: /ws_data/mets_3.xml
+[04/87d4e0] Submitted process > ocrd_cis_ocropy_binarize (3)
+Current range is: PHYS_0044,PHYS_0045,PHYS_0046,PHYS_0047,PHYS_0048,PHYS_0049,PHYS_0050,PHYS_0051,PHYS_0052,PHYS_0053,PHYS_0054,PHYS_0055,PHYS_0056,PHYS_0057,PHYS_0058,PHYS_0059,PHYS_0060,PHYS_0061,PHYS_0062,PHYS_0063,PHYS_0064
+Mets file chunk path: /ws_data/mets_2.xml
+[07/cfb8d6] Submitted process > ocrd_cis_ocropy_binarize (4)
+[66/798518] Submitted process > ocrd_anybaseocr_crop (1)
+[fe/bbbdac] Submitted process > ocrd_anybaseocr_crop (2)
+[ca/96f410] Submitted process > ocrd_anybaseocr_crop (3)
+[46/611521] Submitted process > ocrd_anybaseocr_crop (4)
+[ed/937222] Submitted process > ocrd_skimage_binarize (1)
+[f6/9c4ebe] Submitted process > ocrd_skimage_binarize (2)
+[f1/6c8956] Submitted process > ocrd_skimage_binarize (3)
+[28/e019a1] Submitted process > ocrd_skimage_binarize (4)
+[40/89e50d] Submitted process > ocrd_skimage_denoise (1)
+[46/6efa64] Submitted process > ocrd_skimage_denoise (2)
+[f8/a46643] Submitted process > ocrd_skimage_denoise (3)
+[62/5c6d76] Submitted process > ocrd_skimage_denoise (4)
+[f1/900e66] Submitted process > ocrd_tesserocr_deskew (1)
+[62/281823] Submitted process > ocrd_tesserocr_deskew (2)
+[a1/5e662d] Submitted process > ocrd_tesserocr_deskew (3)
+[7d/537bc5] Submitted process > ocrd_tesserocr_deskew (4)
+[6a/c01712] Submitted process > ocrd_cis_ocropy_segment (1)
+[e0/ce240e] Submitted process > ocrd_cis_ocropy_segment (2)
+[c3/911c23] Submitted process > ocrd_cis_ocropy_segment (3)
+[4b/d4a437] Submitted process > ocrd_cis_ocropy_segment (4)
+[15/0ff641] Submitted process > ocrd_cis_ocropy_dewarp (1)
+[cd/29f348] Submitted process > ocrd_cis_ocropy_dewarp (2)
+[f4/962ed3] Submitted process > ocrd_calamari_recognize (1)
+[3e/26268f] Submitted process > ocrd_calamari_recognize (2)
+[20/424c63] Submitted process > ocrd_cis_ocropy_dewarp (3)
+[3e/c51c3a] Submitted process > ocrd_calamari_recognize (3)
+[b7/2e72b0] Submitted process > ocrd_cis_ocropy_dewarp (4)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[b5/7bf95a] Submitted process > merging_mets (1)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[83/68d3a7] Submitted process > merging_mets (2)
+[75/a7914f] Submitted process > ocrd_calamari_recognize (4)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[0f/d7b2c1] Submitted process > merging_mets (3)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[bf/c7c993] Submitted process > merging_mets (4)
+The nextflow workflow execution has finished successfully
