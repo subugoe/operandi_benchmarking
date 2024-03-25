@@ -14,9 +14,9 @@ OPERANDI_RESULTS_DIR = environ.get("OPERANDI_RESULTS_DIR", "/home/mm/Desktop/ben
 UNSET_VALUE = "Unset"
 
 NF_WORKFLOWS = {
-    "default_workflow":"./Workflows/default_workflow.nf"
+    "default_workflow":"./Workflows/default_workflow.nf",
     "default_workflow_with_MS":"./Workflows/default_workflow_with_MS.nf",
-    "odem_workflow":"./Workflows/odem_workflow.nf"
+    "odem_workflow":"./Workflows/odem_workflow.nf",
     "odem_workflow_with_MS":"./Workflows/odem_workflow_with_MS.nf",
     "sbb_workflow1_with_MS":"./Workflows/sbb_workflow1_with_MS.nf",
     "sbb_workflow2_with_MS":"./Workflows/sbb_workflow2_with_MS.nf"
