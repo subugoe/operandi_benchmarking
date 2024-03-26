@@ -1,0 +1,101 @@
+================================================================================
+JobID = 19717518
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp044
+================================================================================
+amp044
+Hi there, I am task 0 of  tasks of job 19717518.
+I am on host amp044.
+I can use cpu 0-7,24-31,48-55,72-79 on this host.
+There is 262144MB of Memory available on this host.
+====================
+ocrd all SIF path: /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+Workspace dir: /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/72dd94fc-6a9a-4c77-a770-cfd51ef79889
+Nextflow script path: /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/odem_workflow.nf
+Use mets server: false
+Used file group: MAX
+Pages: 140
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888.zip
+Executing the nextflow workflow without mets server
+Nextflow 23.10.1 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/odem_workflow.nf` [disturbed_turing] DSL2 - revision: 4b46836a74
+WARN: Access to undefined parameter `mets_socket` -- Initialise it to a default value eg. `params.mets_socket = some_value`
+OPERANDI - HPC - Odem Workflow
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : null
+workspace_dir       : /ws_data
+pages               : 140
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/72dd94fc-6a9a-4c77-a770-cfd51ef79889:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 32
+ram                 : 256
+forks               : 32
+cpus_per_fork       : 1
+ram_per_fork        : 8GB
+
+[03/a3c37c] Submitted process > split_page_ranges (4)
+[0b/22ac90] Submitted process > split_page_ranges (29)
+[42/818c12] Submitted process > split_page_ranges (7)
+[72/ec1384] Submitted process > split_page_ranges (28)
+[7b/1782e2] Submitted process > split_page_ranges (16)
+[30/385c54] Submitted process > split_page_ranges (25)
+[bd/0ee280] Submitted process > split_page_ranges (21)
+[53/38735d] Submitted process > split_page_ranges (5)
+[2e/9a9d84] Submitted process > split_page_ranges (26)
+[03/1625af] Submitted process > split_page_ranges (18)
+[0d/d3c250] Submitted process > split_page_ranges (32)
+[16/ffc5fe] Submitted process > split_page_ranges (19)
+[0f/05f3a1] Submitted process > split_page_ranges (3)
+[db/52a771] Submitted process > split_page_ranges (6)
+[e0/126a64] Submitted process > split_page_ranges (9)
+[1a/ab8892] Submitted process > split_page_ranges (17)
+[bb/af274b] Submitted process > split_page_ranges (20)
+[8b/e6a1a4] Submitted process > split_page_ranges (10)
+[28/5fdce4] Submitted process > split_page_ranges (24)
+[35/56d125] Submitted process > split_page_ranges (15)
+[7a/1e154c] Submitted process > split_page_ranges (30)
+[6c/c42860] Submitted process > split_page_ranges (12)
+[9c/2f8330] Submitted process > split_page_ranges (27)
+[38/56a791] Submitted process > split_page_ranges (31)
+[d1/61fab6] Submitted process > split_page_ranges (22)
+[7a/e10a6d] Submitted process > split_page_ranges (2)
+[57/0e08be] Submitted process > split_page_ranges (23)
+[07/3f060c] Submitted process > split_page_ranges (13)
+[c9/0546b1] Submitted process > split_page_ranges (11)
+[d0/7a410e] Submitted process > split_page_ranges (1)
+[80/54133b] Submitted process > split_page_ranges (8)
+[b0/00aecb] Submitted process > split_page_ranges (14)
+ERROR ~ Error executing process > 'split_page_ranges (12)'
+
+Caused by:
+  Process `split_page_ranges (12)` terminated with an error exit status (255)
+
+Command executed:
+
+  current_range_pages=$(singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/72dd94fc-6a9a-4c77-a770-cfd51ef79889:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif ocrd workspace -d /ws_data list-page -f comma-separated -D 32 -C 11)
+  echo "Current range is: $current_range_pages"
+  mets_file_chunk=$(echo /ws_data/mets_11.xml)
+  echo "Mets file chunk path: $mets_file_chunk"
+  $(singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/72dd94fc-6a9a-4c77-a770-cfd51ef79889:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif cp -p /ws_data/mets.xml $mets_file_chunk)
+
+Command exit status:
+  255
+
+Command output:
+  (empty)
+
+Command error:
+  WARNING: passwd file doesn't exist in container, not updating
+  WARNING: group file doesn't exist in container, not updating
+  FATAL:   container creation failed: mount /dev->/dev error: while mounting /dev: destination /dev doesn't exist in container
+
+Work dir:
+  /scratch1/users/mmustaf/operandi/slurm_workspaces/7413c5fa-eab6-45e4-b586-097f423cb888/work/6c/c428605fc92ceb86dccbb23e6ea7cb
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+WARN: Killing running tasks (31)
