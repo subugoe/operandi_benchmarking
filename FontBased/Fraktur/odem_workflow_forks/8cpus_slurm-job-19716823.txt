@@ -1,0 +1,165 @@
+================================================================================
+JobID = 19716824
+User = mmustaf, Account = all
+Partition = medium, Nodelist = amp052
+================================================================================
+amp052
+Hi there, I am task 0 of  tasks of job 19716824.
+I am on host amp052.
+I can use cpu 2,17-23 on this host.
+There is 32768MB of Memory available on this host.
+====================
+ocrd all SIF path: /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+Workspace dir: /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/e9ad497d-33e1-4929-bf79-a302bd6e6a63
+Nextflow script path: /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/odem_workflow.nf
+Use mets server: false
+Used file group: MAX
+Pages: 81
+Unzipping /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe.zip to: /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe
+Removing zip: /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe.zip
+Executing the nextflow workflow without mets server
+Nextflow 23.10.1 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+Launching `/scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/odem_workflow.nf` [adoring_jones] DSL2 - revision: 4b46836a74
+WARN: Access to undefined parameter `mets_socket` -- Initialise it to a default value eg. `params.mets_socket = some_value`
+OPERANDI - HPC - Odem Workflow
+===========================================
+input_file_group    : MAX
+mets                : /ws_data/mets.xml
+mets_socket         : null
+workspace_dir       : /ws_data
+pages               : 81
+singularity_wrapper : singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/e9ad497d-33e1-4929-bf79-a302bd6e6a63:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif
+cpus                : 8
+ram                 : 32
+forks               : 8
+cpus_per_fork       : 1
+ram_per_fork        : 4GB
+
+[47/eee562] Submitted process > split_page_ranges (5)
+[9d/609829] Submitted process > split_page_ranges (4)
+[93/bac168] Submitted process > split_page_ranges (7)
+[bc/c55a43] Submitted process > split_page_ranges (1)
+[77/c6d1b2] Submitted process > split_page_ranges (3)
+[f2/69cc70] Submitted process > split_page_ranges (6)
+[d5/67feac] Submitted process > split_page_ranges (8)
+[29/033899] Submitted process > split_page_ranges (2)
+Current range is: PHYS_0032,PHYS_0033,PHYS_0034,PHYS_0035,PHYS_0036,PHYS_0037,PHYS_0038,PHYS_0039,PHYS_0040,PHYS_0041
+Mets file chunk path: /ws_data/mets_3.xml
+Current range is: PHYS_0062,PHYS_0063,PHYS_0064,PHYS_0065,PHYS_0066,PHYS_0067,PHYS_0068,PHYS_0069,PHYS_0070,PHYS_0071
+Mets file chunk path: /ws_data/mets_6.xml
+Current range is: PHYS_0001,PHYS_0002,PHYS_0003,PHYS_0004,PHYS_0005,PHYS_0006,PHYS_0007,PHYS_0008,PHYS_0009,PHYS_0010,PHYS_0011
+Mets file chunk path: /ws_data/mets_0.xml
+Current range is: PHYS_0052,PHYS_0053,PHYS_0054,PHYS_0055,PHYS_0056,PHYS_0057,PHYS_0058,PHYS_0059,PHYS_0060,PHYS_0061
+Mets file chunk path: /ws_data/mets_5.xml
+Current range is: PHYS_0072,PHYS_0073,PHYS_0074,PHYS_0075,PHYS_0076,PHYS_0077,PHYS_0078,PHYS_0079,PHYS_0080,PHYS_0081
+Mets file chunk path: /ws_data/mets_7.xml
+Current range is: PHYS_0012,PHYS_0013,PHYS_0014,PHYS_0015,PHYS_0016,PHYS_0017,PHYS_0018,PHYS_0019,PHYS_0020,PHYS_0021
+Mets file chunk path: /ws_data/mets_1.xml
+[ff/1a7b3b] Submitted process > ocrd_cis_ocropy_binarize_0 (1)
+Current range is: PHYS_0042,PHYS_0043,PHYS_0044,PHYS_0045,PHYS_0046,PHYS_0047,PHYS_0048,PHYS_0049,PHYS_0050,PHYS_0051
+Mets file chunk path: /ws_data/mets_4.xml
+[55/a7505b] Submitted process > ocrd_cis_ocropy_binarize_0 (2)
+Current range is: PHYS_0022,PHYS_0023,PHYS_0024,PHYS_0025,PHYS_0026,PHYS_0027,PHYS_0028,PHYS_0029,PHYS_0030,PHYS_0031
+Mets file chunk path: /ws_data/mets_2.xml
+[09/0f6bf8] Submitted process > ocrd_cis_ocropy_binarize_0 (3)
+[e2/9756d2] Submitted process > ocrd_cis_ocropy_binarize_0 (4)
+[b6/baafb4] Submitted process > ocrd_cis_ocropy_binarize_0 (5)
+[06/f17993] Submitted process > ocrd_cis_ocropy_binarize_0 (6)
+[c1/a22216] Submitted process > ocrd_cis_ocropy_binarize_0 (7)
+[e3/5c78e9] Submitted process > ocrd_cis_ocropy_binarize_0 (8)
+[09/65ddf3] Submitted process > ocrd_anybaseocr_crop_1 (3)
+[43/cef758] Submitted process > ocrd_anybaseocr_crop_1 (1)
+[32/2ee699] Submitted process > ocrd_anybaseocr_crop_1 (2)
+[48/3e1265] Submitted process > ocrd_anybaseocr_crop_1 (4)
+[af/e3d80e] Submitted process > ocrd_anybaseocr_crop_1 (5)
+[5c/e80b3b] Submitted process > ocrd_anybaseocr_crop_1 (6)
+[83/709074] Submitted process > ocrd_anybaseocr_crop_1 (7)
+[7a/fbae0c] Submitted process > ocrd_anybaseocr_crop_1 (8)
+[35/efb9e6] Submitted process > ocrd_cis_ocropy_denoise_2 (1)
+[e8/c2a522] Submitted process > ocrd_cis_ocropy_denoise_2 (2)
+[92/2db717] Submitted process > ocrd_cis_ocropy_denoise_2 (3)
+[52/422b9f] Submitted process > ocrd_cis_ocropy_denoise_2 (4)
+[bf/7e7e22] Submitted process > ocrd_cis_ocropy_denoise_2 (5)
+[2c/6747ee] Submitted process > ocrd_cis_ocropy_denoise_2 (6)
+[ea/d02855] Submitted process > ocrd_cis_ocropy_denoise_2 (7)
+[4f/d0b5d7] Submitted process > ocrd_cis_ocropy_denoise_2 (8)
+[5e/7da9b5] Submitted process > ocrd_cis_ocropy_deskew_3 (1)
+[e1/f629f1] Submitted process > ocrd_cis_ocropy_deskew_3 (2)
+[1f/8de177] Submitted process > ocrd_cis_ocropy_deskew_3 (3)
+[60/a57c90] Submitted process > ocrd_cis_ocropy_deskew_3 (4)
+[b8/7f5698] Submitted process > ocrd_cis_ocropy_deskew_3 (5)
+[7a/affa26] Submitted process > ocrd_cis_ocropy_deskew_3 (6)
+[ab/0010e0] Submitted process > ocrd_cis_ocropy_deskew_3 (7)
+[27/0beb1d] Submitted process > ocrd_cis_ocropy_deskew_3 (8)
+[a2/0b158f] Submitted process > ocrd_tesserocr_segment_region_4 (1)
+[77/0b8d14] Submitted process > ocrd_tesserocr_segment_region_4 (2)
+[55/425f79] Submitted process > ocrd_tesserocr_segment_region_4 (3)
+[b9/7142d6] Submitted process > ocrd_tesserocr_segment_region_4 (4)
+[e3/cc320a] Submitted process > ocrd_tesserocr_segment_region_4 (5)
+[8b/9f425b] Submitted process > ocrd_tesserocr_segment_region_4 (6)
+[d1/504eef] Submitted process > ocrd_tesserocr_segment_region_4 (7)
+[1b/0eb4c1] Submitted process > ocrd_tesserocr_segment_region_4 (8)
+[56/77e861] Submitted process > ocrd_segment_repair_5 (1)
+[42/155202] Submitted process > ocrd_segment_repair_5 (2)
+[35/9cd8e3] Submitted process > ocrd_segment_repair_5 (3)
+[85/181ea0] Submitted process > ocrd_segment_repair_5 (4)
+[e6/407fcd] Submitted process > ocrd_segment_repair_5 (5)
+[02/6d4bf9] Submitted process > ocrd_segment_repair_5 (6)
+[36/06b104] Submitted process > ocrd_segment_repair_5 (7)
+[c6/720db8] Submitted process > ocrd_segment_repair_5 (8)
+[4a/e21600] Submitted process > ocrd_cis_ocropy_clip_6 (1)
+[7c/a28aa5] Submitted process > ocrd_cis_ocropy_clip_6 (2)
+[1c/d04638] Submitted process > ocrd_cis_ocropy_clip_6 (3)
+[92/de667f] Submitted process > ocrd_cis_ocropy_clip_6 (4)
+[f9/05433f] Submitted process > ocrd_cis_ocropy_clip_6 (5)
+[c3/e98613] Submitted process > ocrd_cis_ocropy_clip_6 (6)
+[12/5c18e3] Submitted process > ocrd_cis_ocropy_clip_6 (7)
+[d4/5ccf20] Submitted process > ocrd_cis_ocropy_clip_6 (8)
+[6c/0aef68] Submitted process > ocrd_cis_ocropy_segment_7 (1)
+[5b/9ee44d] Submitted process > ocrd_cis_ocropy_segment_7 (2)
+[59/9da9af] Submitted process > ocrd_cis_ocropy_segment_7 (3)
+[ca/c073ac] Submitted process > ocrd_cis_ocropy_segment_7 (4)
+[ad/5ee8c0] Submitted process > ocrd_cis_ocropy_segment_7 (5)
+[0f/626552] Submitted process > ocrd_cis_ocropy_segment_7 (6)
+[7d/b8f547] Submitted process > ocrd_cis_ocropy_segment_7 (7)
+[4a/2a2159] Submitted process > ocrd_cis_ocropy_segment_7 (8)
+[c8/e9b05b] Submitted process > ocrd_cis_ocropy_dewarp_8 (1)
+[2b/b94345] Submitted process > ocrd_cis_ocropy_dewarp_8 (2)
+[0b/3edb83] Submitted process > ocrd_cis_ocropy_dewarp_8 (3)
+[43/d2d94c] Submitted process > ocrd_cis_ocropy_dewarp_8 (4)
+[f9/300202] Submitted process > ocrd_cis_ocropy_dewarp_8 (5)
+[33/ed523e] Submitted process > ocrd_cis_ocropy_dewarp_8 (6)
+[b2/5e3613] Submitted process > ocrd_cis_ocropy_dewarp_8 (7)
+[1d/6bcf45] Submitted process > ocrd_cis_ocropy_dewarp_8 (8)
+[38/165b4d] Submitted process > ocrd_tesserocr_recognize_9 (1)
+[29/c8fd25] Submitted process > ocrd_tesserocr_recognize_9 (2)
+[f8/8925ac] Submitted process > ocrd_tesserocr_recognize_9 (3)
+[47/a1e6f2] Submitted process > ocrd_tesserocr_recognize_9 (4)
+[72/a3b7b3] Submitted process > ocrd_tesserocr_recognize_9 (5)
+[65/867e4c] Submitted process > ocrd_tesserocr_recognize_9 (6)
+ERROR ~ Error executing process > 'ocrd_tesserocr_recognize_9 (5)'
+
+Caused by:
+  Process `ocrd_tesserocr_recognize_9 (5)` terminated with an error exit status (135)
+
+Command executed:
+
+  singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/e9ad497d-33e1-4929-bf79-a302bd6e6a63:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif ocrd-tesserocr-recognize -w /ws_data -m /ws_data/mets_4.xml --page-id PHYS_0042,PHYS_0043,PHYS_0044,PHYS_0045,PHYS_0046,PHYS_0047,PHYS_0048,PHYS_0049,PHYS_0050,PHYS_0051 -I OCR-D-DEWARP -O OCR-D-OCR -P model Fraktur
+
+Command exit status:
+  135
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: 542935 Bus error               singularity exec --bind /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/e9ad497d-33e1-4929-bf79-a302bd6e6a63:/ws_data --bind /scratch1/users/mmustaf/ocrd_models:/usr/local/share --env OCRD_METS_CACHING=false /scratch1/users/mmustaf/ocrd_all_maximum_image.sif ocrd-tesserocr-recognize -w /ws_data -m /ws_data/mets_4.xml --page-id PHYS_0042,PHYS_0043,PHYS_0044,PHYS_0045,PHYS_0046,PHYS_0047,PHYS_0048,PHYS_0049,PHYS_0050,PHYS_0051 -I OCR-D-DEWARP -O OCR-D-OCR -P model Fraktur
+
+Work dir:
+  /scratch1/users/mmustaf/operandi/slurm_workspaces/c6e932e0-7cec-4169-8798-8a803611e2fe/work/72/a3b7b3b0c0accbf46ed29ccd43cf7e
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+WARN: Killing running tasks (7)
