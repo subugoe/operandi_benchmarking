@@ -223,14 +223,12 @@ def main():
             "default_workflow"
         ],
         use_workspaces=[
-            "VD16",
-            "VD17",
-            "VD18"
+            "VD16"
         ],
         use_file_groups=[
             "MAX"
         ],
-        use_cpus=[1, 2, 4, 8],
+        use_cpus=[8],
         use_ram=[32]
     )
     operandi_benchmarking.run_workflow_jobs()
