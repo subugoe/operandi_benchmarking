@@ -56,7 +56,7 @@ process split_page_ranges {
         """
 }
 
-process ocrd_olena_binarize_0 {
+process ocrd_cis_ocropy_binarize_0 {
     debug true
     maxForks params.forks
     cpus params.cpus_per_fork
@@ -74,11 +74,11 @@ process ocrd_olena_binarize_0 {
 
     script:
         """
-        ${params.env_wrapper_cmd_step0} ocrd-olena-binarize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group}
+        ${params.env_wrapper_cmd_step0} ocrd-cis-ocropy-binarize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group}
         """
 }
 
-process ocrd_tesserocr_recognize_1 {
+process ocrd_tesserocr_segment_1 {
     debug true
     maxForks params.forks
     cpus params.cpus_per_fork
@@ -96,11 +96,11 @@ process ocrd_tesserocr_recognize_1 {
 
     script:
         """
-        ${params.env_wrapper_cmd_step1} ocrd-tesserocr-recognize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group}
+        ${params.env_wrapper_cmd_step1} ocrd-tesserocr-segment -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group}
         """
 }
 
-process ocrd_fileformat_transform_2 {
+process ocrd_kraken_recognize_2 {
     debug true
     maxForks params.forks
     cpus params.cpus_per_fork
@@ -118,7 +118,7 @@ process ocrd_fileformat_transform_2 {
 
     script:
         """
-        ${params.env_wrapper_cmd_step2} ocrd-fileformat-transform -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group} -p '{"from-to": "page alto"}'
+        ${params.env_wrapper_cmd_step2} ocrd-kraken-recognize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group} -p '{"model": "typewriter.mlmodel"}'
         """
 }
 
@@ -126,7 +126,7 @@ workflow {
     main:
         ch_range_multipliers = Channel.of(0..params.forks.intValue()-1)
         split_page_ranges(ch_range_multipliers)
-        ocrd_olena_binarize_0(split_page_ranges.out[0], split_page_ranges.out[1], params.input_file_group, "OCR-D-BIN")
-        ocrd_tesserocr_recognize_1(ocrd_olena_binarize_0.out[0], ocrd_olena_binarize_0.out[1], "OCR-D-BIN", "OCR-D-OCR")
-        ocrd_fileformat_transform_2(ocrd_tesserocr_recognize_1.out[0], ocrd_tesserocr_recognize_1.out[1], "OCR-D-OCR", "OCR-D-PAGE2ALTO")
+        ocrd_cis_ocropy_binarize_0(split_page_ranges.out[0], split_page_ranges.out[1], params.input_file_group, "OCR-D-BIN")
+        ocrd_tesserocr_segment_1(ocrd_cis_ocropy_binarize_0.out[0], ocrd_cis_ocropy_binarize_0.out[1], "OCR-D-BIN", "OCR-D-SEG")
+        ocrd_kraken_recognize_2(ocrd_tesserocr_segment_1.out[0], ocrd_tesserocr_segment_1.out[1], "OCR-D-SEG", "OCR-D-OCR")
 }

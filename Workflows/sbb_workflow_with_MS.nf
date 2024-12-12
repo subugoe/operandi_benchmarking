@@ -13,8 +13,6 @@ params.cpus_per_fork = (params.cpus.toInteger() / params.forks.toInteger()).intV
 params.ram_per_fork = sprintf("%dGB", (params.ram.toInteger() / params.forks.toInteger()).intValue())
 params.env_wrapper_cmd_core = "null"
 params.env_wrapper_cmd_step0 = "null"
-params.env_wrapper_cmd_step1 = "null"
-params.env_wrapper_cmd_step2 = "null"
 
 log.info """\
     OPERANDI HPC - Nextflow Workflow
@@ -31,8 +29,6 @@ log.info """\
     ram_per_fork: ${params.ram_per_fork}
     env_wrapper_cmd_core: ${params.env_wrapper_cmd_core}
     env_wrapper_cmd_step0: ${params.env_wrapper_cmd_step0}
-    env_wrapper_cmd_step1: ${params.env_wrapper_cmd_step1}
-    env_wrapper_cmd_step2: ${params.env_wrapper_cmd_step2}
     """.stripIndent()
 
 process split_page_ranges {
@@ -56,7 +52,7 @@ process split_page_ranges {
         """
 }
 
-process ocrd_olena_binarize_0 {
+process ocrd_tesserocr_recognize_0 {
     debug true
     maxForks params.forks
     cpus params.cpus_per_fork
@@ -74,51 +70,7 @@ process ocrd_olena_binarize_0 {
 
     script:
         """
-        ${params.env_wrapper_cmd_step0} ocrd-olena-binarize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group}
-        """
-}
-
-process ocrd_tesserocr_recognize_1 {
-    debug true
-    maxForks params.forks
-    cpus params.cpus_per_fork
-    memory params.ram_per_fork
-
-    input:
-        val mets_path
-        val page_range
-        val input_group
-        val output_group
-
-    output:
-        val mets_path
-        val page_range
-
-    script:
-        """
-        ${params.env_wrapper_cmd_step1} ocrd-tesserocr-recognize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group}
-        """
-}
-
-process ocrd_fileformat_transform_2 {
-    debug true
-    maxForks params.forks
-    cpus params.cpus_per_fork
-    memory params.ram_per_fork
-
-    input:
-        val mets_path
-        val page_range
-        val input_group
-        val output_group
-
-    output:
-        val mets_path
-        val page_range
-
-    script:
-        """
-        ${params.env_wrapper_cmd_step2} ocrd-fileformat-transform -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group} -p '{"from-to": "page alto"}'
+        ${params.env_wrapper_cmd_step0} ocrd-tesserocr-recognize -U ${params.mets_socket_path} -w ${params.workspace_dir} -m ${mets_path} --page-id ${page_range} -I ${input_group} -O ${output_group} -p '{"segmentation_level": "region", "textequiv_level": "word", "find_tables": true, "model": "deu"}'
         """
 }
 
@@ -126,7 +78,5 @@ workflow {
     main:
         ch_range_multipliers = Channel.of(0..params.forks.intValue()-1)
         split_page_ranges(ch_range_multipliers)
-        ocrd_olena_binarize_0(split_page_ranges.out[0], split_page_ranges.out[1], params.input_file_group, "OCR-D-BIN")
-        ocrd_tesserocr_recognize_1(ocrd_olena_binarize_0.out[0], ocrd_olena_binarize_0.out[1], "OCR-D-BIN", "OCR-D-OCR")
-        ocrd_fileformat_transform_2(ocrd_tesserocr_recognize_1.out[0], ocrd_tesserocr_recognize_1.out[1], "OCR-D-OCR", "OCR-D-PAGE2ALTO")
+        ocrd_tesserocr_recognize_0(split_page_ranges.out[0], split_page_ranges.out[1], params.input_file_group, "OCR-D-OCR")
 }
