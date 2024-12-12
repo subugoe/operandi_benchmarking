@@ -18,8 +18,10 @@ NF_WORKFLOWS = {
     "default_workflow_with_MS":"./Workflows/default_workflow_with_MS.nf",
     "odem_workflow":"./Workflows/odem_workflow.nf",
     "odem_workflow_with_MS":"./Workflows/odem_workflow_with_MS.nf",
-    "sbb_workflow1_with_MS":"./Workflows/sbb_workflow1_with_MS.nf",
-    "sbb_workflow2_with_MS":"./Workflows/sbb_workflow2_with_MS.nf"
+    "sbb_workflow":"./Workflows/sbb_workflow.nf",
+    "sbb_workflow_with_MS":"./Workflows/sbb_workflow_with_MS.nf",
+    "sbb_workflow2_with_MS":"./Workflows/sbb_workflow2_with_MS.nf",
+    "sbb_workflow3_with_MS":"./Workflows/sbb_workflow3_with_MS.nf"
 }
 
 OCRD_WORKSPACE_ZIPS = {
@@ -125,17 +127,17 @@ class OperandiBenchmark:
                 workspace_zip_path = OCRD_WORKSPACE_ZIPS[vd_workspace]
                 for file_group in use_file_groups:
                     for cpu_amount in use_cpus:
-                        for ram_amount in use_ram:
-                            wf_job_data = WorkflowJobData(
-                                vd_workspace=vd_workspace,
-                                nf_workflow_path=nf_workflow_path,
-                                workspace_zip_path=workspace_zip_path,
-                                input_file_grp=file_group,
-                                cpus=cpu_amount,
-                                ram=ram_amount
-                            )
-                            self.workflow_jobs_data.append(wf_job_data)
-                            self.logger.debug(f"Created workflow job data: {wf_job_data}")
+                        ram_amount = cpu_amount * 8
+                        wf_job_data = WorkflowJobData(
+                            vd_workspace=vd_workspace,
+                            nf_workflow_path=nf_workflow_path,
+                            workspace_zip_path=workspace_zip_path,
+                            input_file_grp=file_group,
+                            cpus=cpu_amount,
+                            ram=ram_amount
+                        )
+                        self.workflow_jobs_data.append(wf_job_data)
+                        self.logger.debug(f"Created workflow job data: {wf_job_data}")
 
     def _run_workflow_job(self, wf_job_data: WorkflowJobData) -> WorkflowJobData:
         workflow_id = self.operandi_client.post_workflow(wf_job_data.nf_workflow_path)
@@ -220,20 +222,20 @@ def main():
     operandi_benchmarking = OperandiBenchmark(OPERANDI_SERVER_ADDR, OPERANDI_USERNAME, OPERANDI_PASSWORD)
     operandi_benchmarking.prepare_workflow_jobs_data(
         use_workflows=[
-            "default_workflow"
+            "default_workflow",
+            "default_workflow_with_MS",
+            "odem_workflow",
+            "odem_workflow_with_MS",
+            "sbb_workflow",
+            "sbb_workflow_with_MS",
         ],
-        use_workspaces=[
-            "VD16"
-        ],
-        use_file_groups=[
-            "MAX"
-        ],
-        use_cpus=[8],
-        use_ram=[32]
+        use_workspaces=["VD16", "VD17", "VD18", "Antiqua", "Fraktur"],
+        use_file_groups=["MAX"],
+        use_cpus=[1, 2, 4, 8, 16, 32],
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()
-    # operandi_benchmarking.download_all_results()
+    operandi_benchmarking.download_all_results()
 
 if __name__ == '__main__':
     main()

@@ -54,13 +54,13 @@ class OperandiClient:
         return workflow_id
 
     def post_workflow_job(
-            self,
-            workflow_id: str,
-            workspace_id: str,
-            input_file_grp: str = "DEFAULT",
-            mets_base: str = "mets.xml",
-            cpus: int = 8,
-            ram: int = 32
+        self,
+        workflow_id: str,
+        workspace_id: str,
+        input_file_grp: str = "DEFAULT",
+        mets_base: str = "mets.xml",
+        cpus: int = 8,
+        ram: int = 32
     ) -> str:
         self.logger.info(f"Posting workflow job with workflow id: {workflow_id} on workspace id: {workspace_id}")
         request_json = {
@@ -68,6 +68,7 @@ class OperandiClient:
             "workflow_args": {
                 "workspace_id": workspace_id,
                 "input_file_grp": input_file_grp,
+                "preserve_file_grps": "MAX,OCR-D-OCR",
                 "mets_name": mets_base
             },
             "sbatch_args": {
