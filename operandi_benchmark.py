@@ -127,6 +127,8 @@ class OperandiBenchmark:
                 for file_group in use_file_groups:
                     for cpu_amount in use_cpus:
                         ram_amount = cpu_amount * 8
+                        if ram_amount < 32:
+                            ram_amount = 32
                         wf_job_data = WorkflowJobData(
                             vd_workspace=vd_workspace,
                             nf_workflow_path=nf_workflow_path,
