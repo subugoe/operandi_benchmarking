@@ -117,8 +117,7 @@ class OperandiBenchmark:
         use_workflows: List[str],
         use_workspaces: List[str],
         use_file_groups: List[str],
-        use_cpus: List[int],
-        use_ram: List[int]
+        use_cpus: List[int]
     ):
         self._verify_existence_files(use_workflows, use_workspaces, use_file_groups)
         for workflow in use_workflows:
