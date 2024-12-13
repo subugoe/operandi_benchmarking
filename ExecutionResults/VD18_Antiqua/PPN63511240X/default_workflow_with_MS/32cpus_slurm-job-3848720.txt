@@ -1,0 +1,726 @@
+================================================================================
+JobID = 3848720
+User = u12198, Account = project_pwieder_ocr_nhr
+Partition = standard96:shared, Nodelist = gcn2864
+================================================================================
+gcn2864
+Ocrd total images in request: 1
+Ocrd images: 
+ocrd_all_maximum_image.sif 
+Project dir ocrd models: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/ocrd_models
+Project dir processor sifs: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/ocrd_processor_sifs
+Node dir ocrd models: /local/u12198_3848720/ocrd_models
+Node dir processor sifs: /local/u12198_3848720/ocrd_processor_sifs
+
+Workspace dir: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df
+Use mets server: true
+
+Nf run command with Node placeholders: nextflow run /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/default_workflow_with_MS.nf -ansi-log false -with-report -with-trace --input_file_group MAX --mets_path /ws_data/mets.xml --mets_socket_path /ws_data/mets_server.sock --workspace_dir /ws_data --pages 85 --env_wrapper_cmd_core PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=false PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step0 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step1 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step2 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step3 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step4 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step5 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step6 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step7 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --cpus 32 --ram 256 --forks 32
+
+Nf run command without placeholders: nextflow run /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/default_workflow_with_MS.nf -ansi-log false -with-report -with-trace --input_file_group MAX --mets_path /ws_data/mets.xml --mets_socket_path /ws_data/mets_server.sock --workspace_dir /ws_data --pages 85 --env_wrapper_cmd_core 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=false /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step0 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step1 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step2 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step3 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step4 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step5 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step6 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step7 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --cpus 32 --ram 256 --forks 32
+
+Replacing ocrd core NODE_DIR_PROCESSOR_SIFS
+
+Scratch base found/created at: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces
+Ocrd models directory found at: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/ocrd_models
+Unzipping /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06.zip to: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06
+Removing zip: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06.zip
+
+Successfully transferred ocrd models to node local storage
+Creating non-existing processor sif images dir: /local/u12198_3848720/ocrd_processor_sifs
+Transferring ocrd processor image to the compute node: ocrd_all_maximum_image.sif
+Ocrd processor image was transferred to: /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+
+ocrd, version 2.70.0
+
+Starting the mets server for the specific workspace in the background
+Executing the nextflow workflow with mets server
+Nextflow 24.10.2 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+Launching `/mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/default_workflow_with_MS.nf` [pensive_ritchie] DSL2 - revision: 11e43745da
+OPERANDI HPC - Nextflow Workflow
+===================================================
+input_file_group: MAX
+mets_path: /ws_data/mets.xml
+workspace_dir: /ws_data
+pages: 85
+mets_socket_path: /ws_data/mets_server.sock
+cpus: 32
+ram: 256
+forks: 32
+cpus_per_fork: 1
+ram_per_fork: 8GB
+env_wrapper_cmd_core: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=false /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step0: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step1: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step2: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step3: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step4: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step5: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step6: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step7: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data --bind /local/u12198_3848720/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+
+[9c/6a155b] Submitted process > split_page_ranges (4)
+[a3/8d457a] Submitted process > split_page_ranges (10)
+[4d/b363b5] Submitted process > split_page_ranges (21)
+[77/651283] Submitted process > split_page_ranges (19)
+[8a/d831e8] Submitted process > split_page_ranges (14)
+[54/9ab161] Submitted process > split_page_ranges (11)
+[ef/24236b] Submitted process > split_page_ranges (32)
+[52/864627] Submitted process > split_page_ranges (23)
+[1d/d8ca0b] Submitted process > split_page_ranges (30)
+[dc/24ff9e] Submitted process > split_page_ranges (5)
+[fd/872729] Submitted process > split_page_ranges (20)
+[38/73eb90] Submitted process > split_page_ranges (6)
+[7d/e4a6a2] Submitted process > split_page_ranges (17)
+[c0/e03165] Submitted process > split_page_ranges (31)
+[1d/367a41] Submitted process > split_page_ranges (15)
+[3e/9c06f4] Submitted process > split_page_ranges (16)
+[2f/bebc4e] Submitted process > split_page_ranges (28)
+[a7/5c9a01] Submitted process > split_page_ranges (2)
+[e9/589d11] Submitted process > split_page_ranges (25)
+[29/64f09c] Submitted process > split_page_ranges (8)
+[9f/f31b67] Submitted process > split_page_ranges (18)
+[99/d5c766] Submitted process > split_page_ranges (27)
+[d9/f0a292] Submitted process > split_page_ranges (13)
+[90/68cc04] Submitted process > split_page_ranges (7)
+[7c/b1f02c] Submitted process > split_page_ranges (22)
+[ec/5e74ad] Submitted process > split_page_ranges (12)
+[f8/cb247f] Submitted process > split_page_ranges (9)
+[ea/995961] Submitted process > split_page_ranges (24)
+[11/886332] Submitted process > split_page_ranges (1)
+[9d/a0ec56] Submitted process > split_page_ranges (29)
+[4c/950b3e] Submitted process > split_page_ranges (26)
+[f8/3adcae] Submitted process > split_page_ranges (3)
+Current range is: PHYS_0066,PHYS_0067
+Current range is: PHYS_0040,PHYS_0041,PHYS_0042
+[06/0aeca9] Submitted process > ocrd_cis_ocropy_binarize_0 (1)
+[2b/1fa4f1] Submitted process > ocrd_cis_ocropy_binarize_0 (2)
+Current range is: PHYS_0084,PHYS_0085
+[b5/842159] Submitted process > ocrd_cis_ocropy_binarize_0 (3)
+Current range is: PHYS_0061,PHYS_0062,PHYS_0063
+[3e/0523fc] Submitted process > ocrd_cis_ocropy_binarize_0 (4)
+Current range is: PHYS_0031,PHYS_0032,PHYS_0033
+[86/ba965e] Submitted process > ocrd_cis_ocropy_binarize_0 (5)
+Current range is: PHYS_0010,PHYS_0011,PHYS_0012
+[35/0471d5] Submitted process > ocrd_cis_ocropy_binarize_0 (6)
+Current range is: PHYS_0013,PHYS_0014,PHYS_0015
+[bf/8b2ff0] Submitted process > ocrd_cis_ocropy_binarize_0 (7)
+Current range is: PHYS_0043,PHYS_0044,PHYS_0045
+[d9/804392] Submitted process > ocrd_cis_ocropy_binarize_0 (8)
+Current range is: PHYS_0016,PHYS_0017,PHYS_0018
+[33/76cc16] Submitted process > ocrd_cis_ocropy_binarize_0 (9)
+Current range is: PHYS_0055,PHYS_0056,PHYS_0057
+Current range is: PHYS_0058,PHYS_0059,PHYS_0060
+[8b/89f949] Submitted process > ocrd_cis_ocropy_binarize_0 (10)
+Current range is: PHYS_0082,PHYS_0083
+[18/8c3d82] Submitted process > ocrd_cis_ocropy_binarize_0 (11)
+[63/c669ef] Submitted process > ocrd_cis_ocropy_binarize_0 (12)
+Current range is: PHYS_0076,PHYS_0077
+[c4/e9afde] Submitted process > ocrd_cis_ocropy_binarize_0 (13)
+Current range is: PHYS_0028,PHYS_0029,PHYS_0030
+Current range is: PHYS_0080,PHYS_0081
+[7b/67a983] Submitted process > ocrd_cis_ocropy_binarize_0 (14)
+[bc/1e2f39] Submitted process > ocrd_cis_ocropy_binarize_0 (15)
+Current range is: PHYS_0074,PHYS_0075
+[7a/7d9644] Submitted process > ocrd_cis_ocropy_binarize_0 (16)
+Current range is: PHYS_0049,PHYS_0050,PHYS_0051
+[8e/60220f] Submitted process > ocrd_cis_ocropy_binarize_0 (17)
+Current range is: PHYS_0046,PHYS_0047,PHYS_0048
+Current range is: PHYS_0034,PHYS_0035,PHYS_0036
+[82/9c24d1] Submitted process > ocrd_cis_ocropy_binarize_0 (18)
+Current range is: PHYS_0025,PHYS_0026,PHYS_0027
+[01/6d1b31] Submitted process > ocrd_cis_ocropy_binarize_0 (19)
+[b6/eccc43] Submitted process > ocrd_cis_ocropy_binarize_0 (20)
+Current range is: PHYS_0004,PHYS_0005,PHYS_0006
+Current range is: PHYS_0007,PHYS_0008,PHYS_0009
+[93/dd25a6] Submitted process > ocrd_cis_ocropy_binarize_0 (21)
+[9a/915b66] Submitted process > ocrd_cis_ocropy_binarize_0 (22)
+Current range is: PHYS_0070,PHYS_0071
+Current range is: PHYS_0022,PHYS_0023,PHYS_0024
+[01/911073] Submitted process > ocrd_cis_ocropy_binarize_0 (23)
+[90/ca6bdf] Submitted process > ocrd_cis_ocropy_binarize_0 (24)
+Current range is: PHYS_0019,PHYS_0020,PHYS_0021
+Current range is: PHYS_0064,PHYS_0065
+[71/0b4532] Submitted process > ocrd_cis_ocropy_binarize_0 (25)
+[0a/ae960a] Submitted process > ocrd_cis_ocropy_binarize_0 (26)
+Current range is: PHYS_0068,PHYS_0069
+Current range is: PHYS_0052,PHYS_0053,PHYS_0054
+[fc/c3beea] Submitted process > ocrd_cis_ocropy_binarize_0 (27)
+Current range is: PHYS_0037,PHYS_0038,PHYS_0039
+Current range is: PHYS_0001,PHYS_0002,PHYS_0003
+[cd/7e5d0b] Submitted process > ocrd_cis_ocropy_binarize_0 (28)
+[28/b05420] Submitted process > ocrd_cis_ocropy_binarize_0 (29)
+[c1/8c66c7] Submitted process > ocrd_cis_ocropy_binarize_0 (30)
+Current range is: PHYS_0078,PHYS_0079
+[fc/58591e] Submitted process > ocrd_cis_ocropy_binarize_0 (31)
+Current range is: PHYS_0072,PHYS_0073
+[8a/3a4c97] Submitted process > ocrd_cis_ocropy_binarize_0 (32)
+[27/7b5c30] Submitted process > ocrd_anybaseocr_crop_1 (1)
+[93/901511] Submitted process > ocrd_anybaseocr_crop_1 (2)
+[dc/ea62ff] Submitted process > ocrd_anybaseocr_crop_1 (3)
+[6f/18c6b4] Submitted process > ocrd_anybaseocr_crop_1 (4)
+[0a/2b2efb] Submitted process > ocrd_anybaseocr_crop_1 (5)
+[3f/3d23f9] Submitted process > ocrd_anybaseocr_crop_1 (6)
+[d7/d39fdc] Submitted process > ocrd_anybaseocr_crop_1 (7)
+[19/f7fcf8] Submitted process > ocrd_anybaseocr_crop_1 (8)
+[a7/8409fd] Submitted process > ocrd_anybaseocr_crop_1 (9)
+[76/0c6c2f] Submitted process > ocrd_anybaseocr_crop_1 (10)
+[88/ca8171] Submitted process > ocrd_anybaseocr_crop_1 (11)
+[e3/217498] Submitted process > ocrd_anybaseocr_crop_1 (12)
+[8c/cf7718] Submitted process > ocrd_anybaseocr_crop_1 (13)
+[55/669df8] Submitted process > ocrd_anybaseocr_crop_1 (14)
+[d3/e6c9e5] Submitted process > ocrd_anybaseocr_crop_1 (15)
+[9b/351e3a] Submitted process > ocrd_anybaseocr_crop_1 (16)
+[0b/bb2293] Submitted process > ocrd_anybaseocr_crop_1 (17)
+[34/e1f398] Submitted process > ocrd_anybaseocr_crop_1 (18)
+[aa/8e32f3] Submitted process > ocrd_anybaseocr_crop_1 (19)
+[af/24c131] Submitted process > ocrd_anybaseocr_crop_1 (20)
+[18/7f720c] Submitted process > ocrd_anybaseocr_crop_1 (21)
+[c6/fc8b6a] Submitted process > ocrd_anybaseocr_crop_1 (22)
+[66/1b60dd] Submitted process > ocrd_anybaseocr_crop_1 (23)
+[81/c99fef] Submitted process > ocrd_anybaseocr_crop_1 (24)
+[00/74b3cb] Submitted process > ocrd_anybaseocr_crop_1 (25)
+[81/861e44] Submitted process > ocrd_anybaseocr_crop_1 (26)
+[a2/9b1cf1] Submitted process > ocrd_anybaseocr_crop_1 (27)
+[d3/d25632] Submitted process > ocrd_anybaseocr_crop_1 (28)
+[78/c2dd5a] Submitted process > ocrd_anybaseocr_crop_1 (29)
+[c8/b1d341] Submitted process > ocrd_anybaseocr_crop_1 (30)
+[56/a1c5ed] Submitted process > ocrd_anybaseocr_crop_1 (31)
+[ad/f5b9c5] Submitted process > ocrd_anybaseocr_crop_1 (32)
+[ab/01a212] Submitted process > ocrd_skimage_binarize_2 (1)
+[83/510efc] Submitted process > ocrd_skimage_binarize_2 (2)
+[1c/5e38d5] Submitted process > ocrd_skimage_binarize_2 (3)
+[91/197764] Submitted process > ocrd_skimage_binarize_2 (4)
+[0c/7dec14] Submitted process > ocrd_skimage_binarize_2 (5)
+[77/760670] Submitted process > ocrd_skimage_binarize_2 (6)
+[4e/3ae8f1] Submitted process > ocrd_skimage_binarize_2 (7)
+[39/928280] Submitted process > ocrd_skimage_binarize_2 (8)
+[d2/dd90d1] Submitted process > ocrd_skimage_binarize_2 (9)
+[2c/8a7827] Submitted process > ocrd_skimage_binarize_2 (10)
+[86/3de3d6] Submitted process > ocrd_skimage_binarize_2 (11)
+[08/6b44dd] Submitted process > ocrd_skimage_binarize_2 (12)
+[0b/708a2f] Submitted process > ocrd_skimage_binarize_2 (13)
+[32/a78c14] Submitted process > ocrd_skimage_binarize_2 (14)
+[fc/8b5b61] Submitted process > ocrd_skimage_binarize_2 (15)
+[a7/7471ae] Submitted process > ocrd_skimage_binarize_2 (16)
+[31/d32e16] Submitted process > ocrd_skimage_binarize_2 (17)
+[c4/4847a7] Submitted process > ocrd_skimage_binarize_2 (18)
+[2d/66d426] Submitted process > ocrd_skimage_binarize_2 (19)
+[ac/fec0b8] Submitted process > ocrd_skimage_binarize_2 (20)
+[e2/b1d929] Submitted process > ocrd_skimage_binarize_2 (21)
+[fc/7018d5] Submitted process > ocrd_skimage_binarize_2 (22)
+[d6/1d85b9] Submitted process > ocrd_skimage_binarize_2 (23)
+[6e/bd9a53] Submitted process > ocrd_skimage_binarize_2 (24)
+[39/c93d85] Submitted process > ocrd_skimage_binarize_2 (25)
+[92/95ad02] Submitted process > ocrd_skimage_binarize_2 (26)
+[c3/770a87] Submitted process > ocrd_skimage_binarize_2 (27)
+[6e/c3f83b] Submitted process > ocrd_skimage_binarize_2 (28)
+[29/5dd473] Submitted process > ocrd_skimage_binarize_2 (29)
+[6c/bc0731] Submitted process > ocrd_skimage_binarize_2 (30)
+[61/c9ac65] Submitted process > ocrd_skimage_binarize_2 (31)
+[76/9c22d7] Submitted process > ocrd_skimage_binarize_2 (32)
+[dc/47a0e1] Submitted process > ocrd_skimage_denoise_3 (1)
+[c7/b8df49] Submitted process > ocrd_skimage_denoise_3 (2)
+[2d/902373] Submitted process > ocrd_skimage_denoise_3 (3)
+[f6/8a1d32] Submitted process > ocrd_skimage_denoise_3 (4)
+[26/f8a852] Submitted process > ocrd_skimage_denoise_3 (5)
+[13/c7d58a] Submitted process > ocrd_skimage_denoise_3 (6)
+[ca/339810] Submitted process > ocrd_skimage_denoise_3 (7)
+[e1/bcc218] Submitted process > ocrd_skimage_denoise_3 (8)
+[6c/10de30] Submitted process > ocrd_skimage_denoise_3 (9)
+[c3/d25f92] Submitted process > ocrd_skimage_denoise_3 (10)
+[2d/9f7f66] Submitted process > ocrd_skimage_denoise_3 (11)
+[77/a86a43] Submitted process > ocrd_skimage_denoise_3 (12)
+[3e/69b4db] Submitted process > ocrd_skimage_denoise_3 (13)
+[3e/e29515] Submitted process > ocrd_skimage_denoise_3 (14)
+[62/8c603d] Submitted process > ocrd_skimage_denoise_3 (15)
+[d4/a8a788] Submitted process > ocrd_skimage_denoise_3 (16)
+[75/e334d2] Submitted process > ocrd_skimage_denoise_3 (17)
+[27/10edb1] Submitted process > ocrd_skimage_denoise_3 (18)
+[b7/e2ec1f] Submitted process > ocrd_skimage_denoise_3 (19)
+[82/023dd3] Submitted process > ocrd_skimage_denoise_3 (20)
+[44/4d6aed] Submitted process > ocrd_skimage_denoise_3 (21)
+[cc/c14870] Submitted process > ocrd_skimage_denoise_3 (22)
+[33/7a5bc0] Submitted process > ocrd_skimage_denoise_3 (23)
+[43/746ade] Submitted process > ocrd_skimage_denoise_3 (24)
+[09/f153a8] Submitted process > ocrd_skimage_denoise_3 (25)
+[1d/8403f3] Submitted process > ocrd_skimage_denoise_3 (26)
+[98/15d308] Submitted process > ocrd_skimage_denoise_3 (27)
+[30/a65a99] Submitted process > ocrd_skimage_denoise_3 (28)
+[d1/eafa9d] Submitted process > ocrd_skimage_denoise_3 (29)
+[66/32db3e] Submitted process > ocrd_skimage_denoise_3 (30)
+[a8/3f1b65] Submitted process > ocrd_tesserocr_deskew_4 (1)
+[6e/1ed167] Submitted process > ocrd_tesserocr_deskew_4 (2)
+[1c/bc0480] Submitted process > ocrd_tesserocr_deskew_4 (3)
+[06/a7c523] Submitted process > ocrd_tesserocr_deskew_4 (4)
+[c2/ace395] Submitted process > ocrd_tesserocr_deskew_4 (5)
+[b2/499b15] Submitted process > ocrd_tesserocr_deskew_4 (6)
+[f9/ca0a91] Submitted process > ocrd_skimage_denoise_3 (31)
+[46/e708fd] Submitted process > ocrd_skimage_denoise_3 (32)
+[cb/b445fa] Submitted process > ocrd_tesserocr_deskew_4 (7)
+[8c/228142] Submitted process > ocrd_tesserocr_deskew_4 (8)
+[be/d861a4] Submitted process > ocrd_tesserocr_deskew_4 (9)
+[cf/90a6bf] Submitted process > ocrd_tesserocr_deskew_4 (10)
+[3a/071137] Submitted process > ocrd_tesserocr_deskew_4 (11)
+[ea/67113e] Submitted process > ocrd_tesserocr_deskew_4 (12)
+[26/074351] Submitted process > ocrd_tesserocr_deskew_4 (13)
+[ca/a76e0f] Submitted process > ocrd_tesserocr_deskew_4 (14)
+[46/3d11e8] Submitted process > ocrd_tesserocr_deskew_4 (15)
+[1a/2075d6] Submitted process > ocrd_tesserocr_deskew_4 (16)
+[d6/fa34ca] Submitted process > ocrd_tesserocr_deskew_4 (17)
+[f5/232edb] Submitted process > ocrd_tesserocr_deskew_4 (18)
+[04/57aa1e] Submitted process > ocrd_tesserocr_deskew_4 (19)
+[aa/b0485d] Submitted process > ocrd_tesserocr_deskew_4 (20)
+[37/9f0d99] Submitted process > ocrd_tesserocr_deskew_4 (21)
+[46/ce80d1] Submitted process > ocrd_tesserocr_deskew_4 (22)
+[9a/9ae46f] Submitted process > ocrd_tesserocr_deskew_4 (23)
+[06/e206b1] Submitted process > ocrd_tesserocr_deskew_4 (24)
+[15/54dcc8] Submitted process > ocrd_tesserocr_deskew_4 (25)
+[b8/1d49d1] Submitted process > ocrd_tesserocr_deskew_4 (26)
+[c8/71bb38] Submitted process > ocrd_tesserocr_deskew_4 (27)
+[87/45656f] Submitted process > ocrd_tesserocr_deskew_4 (28)
+[8c/241c8d] Submitted process > ocrd_tesserocr_deskew_4 (29)
+[fa/997b3c] Submitted process > ocrd_tesserocr_deskew_4 (30)
+[d4/a8ef46] Submitted process > ocrd_cis_ocropy_segment_5 (1)
+[0b/a80bc2] Submitted process > ocrd_cis_ocropy_segment_5 (2)
+[ca/9e46ae] Submitted process > ocrd_tesserocr_deskew_4 (31)
+[76/9541cc] Submitted process > ocrd_tesserocr_deskew_4 (32)
+[d3/22ee3a] Submitted process > ocrd_cis_ocropy_segment_5 (3)
+[a9/983418] Submitted process > ocrd_cis_ocropy_segment_5 (4)
+[ca/331d38] Submitted process > ocrd_cis_ocropy_segment_5 (5)
+[7c/20d58b] Submitted process > ocrd_cis_ocropy_segment_5 (6)
+[9b/08426c] Submitted process > ocrd_cis_ocropy_segment_5 (7)
+[a1/4b9cfc] Submitted process > ocrd_cis_ocropy_segment_5 (8)
+[bc/a2f55c] Submitted process > ocrd_cis_ocropy_segment_5 (9)
+[05/c2e638] Submitted process > ocrd_cis_ocropy_segment_5 (10)
+[d5/824b78] Submitted process > ocrd_cis_ocropy_segment_5 (11)
+[64/aee602] Submitted process > ocrd_cis_ocropy_segment_5 (12)
+[2b/401504] Submitted process > ocrd_cis_ocropy_segment_5 (13)
+[19/176bf8] Submitted process > ocrd_cis_ocropy_segment_5 (14)
+[5a/7741cb] Submitted process > ocrd_cis_ocropy_segment_5 (15)
+[f9/0661ee] Submitted process > ocrd_cis_ocropy_segment_5 (16)
+[7a/49d9ff] Submitted process > ocrd_cis_ocropy_segment_5 (17)
+[06/4ce23f] Submitted process > ocrd_cis_ocropy_segment_5 (18)
+[c8/891d9d] Submitted process > ocrd_cis_ocropy_segment_5 (19)
+[e9/b8a313] Submitted process > ocrd_cis_ocropy_segment_5 (20)
+[c5/60f5df] Submitted process > ocrd_cis_ocropy_segment_5 (21)
+[a7/2f6d47] Submitted process > ocrd_cis_ocropy_segment_5 (22)
+[03/542d6d] Submitted process > ocrd_cis_ocropy_segment_5 (23)
+[13/78fa48] Submitted process > ocrd_cis_ocropy_segment_5 (24)
+[82/9f7c26] Submitted process > ocrd_cis_ocropy_segment_5 (25)
+[a7/df5d0e] Submitted process > ocrd_cis_ocropy_segment_5 (26)
+[5c/f4ef39] Submitted process > ocrd_cis_ocropy_segment_5 (27)
+[cd/431c69] Submitted process > ocrd_cis_ocropy_segment_5 (28)
+[4e/7454ac] Submitted process > ocrd_cis_ocropy_segment_5 (29)
+[7c/1a98ba] Submitted process > ocrd_cis_ocropy_segment_5 (30)
+[2c/1ba310] Submitted process > ocrd_cis_ocropy_segment_5 (31)
+[62/66c8f8] Submitted process > ocrd_cis_ocropy_segment_5 (32)
+[3f/366dc4] Submitted process > ocrd_cis_ocropy_dewarp_6 (1)
+[c7/fb3bfa] Submitted process > ocrd_calamari_recognize_7 (1)
+[06/608a18] Submitted process > ocrd_cis_ocropy_dewarp_6 (2)
+[21/ed6b6f] Submitted process > ocrd_cis_ocropy_dewarp_6 (3)
+[17/b2128a] Submitted process > ocrd_cis_ocropy_dewarp_6 (4)
+[77/98f532] Submitted process > ocrd_calamari_recognize_7 (2)
+[05/efdfe5] Submitted process > ocrd_calamari_recognize_7 (3)
+[40/2515c7] Submitted process > ocrd_cis_ocropy_dewarp_6 (5)
+[a6/1a9604] Submitted process > ocrd_calamari_recognize_7 (4)
+[2f/8ff2a9] Submitted process > ocrd_cis_ocropy_dewarp_6 (6)
+[44/c5ae5f] Submitted process > ocrd_cis_ocropy_dewarp_6 (7)
+[e5/ed6092] Submitted process > ocrd_cis_ocropy_dewarp_6 (8)
+[14/2381f2] Submitted process > ocrd_calamari_recognize_7 (5)
+[6b/63e84a] Submitted process > ocrd_cis_ocropy_dewarp_6 (9)
+[fe/d7e304] Submitted process > ocrd_cis_ocropy_dewarp_6 (10)
+[b2/7e6fc6] Submitted process > ocrd_cis_ocropy_dewarp_6 (11)
+[67/ea194f] Submitted process > ocrd_cis_ocropy_dewarp_6 (12)
+[d5/308054] Submitted process > ocrd_cis_ocropy_dewarp_6 (13)
+[c0/f2881f] Submitted process > ocrd_cis_ocropy_dewarp_6 (14)
+[4b/3de5bc] Submitted process > ocrd_cis_ocropy_dewarp_6 (15)
+[cc/f2200f] Submitted process > ocrd_cis_ocropy_dewarp_6 (16)
+[01/519889] Submitted process > ocrd_cis_ocropy_dewarp_6 (17)
+[93/9b9016] Submitted process > ocrd_cis_ocropy_dewarp_6 (18)
+[fd/36a27d] Submitted process > ocrd_cis_ocropy_dewarp_6 (19)
+[e4/770a3b] Submitted process > ocrd_calamari_recognize_7 (6)
+[4b/af792e] Submitted process > ocrd_cis_ocropy_dewarp_6 (20)
+[bf/824bfc] Submitted process > ocrd_cis_ocropy_dewarp_6 (21)
+[94/f7b02c] Submitted process > ocrd_cis_ocropy_dewarp_6 (22)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[7c/d3d21f] Submitted process > ocrd_cis_ocropy_dewarp_6 (23)
+[3c/c23c92] Submitted process > ocrd_calamari_recognize_7 (7)
+[4a/ce74a5] Submitted process > ocrd_calamari_recognize_7 (8)
+[36/b3ecc7] Submitted process > ocrd_calamari_recognize_7 (9)
+[c4/272453] Submitted process > ocrd_cis_ocropy_dewarp_6 (24)
+[f6/147662] Submitted process > ocrd_cis_ocropy_dewarp_6 (25)
+[ff/3aafc8] Submitted process > ocrd_calamari_recognize_7 (10)
+[57/0715be] Submitted process > ocrd_calamari_recognize_7 (11)
+[ce/8b2b84] Submitted process > ocrd_calamari_recognize_7 (12)
+[59/3e0a41] Submitted process > ocrd_calamari_recognize_7 (13)
+[c1/e6e918] Submitted process > ocrd_calamari_recognize_7 (14)
+[34/b8f050] Submitted process > ocrd_calamari_recognize_7 (15)
+[68/ee6dbc] Submitted process > ocrd_calamari_recognize_7 (16)
+[f6/6e7a41] Submitted process > ocrd_calamari_recognize_7 (17)
+[1a/fb1d65] Submitted process > ocrd_calamari_recognize_7 (18)
+[55/6f3da9] Submitted process > ocrd_calamari_recognize_7 (19)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[42/c280af] Submitted process > ocrd_calamari_recognize_7 (20)
+[75/a2f761] Submitted process > ocrd_calamari_recognize_7 (21)
+[9f/a83b6b] Submitted process > ocrd_calamari_recognize_7 (22)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[43/9f4f5d] Submitted process > ocrd_calamari_recognize_7 (23)
+[87/e42aae] Submitted process > ocrd_calamari_recognize_7 (24)
+[33/7ea286] Submitted process > ocrd_calamari_recognize_7 (25)
+[18/7682fb] Submitted process > ocrd_cis_ocropy_dewarp_6 (26)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[8b/15d943] Submitted process > ocrd_cis_ocropy_dewarp_6 (27)
+[ea/2357d3] Submitted process > ocrd_cis_ocropy_dewarp_6 (28)
+[55/363d16] Submitted process > ocrd_cis_ocropy_dewarp_6 (29)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[de/6ba3fd] Submitted process > ocrd_cis_ocropy_dewarp_6 (30)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[48/5a996b] Submitted process > ocrd_cis_ocropy_dewarp_6 (31)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[e4/e5557b] Submitted process > ocrd_calamari_recognize_7 (26)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[1a/4fc785] Submitted process > ocrd_calamari_recognize_7 (27)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[32/329459] Submitted process > ocrd_calamari_recognize_7 (28)
+[c8/3f1066] Submitted process > ocrd_calamari_recognize_7 (29)
+[6b/3437ca] Submitted process > ocrd_calamari_recognize_7 (30)
+[31/ec0d2a] Submitted process > ocrd_calamari_recognize_7 (31)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[6e/726c10] Submitted process > ocrd_cis_ocropy_dewarp_6 (32)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+[fc/c2d277] Submitted process > ocrd_calamari_recognize_7 (32)
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+Checkpoint version 2 is up-to-date.
+None
+The nextflow workflow execution has finished successfully
+Stopping the mets server
+File groups: PRESENTATION MIN MAX DEFAULT THUMBS OCR-D-BIN OCR-D-CROP OCR-D-BIN2 OCR-D-BIN-DENOISE OCR-D-BIN-DENOISE-DESKEW OCR-D-SEG OCR-D-SEG-LINE-RESEG-DEWARP OCR-D-OCR Total amount of file groups detected: 13
+
+Splitting file groups to an array
+/var/spool/slurmd/job3848720/slurm_script: line 1: 2520504 Terminated              apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df:/ws_data /local/u12198_3848720/ocrd_processor_sifs/ocrd_all_maximum_image.sif ocrd workspace -d /ws_data -U /ws_data/mets_server.sock server start > /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/cedb50bd-c8f5-4121-a4c7-173b5a92ee06/dd96a63e-5d1b-4223-b785-e14c550221df/mets_server.log 2>&1
+Removing file group: PRESENTATION
+Removing file group: MIN
+Removing file group: DEFAULT
+Removing file group: THUMBS
+Removing file group: OCR-D-BIN
+Removing file group: OCR-D-CROP
+Removing file group: OCR-D-BIN2
+Removing file group: OCR-D-BIN-DENOISE
+Removing file group: OCR-D-BIN-DENOISE-DESKEW
+Removing file group: OCR-D-SEG
+Removing file group: OCR-D-SEG-LINE-RESEG-DEWARP
+File groups: MAX OCR-D-OCR Total amount of file groups detected: 2
+
+The file groups have been removed successfully
+The results have been zipped successfully
+
+Removing the OCR-D models directory from the computing node, path: /local/u12198_3848720/ocrd_models
+Removing the OCR-D processor images (SIF) directory from the computing node, path: /local/u12198_3848720/ocrd_processor_sifs

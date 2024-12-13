@@ -28,8 +28,8 @@ OCRD_WORKSPACE_ZIPS = {
     "VD16":"./VD16/urn_nbn_de_gbv_3_1-326439.ocrd.zip",
     "VD17":"./VD17/urn_nbn_de_bsz_14-db-id3272770845.ocrd.zip",
     "VD18":"./VD18/PPN1023134829.ocrd.zip",
-    "Fraktur":"./FontBased/Fraktur/PPN841193452.ocrd.zip",
-    "Antiqua":"./FontBased/Antiqua/PPN63511240X.ocrd.zip"
+    "VD18_Fraktur":"./VD18_Fraktur/PPN841193452.ocrd.zip",
+    "VD18_Antiqua":"./VD18_Antiqua/PPN63511240X.ocrd.zip"
 }
 
 @dataclass()
@@ -230,7 +230,7 @@ def main():
             "sbb_workflow",
             "sbb_workflow_with_MS",
         ],
-        use_workspaces=["VD16", "VD17", "VD18", "Antiqua", "Fraktur"],
+        use_workspaces=["VD16", "VD17", "VD18", "VD18_Antiqua", "VD18_Fraktur"],
         use_file_groups=["MAX"],
         use_cpus=[1, 2, 4, 8, 16, 32],
     )

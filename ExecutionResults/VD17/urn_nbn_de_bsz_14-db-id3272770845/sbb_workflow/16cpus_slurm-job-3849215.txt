@@ -1,0 +1,149 @@
+================================================================================
+JobID = 3849215
+User = u12198, Account = project_pwieder_ocr_nhr
+Partition = standard96:shared, Nodelist = gcn2094
+================================================================================
+gcn2094
+Ocrd total images in request: 1
+Ocrd images: 
+ocrd_all_maximum_image.sif 
+Project dir ocrd models: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/ocrd_models
+Project dir processor sifs: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/ocrd_processor_sifs
+Node dir ocrd models: /local/u12198_3849215/ocrd_models
+Node dir processor sifs: /local/u12198_3849215/ocrd_processor_sifs
+
+Workspace dir: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384
+Use mets server: false
+
+Nf run command with Node placeholders: nextflow run /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/sbb_workflow.nf -ansi-log false -with-report -with-trace --input_file_group MAX --mets_path /ws_data/mets.xml --workspace_dir /ws_data --pages 32 --env_wrapper_cmd_core PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=false PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --env_wrapper_cmd_step0 PH_CMD_WRAPPERapptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384:/ws_data --bind PH_NODE_DIR_OCRD_MODELS/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true PH_NODE_DIR_PROCESSOR_SIFS/ocrd_all_maximum_image.sifPH_CMD_WRAPPER --cpus 16 --ram 128 --forks 16
+
+Nf run command without placeholders: nextflow run /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/sbb_workflow.nf -ansi-log false -with-report -with-trace --input_file_group MAX --mets_path /ws_data/mets.xml --workspace_dir /ws_data --pages 32 --env_wrapper_cmd_core 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384:/ws_data --bind /local/u12198_3849215/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=false /local/u12198_3849215/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --env_wrapper_cmd_step0 'apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384:/ws_data --bind /local/u12198_3849215/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3849215/ocrd_processor_sifs/ocrd_all_maximum_image.sif' --cpus 16 --ram 128 --forks 16
+
+Replacing ocrd core NODE_DIR_PROCESSOR_SIFS
+
+Scratch base found/created at: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces
+Ocrd models directory found at: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/ocrd_models
+Unzipping /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd.zip to: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd
+Removing zip: /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd.zip
+
+Successfully transferred ocrd models to node local storage
+Creating non-existing processor sif images dir: /local/u12198_3849215/ocrd_processor_sifs
+Transferring ocrd processor image to the compute node: ocrd_all_maximum_image.sif
+Ocrd processor image was transferred to: /local/u12198_3849215/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+
+ocrd, version 2.70.0
+
+Executing the nextflow workflow without mets server
+Nextflow 24.10.2 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+Launching `/mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/sbb_workflow.nf` [evil_linnaeus] DSL2 - revision: 68cf31396f
+OPERANDI HPC - Nextflow Workflow
+===================================================
+input_file_group: MAX
+mets_path: /ws_data/mets.xml
+workspace_dir: /ws_data
+pages: 32
+cpus: 16
+ram: 128
+forks: 16
+cpus_per_fork: 1
+ram_per_fork: 8GB
+env_wrapper_cmd_core: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384:/ws_data --bind /local/u12198_3849215/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=false /local/u12198_3849215/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+env_wrapper_cmd_step0: apptainer exec --bind /mnt/lustre-emmy-hdd/projects/project_pwieder_ocr_nhr/operandi/slurm_workspaces/f83f38cf-f9df-4333-b7d0-9646d1379afd/1e71e5fc-1df5-49a6-a930-8ad32771d384:/ws_data --bind /local/u12198_3849215/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources --env OCRD_METS_CACHING=true /local/u12198_3849215/ocrd_processor_sifs/ocrd_all_maximum_image.sif
+
+[8a/bb420a] Submitted process > split_page_ranges (2)
+[67/096bab] Submitted process > split_page_ranges (1)
+[63/50612d] Submitted process > split_page_ranges (8)
+[fb/6bf643] Submitted process > split_page_ranges (10)
+[3f/3ef418] Submitted process > split_page_ranges (9)
+[5b/8ed998] Submitted process > split_page_ranges (16)
+[26/75376f] Submitted process > split_page_ranges (7)
+[04/b992ba] Submitted process > split_page_ranges (4)
+[f1/bb54cf] Submitted process > split_page_ranges (3)
+[54/12eb94] Submitted process > split_page_ranges (15)
+[b5/901323] Submitted process > split_page_ranges (6)
+[33/e0e52a] Submitted process > split_page_ranges (12)
+[cd/517581] Submitted process > split_page_ranges (5)
+[c1/04c03f] Submitted process > split_page_ranges (11)
+[36/59e4f0] Submitted process > split_page_ranges (14)
+[a5/0aefa6] Submitted process > split_page_ranges (13)
+Current range is: PHYS_0023,PHYS_0024
+Mets file chunk path: /ws_data/mets_11.xml
+Current range is: PHYS_0009,PHYS_0010
+Mets file chunk path: /ws_data/mets_4.xml
+[da/86e6e6] Submitted process > ocrd_tesserocr_recognize_0 (1)
+Current range is: PHYS_0003,PHYS_0004
+Mets file chunk path: /ws_data/mets_1.xml
+[ca/93851c] Submitted process > ocrd_tesserocr_recognize_0 (2)
+Current range is: PHYS_0015,PHYS_0016
+Mets file chunk path: /ws_data/mets_7.xml
+[97/12e6fa] Submitted process > ocrd_tesserocr_recognize_0 (3)
+Current range is: PHYS_0007,PHYS_0008
+Mets file chunk path: /ws_data/mets_3.xml
+[6b/7f9995] Submitted process > ocrd_tesserocr_recognize_0 (4)
+Current range is: PHYS_0005,PHYS_0006
+Mets file chunk path: /ws_data/mets_2.xml
+[05/9127f3] Submitted process > ocrd_tesserocr_recognize_0 (5)
+Current range is: PHYS_0029,PHYS_0030
+Mets file chunk path: /ws_data/mets_14.xml
+[8a/2a6c56] Submitted process > ocrd_tesserocr_recognize_0 (6)
+[8c/a2a60c] Submitted process > ocrd_tesserocr_recognize_0 (7)
+Current range is: PHYS_0031,PHYS_0032
+Mets file chunk path: /ws_data/mets_15.xml
+[a9/c8ced8] Submitted process > ocrd_tesserocr_recognize_0 (8)
+Current range is: PHYS_0013,PHYS_0014
+Mets file chunk path: /ws_data/mets_6.xml
+[b3/ad5ec8] Submitted process > ocrd_tesserocr_recognize_0 (9)
+Current range is: PHYS_0011,PHYS_0012
+Mets file chunk path: /ws_data/mets_5.xml
+Current range is: PHYS_0027,PHYS_0028
+Mets file chunk path: /ws_data/mets_13.xml
+[3b/9059f7] Submitted process > ocrd_tesserocr_recognize_0 (10)
+[c6/5ecf5e] Submitted process > ocrd_tesserocr_recognize_0 (11)
+Current range is: PHYS_0025,PHYS_0026
+Mets file chunk path: /ws_data/mets_12.xml
+[b7/ca3ef4] Submitted process > ocrd_tesserocr_recognize_0 (12)
+Current range is: PHYS_0021,PHYS_0022
+Mets file chunk path: /ws_data/mets_10.xml
+[cb/a8afc5] Submitted process > ocrd_tesserocr_recognize_0 (13)
+Current range is: PHYS_0019,PHYS_0020
+Mets file chunk path: /ws_data/mets_9.xml
+[c5/dc580b] Submitted process > ocrd_tesserocr_recognize_0 (14)
+Current range is: PHYS_0017,PHYS_0018
+Mets file chunk path: /ws_data/mets_8.xml
+[14/24231a] Submitted process > ocrd_tesserocr_recognize_0 (15)
+Current range is: PHYS_0001,PHYS_0002
+Mets file chunk path: /ws_data/mets_0.xml
+[fd/42585f] Submitted process > ocrd_tesserocr_recognize_0 (16)
+[81/7ca143] Submitted process > merging_mets (1)
+[23/ad4f15] Submitted process > merging_mets (2)
+[a5/8e54df] Submitted process > merging_mets (3)
+[b5/1629bb] Submitted process > merging_mets (4)
+[62/cecc8b] Submitted process > merging_mets (5)
+[40/11ea1e] Submitted process > merging_mets (6)
+[31/5acc54] Submitted process > merging_mets (7)
+[71/02e024] Submitted process > merging_mets (8)
+[de/ed670d] Submitted process > merging_mets (9)
+[97/973d36] Submitted process > merging_mets (10)
+[5f/bd0027] Submitted process > merging_mets (11)
+[1c/9a733e] Submitted process > merging_mets (12)
+[40/9f0792] Submitted process > merging_mets (13)
+[71/c96c5c] Submitted process > merging_mets (14)
+[1a/e70da8] Submitted process > merging_mets (15)
+[ee/362591] Submitted process > merging_mets (16)
+The nextflow workflow execution has finished successfully
+File groups: DOWNLOAD MAX ORIGINAL THUMBS MIN DEFAULT OCR-D-OCR Total amount of file groups detected: 7
+
+Splitting file groups to an array
+Removing file group: DOWNLOAD
+Removing file group: ORIGINAL
+Removing file group: THUMBS
+Removing file group: MIN
+Removing file group: DEFAULT
+File groups: MAX OCR-D-OCR Total amount of file groups detected: 2
+
+The file groups have been removed successfully
+The results have been zipped successfully
+
+Removing the OCR-D models directory from the computing node, path: /local/u12198_3849215/ocrd_models
+Removing the OCR-D processor images (SIF) directory from the computing node, path: /local/u12198_3849215/ocrd_processor_sifs

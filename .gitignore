@@ -159,5 +159,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-VD*/*.ocrd.zip
-FontBased/*/*.ocrd.zip
+Workspaces/VD*/*.ocrd.zip

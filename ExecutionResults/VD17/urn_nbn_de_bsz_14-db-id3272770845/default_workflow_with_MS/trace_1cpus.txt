@@ -1,0 +1,10 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	78/7dfc17	3027291	split_page_ranges (1)	COMPLETED	0	2024-12-12 16:11:36.979	3.9s	3.7s	83.6%	162.9 MB	2.3 GB	67.8 MB	86.6 MB
+2	4a/cd95b7	3038296	ocrd_cis_ocropy_binarize_0 (1)	COMPLETED	0	2024-12-12 16:11:41.193	33m 51s	33m 50s	99.5%	1.9 GB	4.3 GB	416.1 MB	513.5 MB
+3	c6/5e2ea9	188378	ocrd_anybaseocr_crop_1 (1)	COMPLETED	0	2024-12-12 16:45:31.959	38m 23s	38m 23s	100.1%	3.3 GB	30.3 GB	369.1 MB	329.7 MB
+4	3f/132a30	1331910	ocrd_skimage_binarize_2 (1)	COMPLETED	0	2024-12-12 17:23:54.953	17.3s	17.1s	91.3%	348.2 MB	2.6 GB	170.5 MB	149.4 MB
+5	eb/866409	1334113	ocrd_skimage_denoise_3 (1)	COMPLETED	0	2024-12-12 17:24:12.306	19.2s	19s	92.2%	333.9 MB	2.6 GB	173.3 MB	149.3 MB
+6	d8/2cd429	1336199	ocrd_tesserocr_deskew_4 (1)	COMPLETED	0	2024-12-12 17:24:31.563	1m 16s	1m 16s	97.0%	291.8 MB	2.5 GB	232.9 MB	131.9 MB
+7	43/d25746	1396274	ocrd_cis_ocropy_segment_5 (1)	COMPLETED	0	2024-12-12 17:25:47.864	27m 32s	27m 32s	100.7%	1.4 GB	3.7 GB	199.5 MB	189.5 MB
+8	11/bde42e	1637032	ocrd_cis_ocropy_dewarp_6 (1)	COMPLETED	0	2024-12-12 17:53:20.233	2m 8s	2m 8s	72.0%	300.9 MB	2.6 GB	187.7 MB	174.2 MB
+9	6c/ca7630	1641254	ocrd_calamari_recognize_7 (1)	COMPLETED	0	2024-12-12 17:55:28.498	14m 48s	14m 47s	104.4%	2.1 GB	7.4 GB	400.8 MB	464.6 MB

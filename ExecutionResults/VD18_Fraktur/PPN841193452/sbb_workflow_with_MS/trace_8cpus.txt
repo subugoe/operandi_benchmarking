@@ -1,0 +1,17 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+6	3c/f11c65	1319624	split_page_ranges (6)	COMPLETED	0	2024-12-12 17:31:29.720	5.1s	4.8s	68.9%	123.7 MB	2.2 GB	67.9 MB	86.6 MB
+1	fd/3ef2d5	1319616	split_page_ranges (1)	COMPLETED	0	2024-12-12 17:31:29.707	5.2s	4.9s	68.1%	160.8 MB	2.3 GB	67.9 MB	86.6 MB
+5	e0/26c7b3	1319696	split_page_ranges (5)	COMPLETED	0	2024-12-12 17:31:29.775	5.1s	4.8s	68.6%	159.3 MB	2.3 GB	67.9 MB	86.6 MB
+8	b9/f92cc5	1319665	split_page_ranges (8)	COMPLETED	0	2024-12-12 17:31:29.750	5.2s	4.9s	67.9%	163.8 MB	2.3 GB	67.9 MB	86.6 MB
+4	7e/30f4dd	1319611	split_page_ranges (4)	COMPLETED	0	2024-12-12 17:31:29.696	5.4s	5s	67.0%	161.3 MB	2.3 GB	67.9 MB	86.6 MB
+7	e3/9e6edd	1319641	split_page_ranges (7)	COMPLETED	0	2024-12-12 17:31:29.735	5.3s	5.1s	66.6%	163.9 MB	2.4 GB	67.9 MB	86.6 MB
+2	2c/d934ee	1319706	split_page_ranges (2)	COMPLETED	0	2024-12-12 17:31:29.795	5.3s	5s	67.2%	159.6 MB	2.3 GB	67.9 MB	86.6 MB
+3	ed/74d15e	1320676	split_page_ranges (3)	COMPLETED	0	2024-12-12 17:31:30.657	5.3s	4.7s	69.3%	150.2 MB	2.3 GB	67.9 MB	86.6 MB
+12	05/1b0976	1322884	ocrd_tesserocr_recognize_0 (4)	COMPLETED	0	2024-12-12 17:31:34.996	1m 45s	1m 45s	90.3%	331.8 MB	2.6 GB	130.2 MB	131.2 MB
+14	a5/c751b2	1322961	ocrd_tesserocr_recognize_0 (6)	COMPLETED	0	2024-12-12 17:31:35.086	1m 57s	1m 56s	90.7%	305.5 MB	2.7 GB	132.3 MB	131.5 MB
+11	0c/20c5dd	1322852	ocrd_tesserocr_recognize_0 (3)	COMPLETED	0	2024-12-12 17:31:34.946	1m 58s	1m 58s	90.9%	301.1 MB	2.7 GB	132.6 MB	131.5 MB
+13	3e/cf9369	1322954	ocrd_tesserocr_recognize_0 (5)	COMPLETED	0	2024-12-12 17:31:35.072	1m 59s	1m 59s	90.6%	298 MB	2.7 GB	132.5 MB	131.6 MB
+16	7a/548de1	1323908	ocrd_tesserocr_recognize_0 (8)	COMPLETED	0	2024-12-12 17:31:35.985	1m 58s	1m 58s	91.2%	300.2 MB	2.6 GB	133 MB	131.7 MB
+10	8d/c10256	1322849	ocrd_tesserocr_recognize_0 (2)	COMPLETED	0	2024-12-12 17:31:34.932	1m 59s	1m 59s	91.2%	306.8 MB	2.7 GB	133.9 MB	131.7 MB
+9	a2/bd9cc3	1322842	ocrd_tesserocr_recognize_0 (1)	COMPLETED	0	2024-12-12 17:31:34.910	2m 1s	2m 1s	91.3%	300.4 MB	2.7 GB	132.6 MB	131.5 MB
+15	65/47fe07	1323032	ocrd_tesserocr_recognize_0 (7)	COMPLETED	0	2024-12-12 17:31:35.141	2m 5s	2m 5s	91.4%	305.1 MB	2.6 GB	132.5 MB	131.6 MB

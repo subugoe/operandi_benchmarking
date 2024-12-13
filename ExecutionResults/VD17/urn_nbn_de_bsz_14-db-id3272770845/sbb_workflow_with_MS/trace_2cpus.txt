@@ -1,0 +1,5 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+2	7a/7e450f	63221	split_page_ranges (2)	COMPLETED	0	2024-12-12 17:22:25.316	4.8s	4.5s	73.9%	157.4 MB	2.4 GB	67.8 MB	86.6 MB
+1	c9/32ec7b	63230	split_page_ranges (1)	COMPLETED	0	2024-12-12 17:22:25.346	5.1s	4.8s	71.2%	160.1 MB	2.3 GB	67.8 MB	86.6 MB
+3	34/73d5fd	65664	ocrd_tesserocr_recognize_0 (1)	COMPLETED	0	2024-12-12 17:22:30.329	3m 46s	3m 46s	91.6%	575.7 MB	2.9 GB	151.9 MB	133.6 MB
+4	6c/8eb9e2	65767	ocrd_tesserocr_recognize_0 (2)	COMPLETED	0	2024-12-12 17:22:30.483	3m 55s	3m 55s	91.8%	562.7 MB	2.8 GB	152.9 MB	133.8 MB

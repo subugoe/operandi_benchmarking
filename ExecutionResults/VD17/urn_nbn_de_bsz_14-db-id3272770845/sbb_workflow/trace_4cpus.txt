@@ -1,0 +1,13 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	66/c258a4	114273	split_page_ranges (1)	COMPLETED	0	2024-12-12 17:07:45.167	7.6s	7.3s	62.2%	156.4 MB	2.4 GB	70.2 MB	89.9 MB
+2	67/6fd80b	114259	split_page_ranges (2)	COMPLETED	0	2024-12-12 17:07:45.122	8s	7.6s	59.5%	145.1 MB	2.3 GB	70.2 MB	89.9 MB
+4	12/1f1d8c	114290	split_page_ranges (4)	COMPLETED	0	2024-12-12 17:07:45.193	8s	7.7s	58.1%	131.7 MB	2.3 GB	70.2 MB	89.9 MB
+3	e6/734e1b	114299	split_page_ranges (3)	COMPLETED	0	2024-12-12 17:07:45.229	8.6s	7.6s	57.4%	133 MB	2.2 GB	70.2 MB	89.9 MB
+7	4e/7537c5	122057	ocrd_tesserocr_recognize_0 (3)	COMPLETED	0	2024-12-12 17:07:53.246	1m 47s	1m 47s	89.0%	441.7 MB	2.8 GB	129.3 MB	131.6 MB
+9	ec/1d2b5f	177289	merging_mets (1)	COMPLETED	0	2024-12-12 17:09:40.611	5.5s	5s	72.5%	123 MB	2.3 GB	69.5 MB	88.8 MB
+5	64/025984	121953	ocrd_tesserocr_recognize_0 (1)	COMPLETED	0	2024-12-12 17:07:52.972	2m 4s	2m 3s	90.5%	466 MB	2.7 GB	130.5 MB	131.9 MB
+6	30/92a0c6	121999	ocrd_tesserocr_recognize_0 (2)	COMPLETED	0	2024-12-12 17:07:53.120	2m 8s	2m 7s	91.1%	453.6 MB	2.7 GB	130.5 MB	131.8 MB
+10	a7/7a40e2	180516	merging_mets (2)	COMPLETED	0	2024-12-12 17:09:56.506	4.7s	4.5s	79.1%	159.3 MB	2.3 GB	69.5 MB	88.8 MB
+8	40/ca6978	122889	ocrd_tesserocr_recognize_0 (4)	COMPLETED	0	2024-12-12 17:07:53.894	2m 8s	2m 8s	90.8%	441.4 MB	2.8 GB	130.7 MB	131.9 MB
+11	49/eb7ff2	181610	merging_mets (3)	COMPLETED	0	2024-12-12 17:10:01.266	3.6s	3.4s	79.3%	163.2 MB	2.3 GB	69.6 MB	88.8 MB
+12	22/8a24e4	182251	merging_mets (4)	COMPLETED	0	2024-12-12 17:10:04.873	3.6s	3.4s	80.0%	162.7 MB	2.4 GB	69.6 MB	88.9 MB
