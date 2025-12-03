@@ -34,6 +34,8 @@ ocrd process \
     "tesserocr-recognize -I OCR-D-SEG-DEWARP -O OCR-D-OCR -P textequiv_level glyph -P overwrite_segments true -P model GT4HistOCR_50000000.997_191951"
 ```
 
+Workflows from Staatsbibliothek zu Berlin
+
 ## SBB workflow
 ```
 ocrd process \
