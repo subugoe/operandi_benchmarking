@@ -1,0 +1,13 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	2c/027cdd	2666	split_page_ranges (1)	COMPLETED	0	2025-12-11 10:59:09.456	4.7s	4.5s	86.4%	156.6 MB	2.4 GB	70 MB	90.9 MB
+2	de/6eb392	7062	ocrd_cis_ocropy_binarize_0 (1)	COMPLETED	0	2025-12-11 10:59:14.348	9m 8s	9m 8s	99.2%	364.6 MB	2.7 GB	239 MB	166.3 MB
+3	35/5a9e2f	515429	ocrd_anybaseocr_crop_1 (1)	COMPLETED	0	2025-12-11 11:08:23.159	10m 59s	10m 59s	99.3%	2.5 GB	4.9 GB	381.3 MB	194.6 MB
+4	29/c7e259	1048561	ocrd_cis_ocropy_denoise_2 (1)	COMPLETED	0	2025-12-11 11:19:22.588	2m 51s	2m 50s	100.3%	399.4 MB	2.8 GB	241.8 MB	164.8 MB
+5	fd/3ddd59	1151773	ocrd_cis_ocropy_deskew_3 (1)	COMPLETED	0	2025-12-11 11:22:13.451	8m 35s	8m 35s	99.2%	361 MB	2.7 GB	366.2 MB	166.7 MB
+6	ba/a5a720	1430345	ocrd_tesserocr_segment_region_4 (1)	COMPLETED	0	2025-12-11 11:30:49.015	1m 33s	1m 33s	99.4%	594.8 MB	3 GB	241.1 MB	141.1 MB
+7	18/39c4c4	1462625	ocrd_segment_repair_5 (1)	COMPLETED	0	2025-12-11 11:32:21.806	6.1s	5.9s	94.2%	192.7 MB	2.4 GB	81.8 MB	106.8 MB
+8	4d/b8944d	1465430	ocrd_cis_ocropy_clip_6 (1)	COMPLETED	0	2025-12-11 11:32:27.971	6m 5s	6m 5s	102.8%	455.5 MB	2.9 GB	242.2 MB	166.9 MB
+9	80/8b6f2b	1596686	ocrd_cis_ocropy_segment_7 (1)	COMPLETED	0	2025-12-11 11:38:33.427	6m 36s	6m 36s	102.1%	424.3 MB	2.6 GB	255.8 MB	176 MB
+10	e5/6cba94	1655317	ocrd_cis_ocropy_dewarp_8 (1)	COMPLETED	0	2025-12-11 11:45:09.888	5m	5m	99.5%	295.9 MB	2.7 GB	264.2 MB	184.1 MB
+11	87/526571	1673837	ocrd_tesserocr_recognize_9 (1)	COMPLETED	0	2025-12-11 11:50:10.231	11m 41s	11m 41s	99.5%	304.6 MB	2.7 GB	277 MB	164.6 MB
+12	d0/b2f9fc	1713982	merging_mets (1)	COMPLETED	0	2025-12-11 12:01:51.286	1m 33s	1m 32s	99.0%	201.6 MB	2.5 GB	71.9 MB	92.3 MB
