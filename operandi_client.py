@@ -27,11 +27,16 @@ class OperandiClient:
 
     def post_workspace_zip(self, ocrd_zip_path: str) -> str:
         self.logger.info(f"Posting workspace ocrd zip: {ocrd_zip_path}")
+        ws_detail = "Workspace zip uploaded by Operandi Client"
         response = post(
             url=f"{self.server_address}/workspace",
-            files={"workspace": open(f"{ocrd_zip_path}", "rb")},
+            params={"details": ws_detail},
+            files={"workspace": ("workspace.zip", open(ocrd_zip_path, "rb"), "application/zip")},
+            data={"details": ws_detail},
             auth=self.auth
         )
+        print("Status:", response.status_code)
+        print(response.text)
         self.logger.debug(response.json())
         workspace_id = response.json().get("resource_id", None)
         if not workspace_id:
@@ -41,9 +46,11 @@ class OperandiClient:
 
     def post_workflow(self, nf_script_path: str) -> str:
         self.logger.info(f"Posting nextflow script file: {nf_script_path}")
+        wf_detail = "Workflow uploaded by Operandi"
         response = post(
             url=f"{self.server_address}/workflow",
-            files={"nextflow_script": open(f"{nf_script_path}", "rb")},
+            params={"details": wf_detail},
+            files={"nextflow_script": open(nf_script_path, "rb")},
             auth=self.auth
         )
         self.logger.debug(response.json())
@@ -92,7 +99,7 @@ class OperandiClient:
     def get_workflow_job_state(self, workflow_id: str, job_id: str) -> str:
         self.logger.info(f"Checking state of workflow job id: {job_id}")
         response = get(
-            url=f"{self.server_address}/workflow/{workflow_id}/{job_id}",
+            url=f"{self.server_address}/workflow-job/{job_id}",
             auth=self.auth
         )
         self.logger.debug(response.json())
@@ -117,7 +124,7 @@ class OperandiClient:
         self.logger.info(f"Getting workflow job zip of: {job_id}")
         download_path = join(download_dir, f"{zip_name}.zip")
         response = get(
-            url=f"{self.server_address}/workflow/{workflow_id}/{job_id}/log",
+            url=f"{self.server_address}/workflow-job/{job_id}/logs",
             # headers={'accept': 'application/vnd.zip'},
             auth=self.auth
         )

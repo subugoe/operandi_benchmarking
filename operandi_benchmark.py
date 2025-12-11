@@ -25,11 +25,11 @@ NF_WORKFLOWS = {
 }
 
 OCRD_WORKSPACE_ZIPS = {
-    "VD16":"./VD16/urn_nbn_de_gbv_3_1-326439.ocrd.zip",
-    "VD17":"./VD17/urn_nbn_de_bsz_14-db-id3272770845.ocrd.zip",
-    "VD18":"./VD18/PPN1023134829.ocrd.zip",
-    "VD18_Fraktur":"./VD18_Fraktur/PPN841193452.ocrd.zip",
-    "VD18_Antiqua":"./VD18_Antiqua/PPN63511240X.ocrd.zip"
+    "VD16":"./Workspaces/VD16/urn_nbn_de_gbv_3_1-326439.ocrd.zip",
+    "VD17":"./Workspaces/VD17/urn_nbn_de_bsz_14-db-id3272770845.ocrd.zip",
+    "VD18":"/home/mm/Repos/operandi_benchmarking/Workspaces/VD18/PPN1023134829.ocrd.zip",
+    "VD18_Fraktur":"./Workspaces/VD18_Fraktur/PPN841193452.ocrd.zip",
+    "VD18_Antiqua":"./Workspaces/VD18_Antiqua/PPN63511240X.ocrd.zip"
 }
 
 @dataclass()
@@ -127,8 +127,8 @@ class OperandiBenchmark:
                 for file_group in use_file_groups:
                     for cpu_amount in use_cpus:
                         ram_amount = cpu_amount * 8
-                        if ram_amount < 32:
-                            ram_amount = 32
+                        # if ram_amount < 32:
+                        #    ram_amount = 32
                         wf_job_data = WorkflowJobData(
                             vd_workspace=vd_workspace,
                             nf_workflow_path=nf_workflow_path,
@@ -230,9 +230,11 @@ def main():
             "sbb_workflow",
             "sbb_workflow_with_MS",
         ],
-        use_workspaces=["VD16", "VD17", "VD18", "VD18_Antiqua", "VD18_Fraktur"],
+        # use_workspaces=["VD16", "VD17", "VD18", "VD18_Antiqua", "VD18_Fraktur"],
+        use_workspaces=["VD18"],
         use_file_groups=["MAX"],
-        use_cpus=[1, 2, 4, 8, 16, 32],
+        # use_cpus=[1, 2, 4, 8, 16, 32],
+        use_cpus=[1, 4, 8],
     )
     operandi_benchmarking.run_workflow_jobs()
     operandi_benchmarking.poll_till_jobs_end()
