@@ -1,12 +1,28 @@
 # ocrd_benchmarking
 Benchmarking data for OCR-D - Operandi
 
-- The MAX file group of the workspaces were used as an entry file group for the workflows
-- The used workflows are inside the workspace folders and also available under `Workflows`
-- The mets files used to construct the workspace for each VD is inside the VD folder
+# Preparation of the input data
+- The mets files used to construct the workspace for each VD are inside their respective VD folder under `Workspaces`. Inside each workspace there is a ready to use script `build_workspace_zip.sh` which builds the workspace based on the mets file of the specific workspace. A `OCR-D core` is a prerequisite to run the script. 
+- The used workflows are inside the workspace folders and also available under `Workflows`. Each workflow is also provided in a code block at the end of this file.
+- The `MAX` file group of the workspaces were used as an entry file group for the workflows.
+- The usual allocation of resources is 8GB of RAM per 1 CPU core. For CPUs more than 8, more RAM is needed for running in parallel, otherwise the jobs trigger out of memory errors.
+
+# What output data is produced
 - The Nextflow reports follow the naming convention of `report_*cpus`
+- The Nextflow traces follow the naming convention of `trace_*cpus`
 - The Workflow job (slurm job) outputs follow the naming convention of `*cpus_slurm-job-*`
-- The `stats` pdf contains summary tables with results. The boxes having an `ERROR` instead of a time duration means that the workflow job of the same workflow over the same workspace was not possible to execute with the current version of `Operandi`/`ocrd_all`. For CPUs more than 8, more RAM is needed for running in parallel, otherwise the jobs trigger out of memory errors. Regardless of the allocated RAM, 32 CPUs always face different kind of run-time errors.
+
+# Execution results
+
+## First cycle 
+ExecutionResults directory contains the results of the first cycle - with OCR-D processors based on core v2.*
+
+## Second cycle
+ExecutionResults2 directory contains the results of the first cycle - with OCR-D processors based on core v2.*
+
+## Summary of results of all cycles
+
+- The `stats` pdf contains summary tables with all results.
 
 # Used Nextflow workflows in ocrd process format:
 ## Default workflow
