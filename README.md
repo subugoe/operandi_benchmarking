@@ -11,18 +11,27 @@ Benchmarking data for OCR-D - Operandi
 - The Nextflow reports follow the naming convention of `report_*cpus`
 - The Nextflow traces follow the naming convention of `trace_*cpus`
 - The Workflow job (slurm job) outputs follow the naming convention of `*cpus_slurm-job-*`
+- Many other irrelevant for the benchmarking logs which are excluded from this repository
 
 # Execution results
 
 ## First cycle 
 ExecutionResults directory contains the results of the first cycle - with OCR-D processors based on core v2.*
 
+The main objective of the first cycle was to find out how the processors scale based on different amount of provided RAM and CPU resources.
+
 ## Second cycle
-ExecutionResults2 directory contains the results of the first cycle - with OCR-D processors based on core v2.*
+ExecutionResults2 directory contains the results of the first cycle - with OCR-D processors based on core v3.*
 
-## Summary of results of all cycles
+The main objective of the second cycle was to verify if core v3.* is improving the overall speed of the used OCR-D processors. Only a single VD18 workspace was used since that is enough to show some relevant comparison. Moreover, the workflows were tested only with 2, 4, and 8 cpus.
 
-- The `stats` pdf contains summary tables with all results.
+`Warning`: The results for the `default_workflow` and `default_workflow_with_MS` are missing since the model used in the first cycle of these workflows was no longer functional as of v3.* of OCR-D core. The slurm job output logs were still provided as a reference. If another model was used, the results of the workflows would not have been comparable to the first cycle results.
+
+# Summary of results of all execution cycles
+- The `stats` pdf contains summary tables with all results from both cycles.
+
+`Important note`: Keep in mind that the workflows of the first cycle were executed on the SCC HPC and the workflows of the second cycle were executed on the NHR HPC. Although the provided amount of 
+CPUs and RAM is comparable, the processors themselfs are not.  
 
 # Used Nextflow workflows in ocrd process format:
 ## Default workflow
